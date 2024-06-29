@@ -1,0 +1,119 @@
+GDPR_and_Security:
+  Employee_monitoring:
+    principles:
+      - Necessity:
+          - corporate_devices
+          - keyloggers
+          - biometric_scanners
+          - CCTV
+          - webcam_recording
+          - profiling
+      - Legitimate_interests:
+          - balance_of_interests
+          - purpose_limitation
+          - data_minimisation
+          - storage_limitation
+          - integrity_and_confidentiality
+      - Recommendations:
+          - conduct_DPIAs
+          - implement_four-eyes_principle
+          - follow_requirements_for_profiling
+  Key_Topics:
+    articles:
+      - article_5: Appropriate_security
+      - article_25: Data_protection_by_design_and_by_default
+      - article_32: Security_of_processing
+      - article_33: Data_breach_notification
+      - article_34: Personal_data_breach_notification
+      - article_35: Data_Protection_Impact_Assessment_DPIA
+      - article_36: DPO_or_CISO
+      - article_39: Certification
+      - article_5: Accountability
+      - article_5: Risk_management
+  Appropriate_security:
+    principles:
+      - Personal_data_shall_be:
+          - increased_security
+          - protect_data_against_unauthorized_or_unlawful_processing
+          - accidental_loss_or_destruction
+          - damage
+      - Appropriate_technical_and_organizational_measures:
+          - encryption
+          - anonymisation
+          - pseudonymisation
+          - access_controls
+  Certification:
+    types:
+      - ISO_27001
+      - PCI_DSS
+      - ISO_27032
+      - Cyber_Essentials_PLUS
+      - ISO_9001
+      - ISO_27018
+      - CSA_STAR
+      - SOC_2
+  Breach_notification:
+    articles:
+      - article_33: Breach_notification_to_the_Controller
+      - article_34: Breach_notification_to_the_supervisory_authority_SA
+      - article_33: Breach_notification_to_the_data_subjects
+      - article_33: Measures_taken_or_proposed_to_be_taken
+      - article_33: Likely_consequences
+      - article_33: Description_of_the_nature_of_the_breach
+  Accountability:
+    key_points:
+      - article_5: Security_point_of_view
+  Security:
+    key_points:
+      - CIA_Triad:
+          - confidentiality
+          - integrity
+          - availability
+      - Security_of_processing:
+          - ongoing_confidentiality
+          - integrity_and_availability
+          - resilience
+          - availability_and_access_after_incident
+          - regular_testing
+          - audit_and_metrics
+  Notification_and_Communication:
+    processes:
+      - Personal_data_breach:
+          - breach_of_security_leading_to:
+              - accidental_or_unlawful_destruction
+              - loss_or_access
+              - transmission_or_storage
+              - unauthorized_disclosure
+  Privacy_by_Design:
+    principles:
+      - Proactive_not_Reactive
+      - Privacy_as_the_Default_Setting
+      - Privacy_Embedded_into_Design
+      - Full_Functionality_Positive-Sum
+      - End-to-End_Security_Full_Life_Cycle_Protection
+      - Visibility_and_Transparency
+      - Respect_for_User_Privacy
+  Privacy_Operational_Life_Cycle_POLC:
+    steps:
+      - Assess_Measure
+      - Protect_Improve
+      - Sustain_Evaluate
+      - Respond_Support
+  Risk_Management:
+    types:
+      - Business_Impact_Analysis_BIA
+      - Data_Protection_Impact_Assessment_DPIA
+    process:
+      - Scope_context_and_criteria
+      - Risk_Identification
+      - Risk_Analysis
+      - Risk_Evaluation
+      - Risk_Treatment:
+          - Reduce_or_mitigate
+          - Assign_or_transfer
+          - Accept
+          - Deter
+          - Avoid
+          - Reject_or_ignore
+      - Monitoring_and_review
+      - Recording_and_reporting
