@@ -1,0 +1,277 @@
+purpose: >
+  This standard aims to define the cybersecurity requirements related to the patch management for <organization name>’s technology solutions and assets. The ability of <organization name> to manage patches in accordance with this standard will assist in reducing the cybersecurity risks, in ensuring protection from related internal and external threats, and in preservation of the availability, integrity, and confidentiality of <organization name>’s assets and information.
+
+scope: >
+  This standard covers all <organization name>’s information and technology assets and applies to all personnel (employees and contractors) in <organization name>.
+
+standards:
+  - id: 1
+    title: Plan risk response
+    objective: >
+      The objective of this section is to ensure that the organization is managing the patching in accordance with the assessment of the incoming cybersecurity risks and vulnerabilities.
+    risk_implication: >
+      Without patching being done in consequence of the <organization name>’s overall risk and vulnerability management processes (e.g., only being done as an operational duty), the chance of letting potential vulnerabilities untreated is higher.
+    requirements:	
+      - id: 1-1
+        description: >
+          <organization name> must consider every new software vulnerability affecting <organization name>’s assets, including applications, operating systems, and firmware.
+      - id: 1-2
+        description: >
+          <organization name> must avoid the cybersecurity risk of unavailable or not introduced patches, ensuring that the likelihood of risk is reduced by eliminating the attack surface:
+          - uninstalling the vulnerable software;
+          - disconnecting vulnerable asset from network;
+          - decommissioning devices with the vulnerabilities;
+          - disabling computing capabilities in devices that can function without them.
+      - id: 1-3
+        description: >
+          <organization name> must mitigate cybersecurity risks by performing patches to eliminate the vulnerabilities, e.g.:
+          - patching the vulnerable software;
+          - disabling a vulnerable feature; or
+          - upgrading to a newer software version without the vulnerabilities.
+      - id: 1-4
+        description: >
+          <organization name> must deploy additional security controls to reduce vulnerability exploitation, e.g.:
+          - using firewalls and network segmentation to isolate vulnerable devices, thus reducing the attack surface.
+      - id: 1-5
+        description: >
+          <organization name> must define at least the following software vulnerability risk response scenarios they need to be prepared to handle:
+          - Routine patching (standard procedure for patches that are on a regular release cycle)
+          - Emergency patching (to address patching emergencies in a crisis situation)
+          - Emergency workaround (to temporarily mitigate vulnerabilities before a patch is available)
+          - Unpatchable assets (isolation or other methods to mitigate the risk of systems that cannot be easily patched)
+      - id: 1-6
+        description: >
+          <organization name> must define maintenance groups and develop maintenance plan for each maintenance group for each applicable risk response scenario, e.g.:
+          - <Maintenance Plans for Scenario 1, Routine Patching>
+            - <organization name> must adopt phased deployments for routine patching in which a small subset of the assets to be patched receive the patch first.
+          - <Maintenance Plans for Scenario 2, Emergency Patching>
+            - <organization name> must use the same general approach for emergency patching as for routine patching, except with a highly accelerated schedule.
+          - <Maintenance Plans for Scenario 3, Emergency Workarounds>
+            - <organization name> must plan for the quick implementation of multiple types of emergency workarounds to protect vulnerable assets.
+          - <Maintenance Plans for Scenario 4, Un-patchable Assets>
+            - <organization name> must plan to implement multiple types of long-term risk mitigation methods besides patching to protect vulnerable assets.
+
+  - id: 2
+    title: Execute risk response
+    objective: >
+      The objective of this section is to ensure that patching is being done by following logically structured risk response execution.
+    risk_implication: >
+      Without a well-designed and structured risk response execution, the assessment of risks can fail on several occasions, leaving vulnerabilities unpatched or untreated.
+    requirements:
+      - id: 2-1
+        description: >
+          The execution of risk response must be composed of the following steps:
+          - Prepare risk response
+          - Implement risk response
+          - Verify risk response
+          - Continuously monitor risk response
+      - id: 2-2
+        description: >
+          Preparing risk response must cover the following activities:
+          - Acquiring patches
+          - Validating patches
+          - Testing patches
+      - id: 2-3
+        description: >
+          Implementing risk response must cover the following activities:
+          - Applying change management processes
+          - Determine method of installing
+          - Prioritize and schedule installing patches
+      - id: 2-4
+        description: >
+          Verifying risk response must cover the following activities:
+          - Confirmation of installed patch
+          - Checking the effectiveness of patching
+            - Vulnerability scan
+            - Using metrics (KPI)
+      - id: 2-5
+        description: >
+          Continuous monitoring of risk response must cover the following activities:
+          - Making sure no one uninstalls patches
+          - Making sure that an older version of the patched software has not been restored
+          - Periodic vulnerability assessment for installed patches
+
+  - id: 3
+    title: Prepare risk response
+    objective: >
+      The objective of this section is acquiring, validating, and testing patches for the vulnerable software or deploying additional security controls to safeguard the vulnerable software.
+    risk_implication: >
+      Validation: The patch could have been acquired from a rogue source or tampered with in transit or after acquisition.
+      Testing: Operational risk by identifying problems with a patch before placing it into production.
+    requirements:
+      - id: 3-1
+        description: >
+          Patches must be acquired only from legitimate sources. This includes acquiring it through secure sites provided by the vendor/manufacturer or developing it internally.
+      - id: 3-2
+        description: >
+          Available patches must be monitored by the asset owner and be installed if it is technically feasible, in accordance with the patched asset’s criticality level, and after the patch has been tested.
+      - id: 3-3
+        description: >
+          File integrity must be confirmed before the patch is being tested or installed, using hashing algorithms if it is technically feasible (e.g., network device firmware).
+      - id: 3-4
+        description: >
+          Virus scan must always be performed on the downloaded patches to avoid the possibility of malware being installed.
+      - id: 3-5
+        description: >
+          Patches must be tested prior to deployment or live implementation.
+      - id: 3-6
+        description: >
+          In case of software patches, a separate test environment must be used in order to avoid virus infection and software compatibility issues.
+      - id: 3-7
+        description: >
+          Upcoming issues must be documented and resolved in the testing phase before live implementation of the patches.
+      - id: 3-8
+        description: >
+          Processes with an option of rollback must be implemented in case there is an unforeseen incompatibility so systems can be restored to their pre-patched state.
+      - id: 3-9
+        description: >
+          Backup and restore functions must be implemented in case there is an unforeseen incompatibility so system availability can be ensured in such cases.
+
+  - id: 4
+    title: Implement risk response
+    objective: >
+      The objective of this section is to ensure the safety and continuity of the information system through distributing and installing patches and changing asset configurations and state.
+    risk_implication: >
+      Change management: Applying patches without the proper change management process can lead to the halt of business processes or even data loss.
+      Prioritize and schedule: Without the prioritization of patches, there is a chance that some of the critical or high severity patches are not being installed on an important asset.
+    requirements:
+      - id: 4-1
+        description: >
+          Patch deployments must be scheduled as part of the <organization name>’s change management activity.
+      - id: 4-2
+        description: >
+          <organization name> must implement only those changes in the <organization name>’s live environment that have been approved through the <organization name>’s change management procedure.
+      - id: 4-3
+        description: >
+          The application procedure of a patch being installed must be documented in order to be traceable (e.g., approval and testing is already done).
+      - id: 4-4
+        description: >
+          The following installation methods must be used to install patches:
+          - Distributing patches through a centralized solution
+            - Using automatic installation
+            - Scheduling the installation of patches
+            - Installing it manually (forced installation)
+          - Installing patches as a single installation
+      - id: 4-5
+        description: >
+          Patches must be prioritized in order to install higher priority patches first, in accordance with the results of <organization name>’s risk assessment.
+      - id: 4-6
+        description: >
+          Patch prioritization must be based on asset criticality, in accordance with the vulnerability management policy and standard.
+          <organization name> must introduce a Vulnerability Mitigation Time Summary Matrix (Table 1 appendix) and provide mitigation metrics based on:
+          - relative importance of the assets (low, moderate, or high) according to the classification of <organization name> and the legislative and regulatory requirements issued;
+          - vulnerabilities (low, medium, high, or critical), according to the classification of <organization name> and the legislative and regulatory requirements issued.
+
+  - id: 5
+    title: Verify and monitor risk response
+    objective: >
+      The objective of this section is to ensure that the implementation has been completed successfully. For patching, this means confirming that the patch is installed and has taken effect. For deploying additional security controls, ensure they are functioning as intended.
+    risk_implication: >
+      In case the installation of patches is not monitored or confirmed, there is a risk that an information asset will be still vulnerable and open for attack.
+    requirements:
+      - id: 5-1
+        description: >
+          The effectiveness of the patching must be checked in order to verify its success. The following techniques must be used for verification:
+          - Performing vulnerability scan on the patched asset
+          - Using metrics (Key Performance Indicators) provided by the information systems being used to install patches (WSUS, HPSA, SCCM)
+      - id: 5-2
+        description: >
+          The risk response must be continuously monitored, taking into consideration the following:
+          - Patches must be installed only by appropriate personnel (IT operations). Any other means of installing patches must be disabled by the system administrator.
+          - <organization name> must ensure no one uninstalls the patch, deactivates the additional security controls, lets the cybersecurity insurance lapse, or restarts the decommissioned device.
+
+  - id: 6
+    title: Other Standards
+    objective: >
+      Patch Management must be securely deployed and used appropriately when required.
+    risk_implication: >
+      If <organization name> is not compliant with all standards and requirements, it could be exposed to severe threat rise.
+    requirements:
+      - id: 6-1
+        description: >
+          The following standards must be implemented in relevance to Patch management:
+          - Vulnerability Management Policy
+          - Vulnerability Management Standard
+          - Cybersecurity Risk Management Policy
+
+table_a:
+  description: >
+    Vulnerability Mitigation Time Summary Matrix
+  methodologies:
+    - name: Low Vulnerability Importance
+      description: >
+        - Asset Importance: Low
+          - By deadline: 64.7%
+          - Average time: 80.4 days
+          - Median time: 75.2 days
+        - Asset Importance: Moderate
+          - By deadline: 72.4%
+          - Average time: 34.7 days
+          - Median time: 33.7 days
+        - Asset Importance: High
+          - By deadline: 85.0%
+          - Average time: 14.6 days
+          - Median time: 8.1 days
+    - name: Medium Vulnerability Importance
+      description: >
+        - Asset Importance: Low
+          - By deadline: 66.5%
+          - Average time: 75.1 days
+          - Median time: 70.7 days
+        - Asset Importance: Moderate
+          - By deadline: 68.7%
+          - Average time: 33.2 days
+          - Median time: 31.6 days
+        - Asset Importance: High
+          - By deadline: 71.4%
+          - Average time: 12.9 days
+          - Median time: 10.5 days
+    - name: High Vulnerability Importance
+      description: >
+        - Asset Importance: Low
+          - By deadline: 68.6%
+          - Average time: 62.1 days
+          - Median time: 58.0 days
+        - Asset Importance: Moderate
+          - By deadline: 78.8%
+          - Average time: 26.8 days
+          - Median time: 22.1 days
+        - Asset Importance: High
+          - By deadline: 85.5%
+          - Average time: 8.8 days
+          - Median time: 8.1 days
+    - name: Critical Vulnerability Importance
+      description: >
+        - Asset Importance: Low
+          - By deadline: 81.4%
+          - Average time: 44.4 days
+          - Median time: 41.3 days
+        - Asset Importance: Moderate
+          - By deadline: 92.3%
+          - Average time: 21.2 days
+          - Median time: 23.9 days
+        - Asset Importance: High
+          - By deadline: 95.2%
+          - Average time: 5.2 days
+          - Median time: 5.1 days
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
