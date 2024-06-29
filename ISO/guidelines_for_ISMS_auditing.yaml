@@ -1,0 +1,262 @@
+guidelines_for_ISMS_auditing:
+  standards:
+    - ISO_27001
+    - ISO_27002
+    - ISO_27006
+    - ISO_27007
+    - ISO_19011
+    - ISO_17021
+  documented_information:
+    - scope_of_the_ISMS
+    - information_security_policy
+    - information_security_risk_assessment_process
+    - information_security_risk_treatment_process
+    - statement_of_applicability
+    - information_security_objectives
+    - evidence_of_competence
+    - documented_information_determined_by_the_organization_as_being_necessary_for_the_effectiveness_of_the_ISMS
+    - operational_planning_and_control
+    - results_of_the_information_security_risk_treatment
+    - evidence_of_the_monitoring_and_measurement_results
+    - evidence_of_the_audit_programme(s)_and_the_audit_results
+    - evidence_of_the_results_of_management_reviews
+    - evidence_of_the_nature_of_the_nonconformities_and_any_subsequent_actions_taken
+    - evidence_of_the_results_of_any_corrective_action
+    - results_of_the_information_security_risk_assessments
+  sections:
+    - leadership:
+        - leadership_and_commitment
+        - policy
+        - roles_responsibilities_and_authorities
+    - planning:
+        - information_security_risk_assessment
+        - information_security_risk_treatment
+        - information_security_objectives
+    - support:
+        - resources
+        - competence
+        - awareness
+        - communication
+    - operation:
+        - information_security_risk_assessment
+        - information_security_risk_treatment
+    - performance_evaluation:
+        - monitoring_measurement_analysis_and_evaluation
+        - internal_audit
+        - management_review
+    - improvement:
+        - nonconformity_and_corrective_action
+        - continual_improvement
+  methods_and_examples:
+    - training_programme_and_plan
+    - context_of_the_organization:
+        - context
+        - policies_objectives_and_the_strategies
+        - governance_and_organizational_structure
+        - process_model
+        - organization's_culture
+        - contractual_requirements
+        - list_of_requirements
+    - intended_outcomes_examples:
+        - facilitating_business_continuity_and_disaster_recovery
+        - improving_resilience_to_incidents
+        - addressing_legal_contractual_compliance
+        - enabling_certification_against_other_ISO_IEC_standards
+        - enabling_organizational_evolution_and_position
+        - reducing_costs_of_security_controls
+        - protecting_assets_of_strategic_value
+        - establishing_a_healthy_and_effective_internal_control_environment
+        - providing_assurance_to_stakeholders_that_information_assets_are_properly_protected
+        - minimizing_liability_in_case_of_security_breaches
+    - interested_parties:
+        - list_of_interested_parties_with_the_needs_and_expectations
+        - internal_and_external:
+            - employees
+            - owners
+            - shareholders
+            - customers
+            - users
+            - suppliers
+            - third_party_service_providers
+            - legal_and_regulatory_bodies
+            - society
+  scope_of_the_ISMS:
+    boundaries
+    brief_description
+    locations
+    processes
+    employees
+    assets
+    data_centers_and_outsourcing
+  communication_with_top_management:
+    promoting_continual_improvement
+    commitment_to_continual_improvement
+    information_security_policy:
+      - communicated_within_the_organization
+      - available_to_interested_parties
+  reporting:
+    interview_top_management_to_find_out_what_the_strategic_directions_are
+    are_the_ISMS_objectives_adequately_aligned_with_the_strategic_direction
+    integration_of_the_ISMS_requirements_into_the_organization’s_processes
+    mails
+    meetings_and_MoMs
+    reports
+    plans_and_budget
+    management_review_reports_and_decisions
+  involvement_during_the_audit:
+    opening_closing_meetings
+  providing_resources:
+    budget
+    are_there_nonconformities_or_IS_breaches_due_to_inadequate_resources
+  communication_with_staff_on_the_importance_of_the_ISMS:
+    displays
+    intranet
+    training_sessions
+    interview_staff_whether_they_are_aware_of_the_policy
+    is_it_reviewed_approved_for_adequacy_version_controlled
+  roles_have_been_identified:
+    e.g_RACI
+    job_description
+    staff_are_aware
+    responsibilities
+    authorities
+  methods_for_monitoring_and_procedure:
+    evidence_of_the_monitoring_and_measurement_results:
+      - when
+      - who
+  evidence_of_the_audit_programme(s)_and_the_audit_results
+  evidence_of_the_results_of_management_reviews
+  internal_audit_programme:
+    frequency
+    methods
+    responsibilities
+    planning_requirements
+    reporting
+  audit_plans:
+    audit_criteria
+    scope
+    selected_auditors
+    report_to_management
+  report:
+    status_of_actions_from_previous_management_reviews
+    changes_in_the_context:
+      - external
+      - internal
+    feedback_on_the_IS_performance
+    nonconformities_and_corrective_action
+    monitoring_and_measurement_results
+    audit_results
+    fulfillment_of_information_security_objectives
+    feedback_from_interested_parties
+    results_of_risk_assessment_and_status_of_RTPs
+    opportunities_for_continual_improvement
+  output_decisions_related_to_continual_improvement_opportunities_and_changes
+  staff_are_adequately_trained:
+    who_signs_the_reports
+    what_actions_are_planned_on_the_results
+    are_high_risk_processes_audited_at_higher_frequency_and_allocated_more_audit_time
+    are_processes_with_more_nonconformities_in_previous_audits_audited_at_higher_frequency_and_allocated_more_audit_time
+    no_conflicts_of_interest_auditors_not_auditing_their_own_work
+  competence_of_auditors
+  complaints
+  top_management_have_adequate_understanding_of_the_management_review_process
+  annex_A:
+    A.5_information_security_policies
+    A.6_organization_of_information_security
+    A.7_human_resource_security
+    A.8_asset_management
+    A.9_access_control
+    A.10_cryptography
+    A.11_physical_and_environmental_security
+    A.12_operations_security
+    A.13_communications_security
+    A.14_system_acquisition_development_and_maintenance
+    A.16_supplier_relationships
+    A.18_compliance
+    A.17_information_security_aspects_of_business_continuity_management
+  NC_management_procedure_and_register
+  NCR_examples
+  root_cause_analysis
+  evidence_of_the_results_of_any_corrective_action
+  evidence_of_the_nature_of_the_nonconformities_and_any_subsequent_actions_taken
+  continual_improvement_plans:
+    impact_is_assessed
+    correction
+    corrective_action_plan
+    evidence_of_improvements:
+      - responsibilities
+      - time_line
+      - resources_are_available
+      - MoMs
+      - plans
+      - reports
+      - orders
+  information_security_risk_assessment_process
+  statement_of_applicability
+  information_security_risk_treatment_process
+  information_security_objectives
+  evidence_of_competence
+  results_of_the_information_security_risk_assessments
+  results_of_the_information_security_risk_treatment
+  taking_into_account
+  register_of_risks_and_opportunities:
+    loss_of:
+      - confidentiality
+      - integrity
+      - availability
+  identified:
+    risk_acceptance_criteria
+    risk_owners
+    risk_levels_magnitude
+  prioritize_the_analyzed_risks_for_risk_treatment
+  risk_treatment_options
+  risk_treatment_plan_RTP:
+    risk_owner_has_approved_the_RTP
+    shall_be:
+      - aligned_with_the_IS_policy
+      - measurable
+      - aligned_with_risk_and_requirements
+      - communicated
+      - updated
+    other_resources
+    responsibilities
+    all_staff_shall_be_aware
+  IS_policy
+  their_contribution_to_the_effectiveness_of_the_ISMS_including_the_benefits_of_improved_IS_performance
+  the_implications_of_not_conforming_with_the_ISMS_requirements
+  awareness_materials_and_other_records
+  applying_controls_risk_mitigation:
+    list_of_controls_Annex_A
+  knowingly_and_objectively_accepting_the_risk
+  avoiding_the_risks
+  transferring_the_risk
+  all_controls_from_Annex_A
+  list_of_excluded_control_and_justification
+  status_of_implementation
+  risk_owner_has_accepted_the_residual_risks
+  quantifiable_baseline
+  targets
+  timelines
+  aligned_with_the_strategic_direction
+  is_it_done_periodically
+  are_they_aware_about_it
+  competence_in_terms_of_knowledge_skills_behavioral_attributes:
+    ensuring:
+      - by_recruiting_competent_persons
+      - by_training
+      - role_change
+      - mentoring
+  evidence:
+    CVs
+    training_certificates
+    evaluation_records_for_competence_assessment
+  change_in_the_ISMS_scope
+  changes_in_IS_related_legal_requirements
+  changes_in_IS_related_contractual_requirements
+  change_in_social_climate
+  changes_to_the_organization_structure_management
+  change_in_outsourcing
+  change_in_technology
+  changes_to_business_objectives_and_processes
+  major_information_security_incidents
+  change_in_effect
