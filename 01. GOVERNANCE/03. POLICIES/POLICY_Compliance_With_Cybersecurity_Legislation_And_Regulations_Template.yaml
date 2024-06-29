@@ -1,0 +1,70 @@
+purpose: >
+  This policy aims to define the cybersecurity compliance requirements for <organization name>. The requirements in this policy are aligned with the cybersecurity requirements issued by the <Governing Body> including but not limited to <Controls> in addition to other related cybersecurity legal and regulatory requirements.
+
+scope: >
+  This policy covers all systems and procedures in the <organization name> and applies to all personnel (employees and contractors) in the <organization name>.
+
+policy_statements:
+  - id: 1
+    title: General Requirements
+    requirements:
+      - 1-1: >
+          Define and document a list of local and international legislation and regulations related to cybersecurity and relevant requirements applicable to <organization name> on a continuous basis once changed or once new requirements are issued. Should there be any locally approved international agreements or obligations that include cybersecurity requirements they must be added to the list.
+      - 1-2: >
+          Comply with all local and international legislation and regulations as well as clauses of cybersecurity agreements and obligations that apply to <organization name>.
+      - 1-3: >
+          Provide the necessary technologies to verify compliance with the requirements of legal and regulatory authorities related to cybersecurity.
+      - 1-4: >
+          Review cybersecurity policies and procedures with cybersecurity legislation and contract clauses annually.
+      - 1-5: >
+          Monitor compliance of external service providers with cybersecurity legislation and contract clauses on a continuous and permanent basis.
+      - 1-6: >
+          Ensure implementation of cybersecurity policies and procedures annually.
+      - 1-7: >
+          Ensure compliance with requirements related to cybersecurity through the use of appropriate tools including but not limited to:
+          - Cybersecurity Risk Assessment activities.
+          - Vulnerability Management activities.
+          - Penetration Test activities.
+          - Review of cybersecurity standards.
+          - Security Source Code Review.
+          - User surveys.
+          - Stakeholder interviews.
+          - Review of privileges on the system and network.
+          - Review of cybersecurity logs and events.
+      - 1-8: >
+          Define and implement the necessary corrective measures to correct the gaps for all compliance requirements by stakeholders.
+      - 1-9: >
+          Implement appropriate procedures to ensure compliance with legal and regulatory requirements related to intellectual property rights and the use of software.
+      - 1-10: >
+          <Organization name> Cybersecurity Function must review the implementation of Cybersecurity Controls on a regular basis.
+      - 1-11: >
+          Cybersecurity Function must review the implementation of Critical Systems Cybersecurity Controls at least once a year.
+      - 1-12: >
+          Review and audit implementation of cybersecurity controls in <organization name> by parties that are independent from the Cybersecurity Function (such as the <internal audit function> at <organization name>). Review and audit must be carried out independently taking into account the principle of non-conflict of interests as per the general standards accepted for review and auditing as well as the relevant legal and regulatory requirements.
+      - 1-13: >
+          Document and present the results of cybersecurity review and audit to the cybersecurity steering committee and representative of parties independent from cybersecurity function (e.g. <internal audit function> in the <organization name>). As well results must also include the scope of review and audit observations recommendations and corrective measures as well as feedback remediation plan.
+      - 1-14: >
+          Review CSCC implementation by parties independent of the cybersecurity function from <organization name> at least once a year.
+      - 1-15: >
+          Use KPI in a proper and effective manner to ensure continuous improvement and proper and effective use of cybersecurity compliance program requirements.
+
+roles_and_responsibilities:
+  policy_owner: <head of the cybersecurity function>
+  policy_review_and_update: <cybersecurity function>
+  policy_implementation_and_execution: <cybersecurity function>
+  policy_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the policy at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this policy on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this policy.
+    - id: 3
+      description: >
+        Any violation of this policy may be subject to disciplinary action as per <organization name>’s procedures.

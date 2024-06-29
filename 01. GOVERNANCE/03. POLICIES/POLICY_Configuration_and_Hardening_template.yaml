@@ -1,0 +1,73 @@
+purpose: >
+  This policy aims to define the cybersecurity requirements related to the protection, hardening, and configuration of <organization name>'s information and technology assets to achieve the main objective of this policy which is minimizing cybersecurity risks resulting from internal and external threats at <organization name> in order to preserve confidentiality, integrity, and availability. 
+
+scope: >
+  This policy covers all information and technology assets in the <organization name> and applies to all personnel (employees and contractors) in the <organization name>.
+
+policy_statements:
+  - id: 1
+    title: General Requirements
+    requirements:
+      - 1-1: >
+          All information and technology assets and all approved applications and software used in <organization name> must be defined and documented.
+      - 1-2: >
+          <organization name>’s workstations, systems, applications, network devices, servers, and security devices must be configured and hardened according to the technical security standards approved by the vendors and as per the relevant legal and regulatory requirements and international best practices to prevent cyberattacks.
+      - 1-3: >
+          Print screen or screen capture features must be disabled for devices that create or process information based on the information classification.
+      - 1-4: >
+          Key Performance Indicators (KPIs) must be used to ensure the continuous improvement and effective and efficient use of configuration and hardening security protection requirements.
+
+  - id: 2
+    title: Technical Security Standard Development
+    requirements:
+      - 2-1: >
+          The vendors’ security configuration guidance must be used according to <organization name>’s regulatory procedures and policies, the relevant legal and regulatory requirements, and international best practices.
+      - 2-2: >
+          Security configuration guidance must be used from trusted sources that are aligned with factory standards such as the Center for Internet Security (CIS), the SysAdmin Audit Network Security (SANS) Institute, and the National Institute of Standards and Technology (NIST).
+      - 2-3: >
+          <organization name>’s technical security standards must be developed in line with the nature of business, the vendors’ security configuration guidance, factory standards, and the relevant legal and regulatory requirements.
+      - 2-4: >
+          Technical security standards for all <organization name>’s authorized information and technology assets, applications, and programs must be developed, documented, approved, and reviewed in line with international practices, <organization name>’s approved regulatory procedures and policies, and the relevant legal and regulatory requirements.
+
+  - id: 3
+    title: Configuration and Hardening Review and Implementation
+    requirements:
+      - 3-1: >
+          Configuration and hardening of all information and technology assets and applications must be reviewed at least once a year or in case any changes happen and their implementation must be ensured according to cybersecurity guidelines, best practices, and vendors’ recommendations and in line with <organization name>'s change management mechanisms.
+      - 3-2: >
+          Configuration and hardening must be reviewed before launching applications, technology projects, and changes related to information and technology assets.
+      - 3-3: >
+          Default configurations of all information and technology assets for remote work systems must be reviewed and to ensure that fixed passwords and default backgrounds do not exist.
+      - 3-4: >
+          Enabling remote work features and services must be restricted on an as-needed basis and potential cybersecurity risks must be assessed in case of a need to enable them in line with the relevant legal and regulatory requirements.
+      - 3-5: >
+          An image of the <organization name>’s configuration and hardening for information and technology assets must be approved and stored in a secure place as per the approved technical security standards.
+      - 3-6: >
+          An approved image must be used to install or update information and technology assets.
+      - 3-7: >
+          The necessary technologies must be provided to centrally manage configuration and hardening and ensure automatic implementation or/and update of configuration and hardening for all information and technology assets at pre-determined times after conducting the required testing.
+      - 3-8: >
+          A Security Content Automation Protocol (SCAP) compliant configuration monitoring system must be implemented to verify that the configurations are in line with the approved technical security standards and are fully implemented. Any unauthorized changes must be reported.
+      - 3-9: >
+          Clock synchronization must be implemented centrally from an accurate and reliable source (such as relevant sources provided by Saudi Standards Metrology and Quality Organization (SASO)).
+
+roles_and_responsibilities:
+  standard_owner: <head of cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the policy at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        <head of cybersecurity function> will ensure the compliance of <organization name> with this policy on a regular basis.
+    - id: 2
+      description: >
+        All personnel of <organization name> must comply with this policy.
+    - id: 3
+      description: >
+        Any violation of this policy may be subject to disciplinary action according to <organization name>’s procedures.
