@@ -1,0 +1,285 @@
+purpose:
+  description: >
+    This standard aims to define the detailed cybersecurity requirements related 
+    to the Network Detection and Response (NDR) for <organization name>.
+scope:
+  description: >
+    The standard covers <organization name>’s information and technology assets 
+    and applies to all personnel (employees and contractors) in <organization name> 
+    and related third parties.
+standards:
+  - id: 1
+    title: General Requirements
+    objective: >
+      The NDR solution must be securely designed and appropriately used when required.
+    risk_implication: >
+      Misconfiguration of the NDR solution may reduce the success of threat 
+      identification and result in information theft, unauthorized access, and 
+      information disclosure.
+    requirements:
+      - id: 1-1
+        description: >
+          NDR must combine data science, machine learning and behavioral analysis 
+          with well-curated threat intelligence in order to identify in real time 
+          or near real time the intent of network traffic and reveal malicious 
+          behaviors, independent of applications and even when traffic is encrypted 
+          and provide assistance with manual incident and threat hunting response 
+          through automation.
+      - id: 1-2
+        description: >
+          NDR must correlate global threat intelligence to local threats in order 
+          to prevent attackers from infecting many victims with the same malware.
+      - id: 1-3
+        description: >
+          NDR must be deployed in various methodologies (in-line sensors, passive 
+          sensors - Table A).
+      - id: 1-4
+        description: >
+          Physical access to the NDR solution must be restricted to authorized 
+          employees only (least privilege assignment for different administrators).
+      - id: 1-5
+        description: >
+          Administrative access to the management interface of the NDR solution 
+          must be restricted for limited group of administrators.
+      - id: 1-6
+        description: >
+          Unused Network Interface Cards must be disconnected from any network.
+      - id: 1-7
+        description: >
+          NDR must support IPv4 and IPv6 stack for traffic processing and security 
+          rules and traffic policy definition.
+      - id: 1-8
+        description: >
+          All security updates to the NDR solution must be installed as they are 
+          released by the vendor and according to the change management procedure.
+      - id: 1-9
+        description: >
+          Each management communication channel must be using a dedicated management 
+          network or the management network communications which is authenticated 
+          and encrypted using validated cryptographic modules that are in line with 
+          the National Cryptography Standard’s Key Lifecycle Management requirements.
+      - id: 1-10
+        description: >
+          Time configuration on the NDR solution must be synchronized with a trusted 
+          authoritative time server.
+  - id: 2
+    title: Traffic Monitoring
+    objective: >
+      The NDR solution must be properly configured and securely managed for proper 
+      cyber threat and anomalous behavior detection in monitored networks.
+    risk_implication: >
+      Misconfiguration of the NDR solution may have severe consequences like 
+      failing to analyze network traffic and recognizing a threat, which could 
+      lead to data leakage, attack on partner enterprises or even company clients.
+    requirements:
+      - id: 2-1
+        description: >
+          NDR must continually reveal the underlying purpose of traffic, even when 
+          the payload is not visible. This allows for protection without prying.
+      - id: 2-2
+        description: >
+          NDR must model a baseline of what normal network behavior looks like and 
+          alert security teams on any suspicious traffic that falls outside of that 
+          normal range.
+      - id: 2-3
+        description: >
+          NDR must attribute malicious behavior to a specific IP address and perform 
+          forensic analyses to determine how threats have moved laterally within 
+          an environment.
+      - id: 2-4
+        description: >
+          NDR must provide visibility to multiple public and private cloud environments.
+      - id: 2-5
+        description: >
+          NDR must be able to analyze encrypted traffic without decryption and 
+          detect threats that attempt to hide themselves in encrypted traffic.
+      - id: 2-6
+        description: >
+          NDR must recognize URLs, applications (based on signatures), IP addresses, 
+          TCP/UDP ports.
+      - id: 2-7
+        description: >
+          NDR must provide the ability to verify compliance to protocol standards 
+          and prevent traffic that is not compliant.
+      - id: 2-8
+        description: >
+          Incident Response team must be able to query the database with the list 
+          of “always available” or “always denied” resources/attacks which were 
+          verified by NDR solution during traffic monitoring.
+  - id: 3
+    title: Traffic Detection and Logging
+    objective: >
+      The NDR solution must monitor and process traffic in a secure way to save 
+      any suspicious activity and notify the incident response team in case of an 
+      unknown new possible incident.
+    risk_implication: >
+      Traffic detection without proper configuration may easily cause malware 
+      propagation, phishing exposure and information leak. Improperly configured 
+      NDR solution may result in not sufficiently mitigating new possible security 
+      incidents in the future.
+    requirements:
+      - id: 3-1
+        description: >
+          NDR must detect threats (e.g. unusual remote access, port scanning, the 
+          use of restricted ports or protocols, etc.) in real-time with the use of 
+          constantly learning behavioral models derived from machine learning.
+      - id: 3-2
+        description: >
+          NDR must utilize advance threats detection and reduce investigation time 
+          by capturing metadata and also recognize the unique characteristics of 
+          malicious behaviors, which lead to reliable identification of network 
+          intrusions, even if the tools, malware or attack are completely unknown.
+      - id: 3-3
+        description: >
+          NDR must collect and enrich security metadata with deep insights and 
+          context that allows it to detect and stop a wide range of attack scenarios 
+          early and consistently.
+      - id: 3-4
+        description: >
+          NDR must apply algorithmic models directly to network traffic in order to 
+          reveal underlying attack behaviors and then enrich that data with secondary 
+          sources (e.g. authentication logs and threat intelligence data) automatically.
+      - id: 3-5
+        description: >
+          NDR must find signs of attackers who tunnel hidden communications within 
+          an SSL/TLS-encrypted web session. By analyzing tiny fluctuations in 
+          protocols like HTTPS and DNS, NDR solution must reveal when additional 
+          layers of communication are hidden within.
+      - id: 3-6
+        description: >
+          NDR must identify a wide range of command-and-control behaviors, including 
+          attempts to imitate browser behavior, use of hidden tunnels, peer-to-peer 
+          communication, malware updating as well as a broad variety of anonymization 
+          techniques such as TOR.
+      - id: 3-7
+        description: >
+          NDR must continuously monitor and alert for unusual privileged access (the 
+          complexity of access management makes it prone to misconfigurations).
+      - id: 3-8
+        description: >
+          NDR must divide gathered information into two sectors: user information 
+          section and diagnostic information for administration section.
+      - id: 3-9
+        description: >
+          NDR must analyze previously captured incidents and draw schemes to avoid 
+          them in the future with the use of machine learning and artificial 
+          intelligence (ML and AI).
+      - id: 3-10
+        description: >
+          NDR must gather data about incidents in a dedicated database. Each record 
+          must include information about assigned categories of incidents, like 
+          phishing emails, malicious links, etc.
+      - id: 3-11
+        description: >
+          The local threat intelligence database should be updated in real-time to 
+          prepare for attacks happening in local enterprises.
+      - id: 3-12
+        description: >
+          NDR must filter all objects transferred through the network, for instance 
+          phishing emails, malicious links, etc. It must be consistent with the 
+          requirements of <organization name>’s Malware Protection Standard.
+      - id: 3-13
+        description: >
+          NDR must inform users about performed actions (in particular: blocked 
+          requests or files) by configurable response web pages.
+      - id: 3-14
+        description: >
+          NDR must use security feeds delivered by national trusted organizations 
+          like national level CSIRT.
+  - id: 4
+    title: Automatic Response and Notification
+    objective: >
+      The NDR solution must use data science and machine learning in order to 
+      detect, analyze and protect the systems against future security threats.
+    risk_implication: >
+      Without proper activity analysis and providing timely alerts for incident 
+      response teams, the NDR solution may be ineffective in preventing and 
+      mitigating future incidents.
+    requirements:
+      - id: 4-1
+        description: >
+          NDR must constantly detect network activity in order to detect ongoing 
+          attacks, while security analysts have more time to proactively hunt for 
+          threats and investigate incidents with greater success.
+      - id: 4-2
+        description: >
+          NDR must accelerate response time by integrating and sharing security 
+          insights with EDR, SIEMs and SOAR tools for endpoint to cloud threat 
+          management and visibility.
+      - id: 4-3
+        description: >
+          NDR must deny unauthorized access to prevent access to essential information 
+          which might progress attack and compromise sensitive data.
+      - id: 4-4
+        description: >
+          NDR must immediately inform about rejected or mitigated attacks.
+      - id: 4-5
+        description: >
+          NDR must gather events and information about them in its database with 
+          previously captured anomalies and prevented attacks for future relevance.
+      - id: 4-6
+        description: >
+          Organization should have runbook scenarios for NDR to protect from adversary 
+          threats, for instance removing and mitigation a threat by isolating affected 
+          systems, detecting and blocking the spreading of malicious links or phishing 
+          emails (detection based on local threat intelligence database with ongoing 
+          incidents).
+      - id: 4-7
+        description: >
+          NDR must gather all log types from <organization name>’s resources.
+      - id: 4-8
+        description: >
+          NDR must be consistent with the requirements of <organization name>’s Event 
+          Log Management and Monitoring Standard.
+      - id: 4-9
+        description: >
+          NDR must be configured to send only specific logs to the central log system 
+          e.g. using syslog protocol and CEF, LEEF or RFC 5425 specified log format.
+      - id: 4-10
+        description: >
+          NDR must include at least the following information:
+          - date and time of session
+          - source IP address
+          - user login
+          - destination IP
+          - action performed
+          - used traffic policy
+table_a:
+  description: >
+    There are two major methodologies of NDR deployment:
+    - in-line sensors: offer direct response capabilities.
+    - passive sensors: rely on integrations.
+  methodologies:
+    - name: In-line sensors
+      description: >
+        The method is based on placing the NDR solution directly in the path of a 
+        network segment, which allows for fast traffic inspection and dropping 
+        anomalous or malicious traffic in real-time.
+    - name: Passive sensors
+      description: >
+        This option revolves around placing an NDR solution inside the network 
+        (usually by integrating with SIEM, SOAR, public/private clouds, etc.) and 
+        extracting metadata from taken snapshots, which is then sent for analysis.
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+update_and_review:
+  description: >
+    <cybersecurity function> must review the standard at least once a year or 
+    in case any changes happen to the policy or the regulatory procedures in 
+    <organization name> or the relevant regulatory requirements.
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of 
+        <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action 
+        according to <organization name>’s procedures.
