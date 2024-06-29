@@ -1,0 +1,166 @@
+europe_data_protection:
+  europe:
+    edpb: "https://edpb.europa.eu"
+    edps: "https://edps.europa.eu"
+  countries:
+    - name: Austria
+      area: EU, EEA
+      data_protection_authority: "Österreichische Datenschutzbehörde"
+      links:
+        - "www.data-protection-authority.gv.at"
+        - "www.dsb.gv.at"
+    - name: Belgium
+      area: EU, EEA
+      data_protection_authority: "Autorité de la protection des données - Gegevensbeschermingsautoriteit (APD-GBA)"
+      links:
+        - "www.dataprotectionauthority.be/citizen"
+    - name: Bulgaria
+      area: EU, EEA
+      data_protection_authority: "Commission for Personal Data Protection"
+      links:
+        - "www.cpdp.bg/en"
+    - name: Croatia
+      area: EU, EEA
+      data_protection_authority: "Croatian Personal Data Protection Agency"
+      links:
+        - "https://azop.hr/naslovna-english"
+    - name: Cyprus
+      area: EU, EEA
+      data_protection_authority: "Commissioner for Personal Data Protection"
+      links:
+        - "www.dataprotection.gov.cy/dataprotection/dataprotection.nsf/home_el/home_el"
+    - name: Czech Republic
+      area: EU, EEA
+      data_protection_authority: "Office for Personal Data Protection"
+      links:
+        - "https://old.uoou.cz/en"
+    - name: Denmark
+      area: EU, EEA
+      data_protection_authority: "Datatilsynet"
+      links:
+        - "www.datatilsynet.dk/english"
+    - name: Estonia
+      area: EU, EEA
+      data_protection_authority: "Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon)"
+      links:
+        - "www.aki.ee/en"
+    - name: Finland
+      area: EU, EEA
+      data_protection_authority: "Office of the Data Protection Ombudsman"
+      links:
+        - "https://tietosuoja.fi/en/home"
+    - name: France
+      area: EU, EEA
+      data_protection_authority: "Commission Nationale de l'Informatique et des Libertés - CNIL"
+      links:
+        - "www.cnil.fr/en"
+    - name: Germany
+      area: EU, EEA
+      data_protection_authority: "Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit"
+      links:
+        - "www.bfdi.bund.de/EN"
+    - name: Greece
+      area: EU, EEA
+      data_protection_authority: "Hellenic Data Protection Authority"
+      links:
+        - "www.dpa.gr/en"
+    - name: Hungary
+      area: EU, EEA
+      data_protection_authority: "Hungarian National Authority for Data Protection and Freedom of Information"
+      links:
+        - "https://naih.hu/about-the-authority"
+    - name: Ireland
+      area: EU, EEA
+      data_protection_authority: "Data Protection Commission"
+      links:
+        - "www.dataprotection.ie"
+    - name: Italy
+      area: EU, EEA
+      data_protection_authority: "Garante per la protezione dei dati personali"
+      links:
+        - "www.garanteprivacy.it/web/garante-privacy-en/home_en"
+    - name: Latvia
+      area: EU, EEA
+      data_protection_authority: "Data State Inspectorate"
+      links:
+        - "www.dvi.gov.lv/en"
+    - name: Lithuania
+      area: EU, EEA
+      data_protection_authority: "State Data Protection Inspectorate"
+      links:
+        - "https://vdai.lrv.lt/en"
+    - name: Luxembourg
+      area: EU, EEA
+      data_protection_authority: "Commission Nationale pour la Protection des Données"
+      links:
+        - "https://cnpd.public.lu/en.html"
+    - name: Malta
+      area: EU, EEA
+      data_protection_authority: "Office of the Information and Data Protection Commissioner"
+      links:
+        - "https://idpc.org.mt"
+    - name: The Netherlands
+      area: EU, EEA
+      data_protection_authority: "Autoriteit Persoonsgegevens"
+      links:
+        - "https://autoriteitpersoonsgegevens.nl/en"
+    - name: Poland
+      area: EU, EEA
+      data_protection_authority: "Urząd Ochrony Danych Osobowych (Personal Data Protection Office)"
+      links:
+        - "https://uodo.gov.pl/en"
+    - name: Portugal
+      area: EU, EEA
+      data_protection_authority: "Comissão Nacional de Proteção de Dados - CNPD"
+      links:
+        - "www.cnpd.pt/en"
+    - name: Romania
+      area: EU, EEA
+      data_protection_authority: "The National Supervisory Authority for Personal Data Processing"
+      links:
+        - "www.dataprotection.ro/index.jsp?page=home&lang=en"
+    - name: Slovakia
+      area: EU, EEA
+      data_protection_authority: "Office for Personal Data Protection of the Slovak Republic"
+      links:
+        - "https://dataprotection.gov.sk/uoou/en"
+    - name: Slovenia
+      area: EU, EEA
+      data_protection_authority: "Information Commissioner of the Republic of Slovenia"
+      links:
+        - "www.ip-rs.si"
+    - name: Spain
+      area: EU, EEA
+      data_protection_authority: "Agencia Española de Protección de Datos (AEPD)"
+      links:
+        - "www.aepd.es/en"
+    - name: Sweden
+      area: EU, EEA
+      data_protection_authority: "Integritetsskyddsmyndigheten"
+      links:
+        - "www.imy.se/en"
+    - name: Iceland
+      area: EEA
+      data_protection_authority: "Persónuvernd"
+      links:
+        - "www.personuvernd.is/information-in-english/about-us"
+    - name: Liechtenstein
+      area: EEA
+      data_protection_authority: "Data Protection Authority, Principality of Liechtenstein"
+      links:
+        - "www.datenschutzstelle.li"
+    - name: Norway
+      area: EEA
+      data_protection_authority: "Datatilsynet"
+      links:
+        - "www.datatilsynet.no/en"
+    - name: Switzerland
+      area: "-"
+      data_protection_authority: "Federal Data Protection and Information Commissioner (FDPIC)"
+      links:
+        - "www.edoeb.admin.ch/edoeb/en/home.html"
+    - name: The United Kingdom
+      area: "Left the EU"
+      data_protection_authority: "Information Commissioner's Office (ICO)"
+      links:
+        - "https://ico.org.uk"
