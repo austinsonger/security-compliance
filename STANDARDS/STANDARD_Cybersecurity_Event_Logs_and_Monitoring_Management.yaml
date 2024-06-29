@@ -8,7 +8,7 @@ document_approval:
 purpose:
   description: >
     This Standard aims to define the detailed cybersecurity requirements for cybersecurity event logs and monitoring management of ‏<organization name> ‏to achieve the main objective of this Standard which is minimizing cybersecurity risks resulting from internal and external threats at ‏<organization name>.
-    The requirements in this standard are aligned with the Cybersecurity Event Logs and Monitoring Management Policy and the cybersecurity requirements issued by the National Cybersecurity Authority (NCA) including but not limited to (ECC-1:2018) and (CSCC-1:2019), in addition to other related cybersecurity legal and regulatory requirements.
+    The requirements in this standard are aligned with the Cybersecurity Event Logs and Monitoring Management Policy and the cybersecurity requirements issued by the Cybersecurity Authority (NCA), in addition to other related cybersecurity legal and regulatory requirements.
 
 scope:
   description: >
