@@ -1,0 +1,59 @@
+technical_report_writing:
+  core_principles:
+    - The reader is the most important person
+    - Keep the report as short as possible
+    - Organise for the convenience of the report user
+    - All references should be correct in all details
+    - The writing should be accurate, concise, and unobtrusive
+    - The right diagram with the right labels should be in the right place for the reader
+    - Summaries give the whole picture, in miniature
+    - Reports should be checked for technical errors, typing errors, and inconsistency
+    - The report should look as good as it is
+    - The reader is the most important person (repeated for emphasis)
+  objectives:
+    description: "The objectives of a report should be clear to the writer long before the process of writing starts. The objectives of a report are found in matching the reader's need, the information involved, and the appropriate tone, within the clearly defined limits of the report specification."
+  knowing_the_reader:
+    questions:
+      - What does the reader already know about the material of this report?
+      - How wide is the reader's knowledge of the subject?
+      - Why should the particular reader read this particular report?
+      - What is it necessary to tell the reader?
+      - What will be the reader's expected response?
+      - What, from the writer's point of view, is the desired response?
+      - How can the writer bridge the gap between what the reader knows already and what the writer wants the reader to know, in order to produce the desired response?
+  accuracy:
+    factors:
+      - Spelling
+      - Technical words
+      - New words
+      - Punctuation
+      - Choice of words
+      - Sentences
+      - Paragraphs
+  the_full_format_of_a_long_report:
+    sections:
+      - Title page
+      - Acknowledgements
+      - Summary
+      - Table of Contents
+      - Introduction/Terms of Reference/Scope
+      - Procedure
+      - Findings (the evidence)
+      - Conclusions
+      - Recommendations
+      - References/Bibliography
+      - Appendices
+  finishing_the_report:
+    summary:
+      description: "The Summary is the most difficult section to write. It should answer the report's questions, conclusions, and recommendations in no more than 250 words (for 50 pages report)."
+  other:
+    notation:
+      structure:
+        - MAIN HEADING
+        - Lesser Heading
+        - Small Heading
+    references:
+      harvard_system: "van Emden, Joan, (2005) Writing for Engineers, Palgrave Macmillan, Basingstoke, 3rd edn."
+      examples:
+        - "Book: Hawley, Robert, (1991) 'Leadership challenges in an engineering environment', Engineering Management Journal, 1(5), pp. 271-27."
+        - "Journal: van Emden, Joan, (2005) Writing for Engineers, Palgrave Macmillan, Basingstoke, 3rd edn."
