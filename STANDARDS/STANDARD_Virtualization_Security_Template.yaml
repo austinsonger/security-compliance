@@ -1,0 +1,225 @@
+purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to virtualization within <organization name>. Virtualization must be understood as a process of creating and running a virtual instance of a computer system in a layer simulated virtual environment.
+
+scope: >
+  The standard covers <organization name>’s information and technology assets and applies to all personnel (employees and contractors) in <organization name> and related third parties.
+
+standards:
+  - id: 1
+    title: Host Security
+    objective: >
+      The host used for virtualization must be securely managed, and appropriately used when required.
+    risk_implication: >
+      Host compromise may have a crucial security implication for all virtualization environments and may cause an information theft, unauthorized access, and information disclosure.
+    requirements:
+      - id: 1-1
+        description: >
+          All security updates must be installed on the host OS (if present) once they are released by the vendor. All unnecessary applications, other than hypervisor, must be removed.
+      - id: 1-2
+        description: >
+          Host OS must be consistent with the requirements of <organization name>’s Event Log Management and Monitoring Standard and must specially gather in audit log file events related to failed and successful login to administration interfaces.
+      - id: 1-3
+        description: >
+          Physical access to the server must be restricted only to authorized employees (least privilege assignment for different administrators).
+      - id: 1-4
+        description: >
+          Administrative access to the management interface of the hypervisor must be restricted.
+      - id: 1-5
+        description: >
+          All management communication channels using a dedicated management network, or the management network communications must be protected from abuse, authenticated, and encrypted using cryptographic modules compliant with National Cryptography Standard.
+      - id: 1-6
+        description: >
+          Unused physical hardware must be disconnected from the host system.
+      - id: 1-7
+        description: >
+          Unused Network Interface Controllers (NICs) must be disconnected from all networks.
+      - id: 1-8
+        description: >
+          The host system must be synchronized to a trusted authoritative time server.
+      - id: 1-9
+        description: >
+          Only Measured Launch Environment (MLE) supporting hardware must be used to establish the root of trust between the hardware and hypervisor.
+      - id: 1-10
+        description: >
+          Hardware must support an MLE with standard-based cryptographic measurement capabilities and storage devices.
+      - id: 1-11
+        description: >
+          The isolation of processes running in Virtual Machines (VM) must meet the following guidelines:
+          - The privileged commands or instructions from a Guest Operating System (Guest OS) to the host processor must be mediated to maintain Virtual Machine Manager (VMM)/hypervisor as the controller of virtualized resources.
+          - The integrity of the memory management function of the hypervisor host must be protected against cybersecurity attacks such as buffer overflow and unauthorized code execution, especially in the presence of translation tables that are needed for managing memory access by multiple VMs.
+          - Memory allocation algorithms must ensure that payloads in all VMs are able to perform their functions.
+          - CPU allocation algorithms must ensure that payloads in all VMs are able to perform their functions.
+      - id: 1-12
+        description: >
+          All guest OSs' security tools must be monitored and managed in a predefined manner following this standard.
+      - id: 1-13
+        description: >
+          For side channel attacks prevention, the following mechanisms must be followed:
+          - Simultaneous multithreading (SMT) deactivation
+          - Not using memory deduplication (if possible)
+          - Usage of processors with exclusive cache (if possible)
+          - Address space layout randomization activation.
+      - id: 1-14
+        description: >
+          Virtualized host migration between physical or virtual environments must follow all security requirements specified in this standard.
+
+  - id: 2
+    title: Hypervisor Security
+    objective: >
+      The use of the hypervisor in <organization name> must be properly configured and securely managed.
+    risk_implication: >
+      Hypervisor is the foundation of each virtual infrastructure, and any misconfiguration may have severe implications that would lead to information theft, unauthorized access, and information disclosure.
+    requirements:
+      - id: 2-1
+        description: >
+          <organization name> must follow the best practices for managing the physical OS, e.g., time synchronization, log management, authentication, remote access, etc.
+      - id: 2-2
+        description: >
+          Hypervisor’s installation images must be obtained from trusted sources only.
+      - id: 2-3
+        description: >
+          If possible, hypervisor must be installed on bare metal to avoid complexity and potential vulnerabilities present on host OS.
+      - id: 2-4
+        description: >
+          All updates to the hypervisor must be installed within an <organization name>’s defined time period after they are released by the vendor.
+      - id: 2-5
+        description: >
+          The hypervisor itself must be carefully monitored by the administrators using dedicated security tools for any signs of compromise.
+      - id: 2-6
+        description: >
+          Hypervisor must provide a virtual interface to the hardware based MLE.
+      - id: 2-7
+        description: >
+          The administration of all hypervisor installations in the enterprise must be performed centrally using an enterprise virtualization management system (EVMS).
+      - id: 2-8
+        description: >
+          Enterprise gold-standard hypervisor configurations for different types of workloads and clusters must be enforced through EVMS. The gold-standard configurations must, at the minimum, cover the following aspects:
+          - CPU
+          - Memory
+          - Storage
+          - Network bandwidth and Host OS hardening (if required)
+      - id: 2-9
+        description: >
+          All hosts’ OS must be completely isolated (physically and logically) from a hypervisor instance.
+
+  - id: 3
+    title: Guest OS Security
+    objective: >
+      The guest OS must be securely managed and maintained ensuring independence of other systems using encapsulation and traditional security methods due to direct access to the network.
+    risk_implication: >
+      If a guest OS on a hosted virtualization system is compromised, that guest OS may potentially infect other systems on the same hypervisor, that would lead to information theft, unauthorized access, and information disclosure.
+    requirements:
+      - id: 3-1
+        description: >
+          <organization name> must follow the best practices for managing the physical OS, e.g., time synchronization, log management, authentication, remote access, etc.
+      - id: 3-2
+        description: >
+          All updates to the guest OS must be installed promptly. All modern OSs have features that will automatically check for updates and install them.
+      - id: 3-3
+        description: >
+          The virtual drives used by the guest OS on a regular basis must be backed up using the same policy for backups as is used for non-virtualized computers in <organization name>.
+      - id: 3-4
+        description: >
+          In each guest OS, unused virtual hardware (especially virtual drives and virtual network adapters) must be disconnected.
+      - id: 3-5
+        description: >
+          Separate authentication solutions for each guest OS must be used unless there is a particular reason for two guest OSs to share credentials. Authentication approval must be obtained only for a limited amount of time.
+      - id: 3-6
+        description: >
+          Virtual devices for the guest OS must be associated only with the appropriate physical devices on the host system, such as the mappings between virtual and physical NICs.
+      - id: 3-7
+        description: >
+          Guest OS must have access only to its own resources and must not encroach on the other guest OSs’ resources or any resources not allocated for virtualization use.
+      - id: 3-8
+        description: >
+          Guest OS’s snapshots must be restricted to prevent unauthorized disclosure.
+
+  - id: 4
+    title: Virtualized Infrastructure Security
+    objective: >
+      Proper specification of virtualized infrastructure must be ensured in the security area.
+    risk_implication: >
+      Misconfiguration or any violation in infrastructure virtualization may have severe implications that could lead to information theft, unauthorized access, and information disclosure.
+    requirements:
+      - id: 4-1
+        description: >
+          Access to virtual hardware must be strictly limited to the guest OS that will use it.
+      - id: 4-2
+        description: >
+          Access control to the virtual hardware, particularly storage and networking, must be applied and strictly monitored by the administrators using dedicated security tools.
+      - id: 4-3
+        description: >
+          If possible, virtual network switches which support virtual LAN (VLAN) and firewall capabilities must be used to provide separation and isolation of the VM network traffic.
+      - id: 4-4
+        description: >
+          Additional security appliances (hardware or virtual) must be implemented to inspect, control, shape, and monitor the VM network communications in a centralized location.
+      - id: 4-5
+        description: >
+          VM configuration management tools must be used to monitor and manage configuration of every VM throughout its lifecycle.
+      - id: 4-6
+        description: >
+          Emulation of hardware devices must only be used where complexity is manageable (e.g., USB host controller).
+      - id: 4-7
+        description: >
+          If possible, resource limits for network bandwidth and I/O bandwidth (e.g., disk read/write speeds) must be set for each VM to prevent denial of service (DOS) attack.
+
+  - id: 5
+    title: Desktop Virtualization Security
+    objective: >
+      The usage of desktop virtualization must be strictly managed and regulated using the least privileged approach.
+    risk_implication: >
+      When used, a virtualized desktop environment is a foundation of business daily operation and any misconfiguration or violation may cause the entity's cybersecurity policy violation and information disclosure.
+    requirements:
+      - id: 5-1
+        description: >
+          Scenarios that require the enforcement of security by managed virtualization solutions and that do not require centralized management must be determined. For instance, if desktop virtualization is allowed for employees’ working from home, their computers do not need to have stringent security controls in contrast to those that provide access to internal databases or websites.
+      - id: 5-2
+        description: >
+          <organization name> must use virtualization solution that allows to deploy a managed desktop guest OS on unmanaged computers.
+      - id: 5-3
+        description: >
+          All updates must be installed to the guest OS on unmanaged computers as they are released by the vendor.
+      - id: 5-4
+        description: >
+          Users of managed guest OSs used by multiple users must be made aware that any changes made by one user may be propagated back to the main image and then appear in the images used by other users.
+
+  - id: 6
+    title: Other Standards
+    objective: >
+      The Virtualization must be securely configured and appropriately used when required.
+    risk_implication: >
+      If <organization name> is not compliant with all applicable and mandatory standards and requirements, it could lead to information theft, unauthorized access, and information disclosure.
+    requirements:
+      - id: 6-1
+        description: >
+          The following standards must be implemented in relevance to virtualization:
+          - Server Security Standard
+          - Network Security Standard
+          - Identity and Access Management Standard
+          - Backup and recovery management Standard
+          - Cryptography Standard
+          - Physical Security Standard
+          - Secure Configuration and Hardening Standard
+          - Event Log Management and Monitoring Standard
+          - Malware Protection Standard
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
