@@ -1,0 +1,97 @@
+purpose:
+  description: >
+    This standard aims to define the detailed cybersecurity requirements to ensure timely detection and effective remediation of technology vulnerabilities to prevent or minimize the likelihood of exploiting these vulnerabilities through cyber attacks, and to minimize the impact of these attacks on <name of organization> business, and to protect it from internal and external threats at <name of organization>. 
+scope:
+  description: >
+    This standard applies to all information and technology assets in <name of organization>, and to all personnel (employees and contractors) in <name of the organization>.
+standards:
+  general_requirements:
+    objective: >
+      To define the general requirements for vulnerabilities assessment to be followed by internal and external vulnerabilities assessment team prior to conducting vulnerabilities assessment process.
+    risk_implication: >
+      Ad-hoc vulnerability management could result in insufficient or inaccurate outcomes that might impact systems efficiency.
+    requirements:
+      - id: 1-1
+        description: A plan for periodic vulnerability assessments must be developed that defines the assessment scope, start date, and end date.
+      - id: 1-2
+        description: Vulnerability assessment plan must be based on the relevant legislative and regulatory requirements.
+      - id: 1-3
+        description: Vulnerability management activity must follow a defined methodology, in accordance with <organization name>’s enterprise and cybersecurity risk management policies, procedures, and processes.
+      - id: 1-4
+        description: >
+          A report must be developed after finalizing the vulnerability assessment activities. The report must include the following sections at minimum:
+          - Executive Summary
+          - Reporting Introduction
+          - Methodology
+          - Target Assets
+          - Detailed Findings of the results of the vulnerability assessment.
+      - id: 1-5
+        description: >
+          An action plan must be developed after finalizing the vulnerability assessment report in order to implement the recommendations. The report must have at minimum:
+          - Technical Owner
+          - Business Owner
+          - Required Actions to implement the recommendations.
+          - Clear Deadlines to implement the recommendations.
+  vulnerabilities_assessment_approach:
+    objective: >
+      To define and set a plan for vulnerabilities assessment and the tools to be used to be followed by internal and external vulnerabilities assessment team prior to conducting vulnerabilities assessment process.
+    risk_implication: >
+      Improper vulnerability assessment can lead to inconclusive or misleading outcomes, which might lead to exploitations of the vulnerabilities and waste of resources.
+    requirements:
+      - id: 2-1
+        description: Vulnerability assessment must be performed periodically or at least annually.
+      - id: 2-2
+        description: Vulnerability assessment must be conducted on a monthly basis for all external critical systems (Internet-facing systems).
+      - id: 2-3
+        description: Vulnerability assessment must be conducted on a quarterly basis for all internal critical systems.
+      - id: 2-4
+        description: Assessing, remediating, and classifying telework systems vulnerabilities based on criticality at least once every three months.
+      - id: 2-5
+        description: Assessing and remediating cloud services vulnerabilities at least once every three months.
+      - id: 2-6
+        description: >
+          Vulnerability assessment exercise must be conducted as per the relevant legislative and regulatory requirements, and it must take into account the following guidelines:
+          - The exercise must meet specific vulnerability assessment requirements which are mentioned in the procedures.
+          - The exercise must define the systems/applications targeted for assessment, as well as any targeted system/application specific requirements.
+          - The assessment must include network-related vulnerabilities, service-based vulnerabilities, and banner grabbing.
+          - Vulnerability assessment must be performed using approved methods and mechanisms.
+          - Vulnerability assessment tools must be hardened to resist unauthorized use or modification, and the tool’s configuration settings must not be altered. If a tool configuration change is required, <organization name> must be notified and approve of the change.
+          - Vulnerability assessment reports must be classified as "Secret" at least, protected by a password, and shared only with related entities.
+          - Risk rating must be determined to prioritize findings as per the cybersecurity risk management methodology.
+  vulnerabilities_remediation:
+    objective: >
+      To define a specific approach for effective remediation of vulnerabilities, prevention or mitigation of exploiting vulnerabilities, and reduction of impacts of business operation.
+    risk_implication: >
+      Improper remediation of identified vulnerabilities can lead to those vulnerabilities being leveraged and used in cyber attacks.
+    requirements:
+      - id: 3-1
+        description: >
+          An action plan for remediation, fixing the identified gaps and patching targeted systems/applications, must be developed. The plan must include vulnerabilities details, recommendations, assessment start date and end date, and the functions/teams involved in the exercise.
+      - id: 3-2
+        description: The vulnerability assessment action plan must be documented and approved by <organization name>.
+      - id: 3-3
+        description: All systems and devices within <organization name> must have vendor/manufacturer warranty as per the Service Level Agreement with the vendor/manufacturer.
+      - id: 3-4
+        description: All systems and devices within <organization name> should have up-to-date security patches at the operating system and application level.
+      - id: 3-5
+        description: Automated tools for updating operating systems and software (including third party software) are encouraged to be deployed in the environment.
+      - id: 3-6
+        description: >
+          Critical vulnerabilities must be patched immediately after their discovery as per <organization name> change management procedures. Any high or medium risk vulnerabilities should have a priority in the action plan and be closed and remediated within a maximum of two weeks from releasing the fix or patch from the vendor, unless there is business or technical justification that is communicated officially.
+      - id: 3-7
+        description: The vulnerabilities sent by the Cloud Service Provider to <organization name> must be managed and remediated.
+roles_and_responsibilities:
+  - standard_owner: <head of the cybersecurity function>
+  - standard_review_and_update: <cybersecurity function>
+  - standard_implementation_and_execution: <information technology function>
+  - standard_compliance_measurement: <cybersecurity function>
+update_and_review:
+  description: >
+    <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+compliance:
+  description: >
+    The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  all_personnel_compliance: >
+    All personnel at <organization name> must comply with this standard.
+  violation_consequence: >
+    Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
