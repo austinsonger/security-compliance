@@ -1,0 +1,121 @@
+purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to the physical security of <organization name>’s premises, buildings and assets to minimize cybersecurity risks resulting from internal and external threats at <organization name> in order to preserve confidentiality, integrity and availability.
+
+scope: >
+  These standard covers <organization name>’s premises, buildings and assets in <organization to add in physical locations as appropriate, such as data centers, offices and warehouses> and applies to all <organization name> personnel (employees and contractors).
+
+standards:
+  - id: 1
+    title: Physical Premises Protection
+    objective: >
+      To protect physical premises from harm.
+    risk_implication: >
+      Physical premises, buildings and assets can be subject to theft or physical damage, resulting in the loss of assets, data and information, or interruption to services provided by the assets.
+    requirements:
+      - id: 1-1
+        description: >
+          The roles of personnel (including employees, visitors and other individuals) who are allowed to access buildings where <organization name> data centers, network devices or application servers are located, must be defined. This includes buildings owned or managed by <organization name>, business units and third parties.
+      - id: 1-2
+        description: >
+          The locations requiring physical access controls must be identified and documented, including all areas classified as critical, or areas containing systems or data classified as critical.
+      - id: 1-3
+        description: >
+          A process to control access to <organization name> physical premises, buildings and assets must be defined and reviewed periodically.
+      - id: 1-4
+        description: >
+          The process in 1-3 must include the following minimum requirements:
+            a) personnel requiring access must have a valid employment contract, contractor’s agreement, or work order
+            b) how a request for physical access is to be submitted (paper form, email, ticketing system, etc.)
+            c) what the business need is for physical access
+            d) the time frame, schedule or period, required for physical access
+            e) who can request physical access (e.g., <organization name> personnel)
+            f) who can authorize the requested physical access
+            g) how long a request for physical access would take to be approved or denied
+            h) what mechanism would be used to escort or otherwise track the individual granted physical access
+            i) how the request for the physical access is recorded in a secure manner
+            j) how approved physical access requests are stored, and subsequently checked on persons’ arrival at a controlled location
+            k) the validity period of access to be granted
+      - id: 1-5
+        description: >
+          All physical access events to <organization name> physical premises, buildings and assets must be recorded when they occur.
+      - id: 1-6
+        description: >
+          Physical access rights must be reviewed at least once a year to verify that access to physical premises, buildings and assets remains appropriate and valid.
+      - id: 1-7
+        description: >
+          A review must be conducted to confirm, change or revoke physical access at least once a year. Collected log data may be used in this review.
+      - id: 1-8
+        description: >
+          A review must be conducted to confirm, change or revoke physical access to locations hosting critical systems at least once every six months. Collected log data may be used in this review.
+      - id: 1-9
+        description: >
+          Inactive physical access permissions must be revoked after an agreed time period based on the criticality of the system.
+      - id: 1-10
+        description: >
+          Visitors who have been granted temporary physical access to physical premises, buildings and assets must be registered and physically supervised by authorized personnel (this includes <organization name> personnel from other <organization name> locations or divisions).
+      - id: 1-11
+        description: >
+          Physical access controls must be deployed (e.g. use of physical barriers, locks, window bars, reinforced doors, CCTV, restricted access to data centers located in secure buildings, use of ID cards by all visitors) to limit access to <organization name> physical premises, buildings and assets.
+  - id: 2
+    title: Environmental Protection
+    objective: >
+      To provide physical premises, buildings and assets with appropriate environmental safeguards.
+    risk_implication: >
+      The operation of IT systems can be adversely affected by poor, or uncontrolled, environments resulting in poor performance, errors or unexpected shutdowns.
+    requirements:
+      - id: 2-1
+        description: >
+          <organization name> physical premises, buildings and assets must be protected by implementing the following minimum environmental control mechanism requirements:
+            a) air conditioning
+            b) humidity controls
+            c) fire detection systems
+            d) fire suppression systems appropriate for the environment.
+      - id: 2-2
+        description: >
+          Uninterruptible Power Supply (UPS), or similar, systems must be deployed to protect critical IT systems in the event of a power failure.
+      - id: 2-3
+        description: >
+          Communications and power cabling must be protected, for example by limiting access to switch rooms and network rooms, using armored cabling ducts or concealing cable runs.
+      - id: 2-4
+        description: >
+          The risk of natural and man-made disasters must be identified and assessed.
+      - id: 2-5
+        description: >
+          Mitigation measures must be selected and implemented to reduce the impact of natural and man-made disasters (e.g. flood protection, business continuity arrangements, alternative working arrangements, alternative locations) in coordination with the <business continuity function>.
+  - id: 3
+    title: Secure Disposal
+    objective: >
+      To ensure that physical IT assets are securely disposed and destroyed.
+    risk_implication: >
+      Insecure disposal and destruction of IT assets may expose any data or information to compromise or breach, resulting in reputational damage and, depending on the data or information exposed, legal and regulatory investigations and penalties.
+    requirements:
+      - id: 3-1
+        description: >
+          Mechanisms must be identified and approved by <organization name> to securely dispose physical IT assets as per its classification and relevant regulatory requirements.
+      - id: 3-2
+        description: >
+          All physical assets that have reached end-of-life must be disposed of using the approved secure disposal mechanisms.
+      - id: 3-3
+        description: >
+          Physical copies of backup and storage media for IT assets must be protected from unauthorized access, destruction, or modification.
+      - id: 3-4
+        description: >
+          A register must be maintained by <organization name> recording all disposal activities of physical premises, buildings and assets, which must be protected from unauthorized access, destruction, or modification.
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
