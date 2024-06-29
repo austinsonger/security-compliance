@@ -1,0 +1,65 @@
+ISO_27005_2022_examples_of_typical_threats:
+  1_physical_threats:
+    - TP01_fire
+    - TP02_water
+    - TP03_pollution_harmful_radiation
+    - TP04_major_accident
+    - TP05_explosion
+    - TP06_dust_corrosion_freezing
+  2_natural_threats:
+    - TN01_climatic_phenomenon
+    - TN02_seismic_phenomenon
+    - TN03_volcanic_phenomenon
+    - TN04_meteorological_phenomenon
+    - TN05_flood
+    - TN06_pandemic_epidemic_phenomenon
+  3_infrastructure_failures:
+    - TI01_failure_of_a_supply_system
+    - TI02_failure_of_cooling_or_ventilation_system
+    - TI03_loss_of_power_supply
+    - TI04_failure_of_a_telecommunications_network
+    - TI05_failure_of_telecommunication_equipment
+    - TI06_electromagnetic_radiation
+    - TI07_thermal_radiation
+    - TI08_electromagnetic_pulses
+  4_technical_failures:
+    - TT01_failure_of_device_or_system
+    - TT02_saturation_of_the_information_system
+    - TT03_violation_of_information_system_maintainability
+  5_human_actions:
+    - TH01_terror_attack_sabotage
+    - TH02_social_engineering
+    - TH03_interception_of_radiation_of_a_device
+    - TH04_remote_spying
+    - TH05_eavesdropping
+    - TH06_theft_of_media_or_documents
+    - TH07_theft_of_equipment
+    - TH08_theft_of_digital_identity_or_credentials
+    - TH09_retrieval_of_recycled_or_discarded_media
+    - TH10_disclosure_of_information
+    - TH11_data_input_from_untrustworthy_sources
+    - TH12_tampering_with_hardware
+    - TH13_tampering_with_software
+    - TH14_drive-by_exploits_using_web-based_communication
+    - TH15_replay_attack_man-in-the-middle_attack
+    - TH16_unauthorized_processing_of_personal_data
+    - TH17_unauthorized_entry_to_facilities
+    - TH18_unauthorized_use_of_devices
+    - TH19_incorrect_use_of_devices
+    - TH20_damaging_devices_or_media
+    - TH21_fraudulent_copying_of_software
+    - TH22_use_of_counterfeit_or_copied_software
+    - TH23_corruption_of_data
+    - TH24_illegal_processing_of_data
+    - TH25_sending_or_distributing_of_malware
+    - TH26_position_detection
+  6_compromise_of_functions_or_services:
+    - TC01_error_in_use
+    - TC02_abuse_of_rights_or_permissions
+    - TC03_forging_of_rights_or_permissions
+    - TC04_denial_of_actions
+  7_organizational_threats:
+    - TO01_lack_of_resources
+    - TO02_lack_of_staff
+    - TO03_failure_of_service_providers
+    - TO04_violation_of_laws_or_regulations
