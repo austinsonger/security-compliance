@@ -1,0 +1,60 @@
+GRC_professionals_protectors_skillset:
+  1_governance_oversight:
+    skills:
+      - constrain_and_conscribe_activities
+    help_the_organization_to:
+      - set_direction_mission_vision_values
+      - identify_and_set_boundaries
+      - allocate_authority_and_decision_rights
+      - authorize_performance_risk_and_compliance_systems
+      - shape_a_culture_of_integrity
+  2_strategy_performance:
+    skills:
+      - set_objectives_and_results
+      - map_strategies_and_tactics_to_address_opportunities_obstacles_and_obligations
+    help_the_organization_to:
+      - set_direction_mission_vision_values
+      - set_objectives_and_indicators
+      - identify_opportunities_obstacles_and_obligations
+      - align_strategies_and_tactics
+      - manage_performance_risk_and_compliance_systems
+  3_risk_decision_support:
+    skills:
+      - address_uncertainty_and_make_sound_decisions
+    help_the_organization_to:
+      - plan_for_risks
+      - identify_risks
+      - assess_risks
+      - address_risks
+      - measure_and_monitor_risks
+      - use_decision_science_and_support_techniques
+  4_compliance_ethics:
+    skills:
+      - address_obligations_and_the_risks_associated_with_both_mandatory_and_voluntary_boundaries
+    help_the_organization_to:
+      - identify_mandatory_obligations
+      - identify_and_formalize_voluntary_obligations
+      - assess_compliance_and_ethics_risk
+      - set_policy_and_procedures
+      - educate_and_communicate_with_the_workforce
+      - inspire_and_shape_an_ethical_culture
+  5_security_continuity:
+    skills:
+      - address_significant_risks_and_crises
+      - especially_those_areas_of_the_organization_prone_to_attack_or_existential_consequences
+    help_the_organization_to:
+      - identify_critical_physical_and_digital_assets
+      - assess_address_measure_and_monitor_related_risks
+      - use_scenario_planning_and_simulation_to_practice_response
+      - identify_technology_recovery_and_business_resumption_strategies
+      - perform_crisis_response_when_appropriate
+  6_audit_assurance:
+    skills:
+      - enhance_the_confidence_of_internal_and_external_stakeholders
+      - ensure_organization_is_designed_and_operating_effectively
+      - reliably_achieve_objectives_address_uncertainty_and_act_with_integrity
+    help_the_organization_to:
+      - prioritize_assurance_based_on_objectives_opportunities_obstacles_and_obligations
+      - plan_perform_report_and_monitor_assurance_assessments
+      - use_design_and_substantive_testing_techniques
+      - communicate_with_stakeholders_and_management_to_enhance_confidence
