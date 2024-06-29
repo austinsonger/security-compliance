@@ -1,0 +1,114 @@
+GDPR_and_security:
+  key_topics:
+    - appropriate_security_principle: Article_5
+    - data_protection_by_design_and_by_default: Article_25
+    - security_of_processing: Article_32
+    - appropriate_technical_or_organisational_measures
+    - pseudonymisation_and_pseudonymisation: Article_4
+    - personal_data_breach_notification: Article_33
+    - data_protection_impact_assessment_DPIA: Article_35
+    - DPO_or_CISO: Article_37-39
+    - certification: Article_42
+    - accountability: Article_5
+    - employee_monitoring
+    - risk_management
+  employee_monitoring:
+    problem_areas_examples:
+      - email_monitoring
+      - monitoring_of_internet_usage
+      - working_time_tracking
+      - profiling
+      - log_management_and_SIEM
+      - keyloggers
+      - audio_and_video_recording
+      - biometric_scanners
+    principles:
+      - necessity:
+          - consent
+          - public_interest
+          - valid_interests
+          - legitimate_interests
+      - legitimacy
+      - purpose_limitation
+      - data_minimisation
+      - storage_limitation
+      - transparency
+      - integrity_and_confidentiality
+      - accountability
+    recommendation:
+      - conduct_DPIAs
+      - choose_blocking_not_monitoring_if_applicable
+      - implement_four-eyes_principle_access_control
+      - discuss_with_representatives_before_implementation
+      - Article_22_follow_the_requirements_for_profiling
+  appropriate_security_principle:
+    principles:
+      - appropriate_security_of_personal_data
+      - confidentiality_integrity_and_availability_CIA
+      - pseudonymisation_and_encryption
+      - ability_to_ensure_ongoing_confidentiality_integrity_availability_and_resilience
+      - ability_to_restore_availability_and_access_after_incident
+      - regular_testing_assessing_and_evaluating
+      - data_protection_by_design_and_by_default:
+          - proactive_not_reactive_prevent_not_remedial
+          - privacy_as_the_default_setting
+          - privacy_embedded_into_design
+          - full_functionality_positive_sum_not_zero_sum
+          - end-to-end_security_lifecycle_protection
+          - visibility_and_transparency_keep_it_open
+          - respect_for_user_privacy_keep_user_centric
+  breach_notification:
+    notification_and_communication:
+      - processor_to_controller
+      - controller_to_supervisory_authority_SA:
+          - without_undue_delay
+          - not_later_than_72_hours
+          - nature_of_the_PD_breach:
+              - categories_of_PD
+              - number_of_data_subjects
+              - number_of_PD_records
+          - contact_details_of_the_DPO_or_contact_point
+          - likely_consequences
+          - measures_taken_or_proposed
+          - reasons_for_delay_if_not_made_within_72_hours
+      - controller_to_data_subjects:
+          - without_undue_delay
+          - likely_high_risk_to_rights_and_freedoms_of_natural_persons
+          - measures_taken_to_mitigate
+          - clear_and_plain_language
+  accountability:
+    points_of_view:
+      - information_security_risk_management_records
+      - information_security_policy_ISMS_documentation_and_other_appropriate_technical_and_organisational_measures
+      - data_protection_by_design_and_by_default_records
+      - personal_data_breach_records
+      - NDAs_and_contracts_with_processors_and_sub_processors_documented_instructions
+      - information_security_audit_records
+      - certification_ISO_27001_ISO_27017_ISO_27018_Cyber_Essentials_if_applicable
+  certification:
+    standards:
+      - ISO_27001
+      - PCI_DSS
+      - ISO_27017
+      - ISO_27018
+      - Cyber_Essentials_Cyber_Essentials_PLUS
+      - BS_10012
+      - ISO_29100
+      - CSA_STAR
+      - SOC_2
+      - ISO_27701
+      - NIST_Privacy_Framework
+      - SWIFT_Assessment_Framework
+      - EU_DORA
+      - ITSM_GDPR_Guidelines_402019_on_Article_25_Data_Protection_by_Design_and_by_Default
+  security:
+    principles:
+      - confidentiality_integrity_availability_CIA_triads
+      - pseudonymisation_and_encryption
+      - security_of_processing:
+          - ongoing_confidentiality_integrity_availability_and_resilience
+          - restore_availability_and_access_after_incident
+      - appropriate_technical_or_organisational_measures
+          - audit_and_metrics
+      - DPIAs_risk_management
+      - anonymisation_and_pseudonymisation
