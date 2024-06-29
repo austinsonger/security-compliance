@@ -1,0 +1,123 @@
+purpose:
+  description: >
+    This standard aims to define the cybersecurity requirements related to the protection of the security of the wireless networks of <organization name> to achieve the main objective which is minimizing cybersecurity risks resulting from internal and external threats at <organization name>. 
+scope:
+  description: >
+    This standard applies to all wireless network and systems of <organization name> and to all personnel at <organization name> (employees and contractors).
+standards:
+  wireless_network_segregation:
+    objective: >
+      To ensure the wireless network design and architecture are secure and the network segments are protected according to their security level.
+    risk_implication: >
+      Networks without segregation share the same broadcast domain and are hence exposed to the same risks, and devices will be able to communicate without policing or inspecting the traffic. Therefore, any attack on any system could lead to serious internal threats and attacks on most systems of the network facilitating lateral movement within the network.
+    requirements:
+      - id: 1-1
+        description: A logically and/or physically segmented wireless network must be designed and implemented, taking into consideration business needs and enterprise architecture, and based on the principles of Defence-in-Depth and multi-tier architecture.
+      - id: 1-2
+        description: Appropriate level of security controls must be applied to different network segments based on the value and classification of information processed in the wireless network, levels of trust, business impact and associated risks.
+      - id: 1-3
+        description: Wireless networks must be designed and configured to filter traffic between different segments and block any unauthorized access.
+      - id: 1-4
+        description: Adjust firewall and routers settings to prevent any unauthorized connections between untrusted wireless networks.
+      - id: 1-5
+        description: Security configurations, rules, policies and profiles for firewalls and routers must be reviewed in regular bases in accordance to an approved plan.
+      - id: 1-6
+        description: Critical systems must be prevented from connecting to the wireless network.
+  boundary_defense:
+    objective: >
+      To protect the wireless network boundary from threats.
+    risk_implication: >
+      Poor network boundary protection without the proper security controls expose the networks to external attackers that could easily breach the internal network and impose further serious threats.
+    requirements:
+      - id: 2-1
+        description: An up-to-date inventory of all of <organization name>’s wireless network boundaries must be maintained.
+      - id: 2-2
+        description: Communications with known malicious or unused Internet IP addresses must be denied, and access must be limited to trusted and necessary IP address ranges at each of <organization name>’s wireless network boundaries.
+      - id: 2-3
+        description: Communication over unauthorized TCP or UDP ports or application traffic must be denied to ensure that only authorized protocols are allowed to cross the network boundary in or out of the wireless network at each of <organization name>’s network boundaries.
+      - id: 2-4
+        description: Monitoring systems must be configured to record network packets passing through the boundary at each of <organization name>’s wireless network boundaries.
+      - id: 2-5
+        description: Network-based Intrusion Prevention Systems (IPS) must be deployed to block malicious network traffic at each of <organization name>’s wireless network boundaries.
+      - id: 2-6
+        description: Network-based Advanced Persistent Threat (APT) detection/prevention systems must be deployed to detect or block malicious network attacks and Zero-Day attacks at each of <organization name>’s network boundaries.
+      - id: 2-7
+        description: The collection of NetFlow and event logging must be enabled on all wireless network boundary devices.
+      - id: 2-8
+        description: All wireless network traffic to/from the Internet must pass through an authenticated application layer proxy that is configured to filter unauthorized connections.
+      - id: 2-9
+        description: Domain Name System (DNS) query logging must be enabled to detect hostname lookups for known malicious domains.
+      - id: 2-10
+        description: All subscription services, URL categories, threat feeds, blacklists, and signatures must be up-to-date and updated regularly.
+  wireless_access:
+    objective: >
+      To control and protect the use of wireless networks.
+    risk_implication: >
+      Poor protection of wireless network boundaries could expose <organization name> to the risks of unauthorized connection to the network or data disclosure.
+    requirements:
+      - id: 3-1
+        description: A comprehensive risk assessment exercise must be conducted to evaluate the risks of connecting wireless networks to the internal network.
+      - id: 3-2
+        description: An inventory of authorized wireless access points connected to the wired network must be maintained.
+      - id: 3-3
+        description: Network vulnerability scanning tools must be configured to detect and alert on unauthorized wireless access points connected to the wired network.
+      - id: 3-4
+        description: Wireless Intrusion Detection System (WIDS) must be used to detect/prevent and alert on unauthorized wireless access points connected to the wired network.
+      - id: 3-5
+        description: Wireless access on devices that do not have a business purpose for wireless access must be disabled.
+      - id: 3-6
+        description: Wireless access on client machines that do not have a business need for wireless access must be configured to allow access to authorized wireless networks only, and to restrict access to other wireless networks.
+      - id: 3-7
+        description: Peer-to-peer (ad hoc) wireless network capabilities must be disabled on wireless clients.
+      - id: 3-8
+        description: Wireless access points and wireless devices must be configured to connect to the wireless network using secure protocol such as WPA3.
+      - id: 3-9
+        description: Wireless networks must use authentication protocols such as Extensible Authentication Protocol-Transport Layer Security (EAP/TLS) that requires mutual Multi-Factor Authentication.
+      - id: 3-10
+        description: Wireless access of peripheral devices (such as Bluetooth and NFC) must be disabled unless such access is required for a business purpose.
+      - id: 3-11
+        description: A separate wireless network must be created for personal or untrusted devices. Enterprise access from this network must be treated as untrusted and must be filtered and audited accordingly.
+      - id: 3-12
+        description: Restrict transferring the classified data Top secret and Secret using wireless connection.
+  hardware_software_integrity_validation:
+    objective: >
+      To ensure and verify that all network hardware and software come from original sources and that they are not tampered with.
+    risk_implication: >
+      Penetrations in supply chains allow the deployment of malicious software and hardware on <organization name>’s network. Compromised software and hardware may affect the network's performance and jeopardize <organization name>’s data confidentiality, integrity and availability. As a result, it will become possible to download unauthorized or malicious software onto the device after turned on.
+    requirements:
+      - id: 4-1
+        description: All physical wireless network devices must be scanned for signs of tampering upon installation.
+      - id: 4-2
+        description: Software, updates, patches, and upgrades to wireless network components must be obtained from validated sources.
+  other_standard_controls:
+    objective: >
+      To implement all wireless network security standard controls and requirements to ensure the highest protection levels.
+    risk_implication: >
+      Failure to‏ implement all security standard controls and requirements exposes <organization name> to increased wireless network security risks.
+    requirements:
+      - id: 5-1
+        description: >
+          The following standard controls must be implemented:
+          - Backup and recovery standard
+          - Event and audit logging standard
+          - Physical security standard controls
+          - Network security standard controls
+          - Identity and access management standard controls
+          - Secure and hardening configuration standard controls
+          - Cryptography standard controls
+          - Cybersecurity Incident and Threat Management standard controls
+roles_and_responsibilities:
+  - standard_owner: <head of the cybersecurity function>
+  - standard_review_and_update: <cybersecurity function>
+  - standard_implementation_and_execution: <IT function>
+  - standard_compliance_measurement: <cybersecurity function>
+update_and_review:
+  description: >
+    <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+compliance:
+  description: >
+    The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  all_personnel_compliance: >
+    All personnel at <organization name> must comply with this standard.
+  violation_consequence: >
+    Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
