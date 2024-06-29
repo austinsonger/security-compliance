@@ -1,0 +1,122 @@
+Purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to Distributed Denial of Service (DDoS) attack protection for <organization name>. The ability of <organization name> to apply the controls specified in this DDoS protection standard will assist in preserving the availability, integrity, and confidentiality of <organization name>’s information and assets.
+Scope: >
+  These standards cover <organization name>’s best practices in DDoS protection solution deployment and usage and applies to all assets and all personnel (employees and contractors) in <organization name>.
+Standards:
+  1:
+    title: General Requirements
+    Objective: >
+      The DDoS protection solution must be securely deployed and used appropriately when required.
+    Risk Implication: >
+      Misconfiguration of DDoS protection solution may cause unavailability of business services provided to the client and internal company services.
+    Requirements:
+      1-1: >
+        DDoS protection solution must offer a service level agreement with a guaranteed time to mitigation (TTM). It is especially important when deploying as a service.
+      1-2: >
+        DDoS protection solution must protect both IPv4 and IPv6 stack of <organization name> network.
+      1-3: >
+        DDoS protection solution must have consistent application uptime and availability.
+      1-4: >
+        DDoS protection solution must protect networks, DNS servers, publicly accessible & hosted websites within <organization name> IT environment and individual IPs.
+      1-5: >
+        DDoS protection solution must have multi-layered protection from DDoS attacks on the network and application layers, volumetric and non-volumetric attacks, as well as full coverage of SSL/TLS-based DDoS attacks.
+      1-6: >
+        All <organization name>’s IT administrators defined in Access Management Principles that need access to the DDoS attacks logs must have configured access to the logs database.
+      1-7: >
+        DDoS protection solution must be possible to be deployed in various methodologies - Table A.
+      1-8: >
+        All security updates to the DDoS protection solution must be installed in accordance with the patch management process.
+      1-9: >
+        All management communication channels must be using a dedicated management network or the management network communications which is authenticated and encrypted using cryptographic modules validated in line with National Cryptography Standard and internal <organization name>’s cryptography standards. There must be protection in case of access to the managing console in DDoS as a Service deployment method.
+      1-10: >
+        DDoS Response and mitigation plan should be established in accordance with the relevant legislative and regulatory requirements.
+      1-11: >
+        <organization name> must perform periodic training for employees to ensure that they know how to choose the right mitigation service and measure training effectiveness based on reviewing the KPIs annually.
+  2:
+    title: Attack prevention
+    Objective: >
+      Properly configured and securely managed DDoS protection solution must prevent attempts to DDoS attack on <organization name> infrastructure.
+    Risk Implication: >
+      Misconfiguration of a DDoS solution may have severe consequences like legitimate traffic blocking and denial of service.
+    Requirements:
+      2-1: >
+        <organization name> must identify and protect, using DDoS protection solution, all assets available from the public network to ensure that they are capable of responding effectively to DoS/DDoS attacks.
+      2-2: >
+        DDoS protection solution must be tailored to <organization name>’s industry profile.
+      2-3: >
+        DDoS protection solution must provide reports and dashboards of prevented attacks and actions.
+      2-4: >
+        DDoS protection solution must offer multi-layered protection. When deployed with a web application firewall (WAF), DDoS Protection solution protects both at the network layer and at the application layer.
+      2-5: >
+        DDoS protection solution must use security feeds delivered by national trusted organizations like National Cybersecurity Authority (NCA).
+  3:
+    title: Attack detection, alerting and mitigation
+    Objective: >
+      DDoS protection solution must detect anomalies and use filtering and limiting techniques to mitigate attacks.
+    Risk Implication: >
+      Improper detection may easily cause malware propagation, denial of service, and information leak.
+    Requirements:
+      3-1: >
+        <organization name> must define key performance indicators to track effectiveness and trends related to DDoS protection solution.
+      3-2: >
+        DDoS protection solution must stop the spread of the DoS/DDoS and prevent further damage to the system.
+      3-3: >
+        DDoS protection solution must use automation to quickly mitigate arising attacks.
+      3-4: >
+        DDoS protection solution must deliver real-time visibility into DDoS threats with reporting and attack correlation through attack analytics or a SIEM integration.
+      3-5: >
+        DDoS protection solution must provide instant attack notifications.
+      3-6: >
+        DDoS protection solution must inform users about performed actions, rejected and mitigated attacks.
+      3-7: >
+        Alerts must be configured at the start and end of an attack, and over the attack's duration, using built-in attack metrics.
+      3-8: >
+        DDoS protection solution should use machine learning and artificial intelligence to prevent new threats.
+      3-9: >
+        DDoS protection solution must be configured to send only specific logs to the central log system using syslog protocol and CEF (Common Event Format), LEEF (Log Event Extended Format) or RFC 5425 specified log format.
+      3-10: >
+        DDoS protection solution must attribute malicious behavior to a specific IP address and perform forensic analysis to determine how threats have moved laterally within an environment.
+      3-11: >
+        DDoS protection solution must constantly monitor network activity to detect traffic anomalies, such as unusual growth of network throughput or higher-than-usual usage of network resources.
+  4:
+    title: Other Standards
+    Objective: >
+      The DDoS protection solution must be securely configured, deployed and used appropriately according to best practices and compliant to standards and relevant policies security environment.
+    Risk Implication: >
+      If <organization name> is not compliant with all applicable and mandatory standards and requirements, it could be exposed to severe threat rise specific to the areas covered by the below-mentioned standards.
+    Requirements:
+      4-1: >
+        The following standards must be implemented in relevance to DDoS Solutions:
+        - Identity and access management
+        - Disaster recovery and backup
+        - Cryptography
+        - Event and audit logging
+        - Physical security
+        - Secure configuration and hardening
+        - Event Log Management and Monitoring
+Table A – DDoS protection solution deployment methodologies:
+  Methodology:
+    DDoS Protection as a Service:
+      Description: >
+        Application of service providers’ solutions. DDoS Protection as a Service is usually implemented by redirecting network traffic to an external scrubbing center.
+    On-premise (hardware):
+      Description: >
+        Deployment of the solution on the <organization name>’s network, which is performed by installing the hardware in its network.
+    Hybrid:
+      Description: >
+        This methodology combines deployment as a service with on-premise to mitigate volumetric attacks as close to the source of the attack as possible, and mitigate application DDoS attacks on the perimeter of <organization name>’s network using the resource of Cloud/ISP scrubbing center if the DDoS attack exceeds the capability of the on-prem hardware.
+Roles and Responsibilities:
+  - Standard Owner: <head of the cybersecurity function>
+  - Standard Review and Update: <cybersecurity function>
+  - Standard Implementation and Execution: <information technology function> and <cybersecurity function>
+  - Standard Compliance Measurement: <cybersecurity function>
+Update and Review:
+  - >
+    <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+Compliance:
+  - >
+    The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  - >
+    All personnel at <organization name> must comply with this standard.
+  - >
+    Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
