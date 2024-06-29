@@ -1,0 +1,66 @@
+register_of_suppliers:
+  risk_level:
+    - IT Security Risk Level
+    - Overall Risk Level
+    - Summary and recommendations
+    - Additional comments
+  system:
+    - creation_date
+    - last_update_date
+    - created_by
+    - last_updated_by
+  contacts:
+    - point_of_contact:
+        - email
+        - comments
+    - incident_notification_CISO:
+        - email
+        - comments
+    - data_protection_privacy_DPO:
+        - email
+        - comments
+    - trust_center:
+        - website_if_applicable
+  general:
+    - vendor_id: internal
+    - brief_description
+    - type: depends_on_the_classification_scheme
+    - website
+    - location: country
+    - status:
+        - active
+        - inactive
+        - prospect
+    - project_owner: internal
+  implementation:
+    - ICT_service: yes_no
+    - level_of_reliance_on_supplier: 
+      - 1. Not_significant
+      - 2. Low_reliance
+      - 3. Material_reliance
+      - 4. Full_reliance
+    - substitutability_of_the_supplier: 
+      - 1. Not_substitutable
+      - 2. Highly_complex_substitutability
+      - 3. Medium_complexity_in_terms_of_substitutability
+      - 4. Easily_substitutable
+    - IT_system_classification: 
+      - critical
+      - important
+      - standard
+  data_processing:
+    - storage_of_data: yes_no
+    - confidentiality
+    - integrity
+    - availability
+    - sensitivity_of_the_data: 
+      - high
+      - medium
+      - low
+    - personal_data_processing: yes_no
+    - location_of_data_at_rest_storage: 
+      - country
+    - location_of_management_of_the_data_processing: 
+      - country
+  checklists_if_needed:
+    - e.g., Due Diligence, Data Processing Agreement, NDA, reports...
