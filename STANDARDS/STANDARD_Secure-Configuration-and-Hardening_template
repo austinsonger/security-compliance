@@ -1,0 +1,198 @@
+purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to the secure configuration and hardening of <organization name>'s systems in order to minimize cybersecurity risks resulting from internal and external threats at <organization name>. The requirements in this standard are aligned with the cybersecurity requirements issued by the National Cybersecurity Authority (NCA) in addition to other related cybersecurity legal and regulatory requirements.
+
+scope: >
+  This standard covers all <organization name>’s systems assets and applies to all <organization name> personnel (employees and contractors).
+
+standards:
+  - id: 1
+    title: Security baseline standards definition
+    objective: >
+      To define security baseline standards (including base configuration) for the systems infrastructure.
+    risk_implication: >
+      Lack of configuration standards may result in required settings and security configurations being omitted; it may lead to deployment of systems or infrastructure with active vulnerabilities and issues; and increased maintenance and upgrade overhead due to the number of versions deployed.
+    requirements:
+      - id: 1-1
+        description: >
+          Security baseline standards and configuration parameters for systems infrastructure must be defined, documented, and approved.
+      - id: 1-2
+        description: >
+          Security baseline standards for the following must be prepared:
+          - end user devices including tablets and mobile devices
+          - network devices including firewalls, routers, and switches
+          - network operating systems
+          - servers
+          - operating systems
+          - business applications (including social media applications)
+          - remote access and telework infrastructure, including servers, VPN, and end user devices
+          - other critical systems defined by management
+      - id: 1-3
+        description: >
+          Security baselines must reference:
+          - manufacturer published guidelines or instructions
+          - manufacturer issued upgrades, patches, or settings
+          - <organization name> cybersecurity risk assessments
+          - vulnerability management scans and results
+          - results of security testing
+          - globally and nationally trusted sources of security best practice information
+          - <organization name> policies requiring particular requirements
+      - id: 1-4
+        description: >
+          <organization name> secure baseline and configuration standards must be defined and applied for incorporated cloud-based and hosted applications and services (including SaaS/PaaS/IaaS).
+      - id: 1-5
+        description: >
+          Default passwords for all accounts must be changed, and new passwords created, at first login. New passwords must be created in accordance with <organization name> identity and access management policy and standard.
+      - id: 1-6
+        description: >
+          Software must be configured to disable services and functionality not required for use by the <organization name> operations, where those services and functionality present risk to <organization name>.
+      - id: 1-7
+        description: >
+          A register of disabled services and functionality must be maintained by <organization name> for use in setting configurations and builds.
+      - id: 1-8
+        description: >
+          Secure baselines and configurations must include centralized clock synchronization with an accurate and trusted source —e.g., Saudi Standards, Metrology and Quality Organization (SASO).
+      - id: 1-9
+        description: >
+          Baselines and configurations must be deployed via standard builds, images, and configuration files which have been created from a controlled, master (or Gold) reference build.
+      - id: 1-10
+        description: >
+          Secure baseline and configuration builds, images, and files must be stored in a secure manner, with access limited to authorized personnel, using physical and logical access controls.
+      - id: 1-11
+        description: >
+          Secure baseline and configuration builds, images, and files must be protected against unauthorized access, unauthorized change, and unauthorized disclosure by logical and physical controls.
+      - id: 1-12
+        description: >
+          Access to security baseline standard and secure configuration documentation must be restricted to appropriate individuals within <organization name>.
+
+  - id: 2
+    title: Secure configuration implementation and deployment
+    objective: >
+      To implement and deploy secure configurations across the organization.
+    risk_implication: >
+      Not implementing standard builds may leave the organization with a mix of configurations and security settings; active vulnerabilities and issues in the production environment; and an increased maintenance and upgrade overhead.
+    requirements:
+      - id: 2-1
+        description: >
+          All new systems, devices, and software must be built and configured to the approved secure baseline and configuration, using the relevant builds, images, and files.
+      - id: 2-2
+        description: >
+          All new systems, devices, and software must be successfully tested before implementation/roll-out to ensure they meet the approved secure baseline and configuration.
+      - id: 2-3
+        description: >
+          The implementation/roll-out of systems, devices, or software that do not meet the approved secure baseline and configuration must be paused.
+      - id: 2-4
+        description: >
+          Cloud-based and hosted applications and services (including SaaS/PaaS/IaaS) must be deployed following <organization name> secure baseline and configuration standards for cloud-based and hosted applications.
+      - id: 2-5
+        description: >
+          Secure baseline configurations must be deployed to existing systems as soon as practical and during agreed maintenance periods.
+      - id: 2-6
+        description: >
+          Systems, devices, or software that do not meet the approved secure baseline and configuration must be remediated by applying the approved secure baseline and configuration as soon as practical and during agreed maintenance periods.
+
+  - id: 3
+    title: Update secure configurations
+    objective: >
+      To ensure that secure configurations are kept up to date, reviewed regularly, and updated in a controlled manner.
+    risk_implication: >
+      Using out of date configurations may expose the organization to new or existing threats, degrade functionality, reduce performance, and deploy systems or infrastructure with known and active vulnerabilities.
+    requirements:
+      - id: 3-1
+        description: >
+          Security baseline standards and secure configurations must be reviewed at least once a year or after any significant change to <organization name> infrastructure, devices, or software.
+      - id: 3-2
+        description: >
+          Deployed systems, devices, and software must be reviewed at least once a year to ensure the approved secure baselines and configurations are deployed.
+      - id: 3-3
+        description: >
+          Change management procedures must be followed to update secure baselines and configurations.
+      - id: 3-4
+        description: >
+          Cloud-based and hosted applications and services must be assessed at least once a year to ensure the applications and services are deployed using the approved secure baselines and configurations.
+      - id: 3-5
+        description: >
+          Deployed secure baselines and configurations must be updated to the approved version as soon as practical and during agreed maintenance periods.
+      - id: 3-6
+        description: >
+          Evaluation of infrastructure and remote working systems and systems must be assessed at least once a year to ensure that remote access is provided using the approved secure baselines and configurations.
+
+  - id: 4
+    title: Anti-malware software configuration
+    objective: >
+      To protect <organization name> used IT assets from malware.
+    risk_implication: >
+      Lack of anti-malware software may expose organization IT assets to infection and attack from malicious code, resulting in loss or damage to data and information, loss of productivity, error, and unexpected shutdown.
+    requirements:
+      - id: 4-1
+        description: >
+          <organization name> approved anti-malware (AM) software must be installed on all server and client (i.e., desktop, laptop, tablet, mobile) systems.
+      - id: 4-2
+        description: >
+          At a minimum, the AM software must be configured with the following capabilities:
+          - signature and/or non-signature-based malware detection
+          - alert generation for logging and monitoring.
+      - id: 4-3
+        description: >
+          At a minimum, the AM software must be configured to:
+          - connect to the network automatically
+          - run continuously and/or perform a regular scan for malware
+          - check and download updates automatically at the scheduled frequency
+          - log all activities undertaken by the software
+          - generate alerts to the responsible user and send alerts to a central monitoring system (e.g., the SOC)
+          - require privileged access for changes to operation.
+      - id: 4-4
+        description: >
+          Host-based Intrusion Prevention Systems (HIPS) and Host-based Intrusion Detection Systems (HIDS) must be installed on all <organization name> used servers, desktops, laptops, tablets (where the system is capable of running HIPS and HIDS).
+      - id: 4-5
+        description: >
+          At a minimum, the HIPS must be configured to:
+          - connect to the network automatically
+          - run continuously
+          - check and download updates automatically at the scheduled frequency
+          - log all alerts, blocked activities, and traffic processed by the HIPS
+          - generate alerts for the user and send alerts to a central monitoring system (e.g., the SOC)
+          - require privileged access for changes to operation.
+      - id: 4-6
+        description: >
+          Assets provided under third-party agreements must be configured to meet the requirements of this standard.
+      - id: 4-7
+        description: >
+          Third-party’s assets that do not/cannot meet the requirements of this standard must be identified, logged, and reviewed.
+      - id: 4-8
+        description: >
+          Email gateway systems must be configured to protect against malware as per the <organization name>’s email protection policy and standard.
+
+  - id: 5
+    title: Critical systems configuration
+    objective: >
+      To deploy additional controls for secure configurations on critical systems.
+    risk_implication: >
+      Standard configurations, builds, and adjustment operations may not provide the level of protection required by critical systems, as such systems may be subject to higher levels of threat, higher frequency of attacks, and higher levels of business impact if system operation is interrupted.
+    requirements:
+      - id: 5-1
+        description: >
+          Security baseline standards and secure configurations for critical systems must be reviewed at least every six months or after any significant change to <organization name> infrastructure, devices, or software, as well as any changes to the relevant legal and regulatory requirements.
+      - id: 5-2
+        description: >
+          Deployed critical systems, devices, and software must be reviewed at least every six months to ensure the approved secure baselines and configurations are deployed.
+      - id: 5-3
+        description: >
+          Deployed secure baselines and configurations must be updated to the approved version as soon as practical and during agreed maintenance periods.
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
