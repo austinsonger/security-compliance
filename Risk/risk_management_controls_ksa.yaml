@@ -1,0 +1,95 @@
+risk_management_controls_ksa:
+  1_building_risk_management_department:
+    objective: >
+      Building the RM function in the entity and defining the roles and tasks of RM management and assigning those responsible to implement and develop the Risk Management Program and align it with the entity's strategy.
+    steps:
+      - appointing_a_risk_management_head
+      - appointing_a_risk_management_team
+      - ensuring_the_appointed_RM_head_is_in_charge_of_RM_and_report_directly_to_the_highest_management_level
+      - formation_of_a_risk_management_steering_committee_RMSC
+      - assign_RMSC_chairman_and_members
+      - assign_RMSC_authorities_roles_and_responsibilities
+      - review_the_charter_of_the_committee_periodically
+      - submitting_risk_management_reports_to_top_management_and_the_board
+      - building_a_risk_management_policy_and_governance_and_update_it_periodically
+      - building_an_effective_system_for_the_RM_department
+  2_developing_the_risk_management_strategy:
+    objective: >
+      To conduct an initial evaluation of the Risk Management and building a framework and methodology to evaluate and monitor strategic objectives.
+    steps:
+      - evaluating_the_maturity_level_of_the_RM
+      - adjusting_and_documenting_the_RM_strategy_and_framework_in_line_with_the_entity's_strategy
+      - setting_up_a_framework_for_identifying_and_analyzing_internal_and_external_risks_assessing_their_probability_and_consequences_to_decrease_the_level_of_impact_and_increase_the_probability_of_their_occurrence
+      - building_a_risk_management_system_and_procedures
+      - defining_the_risk_indicators_KRI_methodology
+      - build_and_account_the_process_of_the_RM_department
+      - align_the_RM_procedures_with_the_structure_and_the_services_provided_by_the_entity
+  3_setting_the_risk_appetite_and_risk_tolerance:
+    objective: >
+      Determining the level of risk that the entity is willing to take and managing the risks to achieve proper treatment.
+    steps:
+      - building_and_documenting_risk_appetite_and_risk_tolerance_limits
+      - aligning_risk_appetite_and_risk_tolerance_limits_with_entity's_strategic_objectives
+  4_design_the_risk_management_framework_and_procedures:
+    objective: >
+      Building a framework for identifying and analyzing internal and external risks and identifying the probability and consequences to decrease the level of impact and increase the probability of their occurrence.
+    steps:
+      - the_scope_and_objectives
+      - the_framework_and_criteria
+      - the_likelihood_and_probability_scale_of_risks_and_threats
+      - the_impact_scale
+      - the_risk_map
+      - the_methodology_of_identifying_analyzing_and_evaluating_internal_and_external_risks_and_threats
+      - the_methodology_for_measuring_the_impact_of_risks
+      - the_risk_catalogues_and_sub-categories
+      - the_KRIs_and_reviews
+      - the_reporting_procedures
+      - design_the_RM_framework_and_procedures
+      - updating_and_evaluating_the_RM_system
+      - defining_the_risk_management_framework_with_the_services_provided_by_the_entity
+      - defining_the_risk_indicators_KRI_methodology
+      - creating_a_risk_register
+  5_risk_assessment_and_treatment:
+    objective: >
+      Identifying and assessing the internal and external risks, their impact and their probability of occurrence and identifying and assessing the internal and external risks.
+    steps:
+      - measuring_the_likelihood_of_the_occurrence_of_risks_that_may_affect_the_operations_and_functions_of_the_entity
+      - presenting_the_results_of_identifying_and_visualizing_risks_and_threats_to_the_RMSC
+  6_risk_treatment:
+    objective: >
+      Develop appropriate treatments to reducing the likelihood of their occurrence and mitigating the impact of the risk.
+    steps:
+      - determine_the_appropriate_treatments_to_respond_to_the_risk
+      - define_and_decide_the_treatment_to_each_risk
+      - identify_any_implications_for_the_risk_treatment_plan
+      - identify_the_costs_and_benefits_of_the_proposed_treatments
+      - all_information_should_be_monitored_and_documented_to_ensure_its_regular_update
+      - presenting_the_results_of_assessing_and_mitigating_the_risks_and_threats_to_the_RMSC
+      - reviewing_and_monitoring_the_response_plans_on_an_ongoing_basis_to_ensure_their_effectiveness
+  7_reviewing_monitoring_and_follow_up:
+    objective: >
+      Review and monitor the risks to ensure the effectiveness of the risk assessment and implementation of the RM system.
+    steps:
+      - review_and_monitor_the_risks
+      - sending_reports_periodically_to_the_RM_department
+  8_risk_management_training_and_improvement:
+    objective: >
+      Educate all employees and stakeholders to increase the achievement of the RM strategy and ensure the achievement of the RM objectives.
+    steps:
+      - educate_all_employees_and_stakeholders_through_awareness_sessions
+      - awareness_such_as_through_the_RM_policies_and_procedures
+      - RM_training_programs
+      - knowledge_and_awareness
+      - RM_policy
+      - impact_of_not_supporting_the_RM_program
+  9_documentation_and_continues_improvement:
+    objective: >
+      Documenting the lessons learned from implementing the RM framework and identifying possible risks and opportunities.
+    steps:
+      - developing_and_reviewing_the_RM_documents
+      - escalate_the_results_of_internal_and_external_audits_to_top_management_and_the_RMSC
+      - ensure_continues_governance_and_continues_improvement
+      - self-assessment
+      - administrative_audit
+      - performance_evaluation
+      - reviewing_the_RM_program
