@@ -3,7 +3,7 @@ Purpose: >
 Scope: >
   These standards cover <organization name>’s best practices in DDoS protection solution deployment and usage and applies to all assets and all personnel (employees and contractors) in <organization name>.
 Standards:
-  1:
+  - id: 1
     title: General Requirements
     Objective: >
       The DDoS protection solution must be securely deployed and used appropriately when required.
@@ -32,7 +32,7 @@ Standards:
         DDoS Response and mitigation plan should be established in accordance with the relevant legislative and regulatory requirements.
       1-11: >
         <organization name> must perform periodic training for employees to ensure that they know how to choose the right mitigation service and measure training effectiveness based on reviewing the KPIs annually.
-  2:
+  - id: 2:
     title: Attack prevention
     Objective: >
       Properly configured and securely managed DDoS protection solution must prevent attempts to DDoS attack on <organization name> infrastructure.
@@ -49,7 +49,7 @@ Standards:
         DDoS protection solution must offer multi-layered protection. When deployed with a web application firewall (WAF), DDoS Protection solution protects both at the network layer and at the application layer.
       2-5: >
         DDoS protection solution must use security feeds delivered by national trusted organizations like National Cybersecurity Authority (NCA).
-  3:
+  - id: 3:
     title: Attack detection, alerting and mitigation
     Objective: >
       DDoS protection solution must detect anomalies and use filtering and limiting techniques to mitigate attacks.
@@ -78,7 +78,7 @@ Standards:
         DDoS protection solution must attribute malicious behavior to a specific IP address and perform forensic analysis to determine how threats have moved laterally within an environment.
       3-11: >
         DDoS protection solution must constantly monitor network activity to detect traffic anomalies, such as unusual growth of network throughput or higher-than-usual usage of network resources.
-  4:
+  - id: 4:
     title: Other Standards
     Objective: >
       The DDoS protection solution must be securely configured, deployed and used appropriately according to best practices and compliant to standards and relevant policies security environment.
