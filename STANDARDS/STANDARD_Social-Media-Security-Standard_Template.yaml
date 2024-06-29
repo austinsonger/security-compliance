@@ -1,0 +1,273 @@
+purpose: >
+  This standard aims to define how <organization name> must ensure social media security in terms of setting up, running, publishing content at, and monitoring of <organization name>’s social media accounts on social media platforms. The ability of <organization name> to use social media in accordance with this standard will assist in preserving the availability, integrity, and confidentiality of <organization name>’s data and information.
+
+scope: >
+  This standard covers all <organization name>’s information technology assets and applies to all personnel (employees and contractors) in <organization name>.
+  
+standards:
+  - id: 1
+    title: Asset Management
+    objective: >
+      To ensure that the <organization name> has an accurate and detailed inventory of information and technology assets related to social media in order to support the <organization name>’s cybersecurity and operational requirements to maintain the confidentiality, integrity, and availability of information and technology assets.
+    risk_implication: >
+      If <organization name>’s inventory on information and technology assets related to social media is not properly managed, this can result in lack of control over social media usage, confidentiality breaches, and data leaks.
+    requirements:
+      - id: 1-1
+        description: >
+          <organization name>’s social media accounts, and information and technology assets related to them, must be identified and inventoried. The inventory must be updated at least once a year.
+      - id: 1-2
+        description: >
+          Once a new <organization name>’s social media account is created, it must be added to the inventory.
+      - id: 1-3
+        description: >
+          If <organization name>’s social media account is deleted, it must be accordingly marked in the inventory.
+
+  - id: 2
+    title: Identity and Access Management
+    objective: >
+      To ensure the secure and restricted logical access to <organization name>’s information and technology assets in order to prevent unauthorized access and allow only authorized access for users which are necessary to accomplish assigned tasks related to social media.
+    risk_implication: >
+      If access to <organization name>’s information and technology assets related to social media is not properly managed, this can result in credential exposure, unauthorized access, and serious reputational damage.
+    requirements:
+      - id: 2-1
+        description: >
+          When setting up the account, only social media accounts designated for organizations, not individuals must be used. If possible, official <organization name>’s social media accounts must be verified and marked accordingly by social media providers.
+      - id: 2-2
+        description: >
+          Registration for social media must be performed only by using official information (official specific social media email and official mobile number), and not personal information.
+      - id: 2-3
+        description: >
+          Email addresses published publicly for contact purposes on official <organization name>’s social media accounts must be generic and nonspecific rather than resembling organizational email addresses of the <organization name>’s personnel.
+      - id: 2-4
+        description: >
+          Different email addresses must be used for each official <organization name>’s social media account.
+      - id: 2-5
+        description: >
+          <organization name>’s social media accounts must be verified whenever possible and a consistent identity across all <organization name>’s social media accounts used must be maintained; to facilitate knowledge of official accounts, and to discover fraud or unofficial accounts.
+      - id: 2-6
+        description: >
+          Only secure, specific, and unique passwords for each <organization name>’s social media account must be used. The password must be changed regularly, and the use of passwords must not be repeated.
+      - id: 2-7
+        description: >
+          Passwords must not be copied or shared under any circumstances neither outside nor within <organization name>.
+      - id: 2-8
+        description: >
+          Multi-factor authentication must be used for <organization name>’s social media accounts logins.
+      - id: 2-9
+        description: >
+          If possible, Single Sign-On (SSO) must be implemented for all official <organization name>’s social media accounts.
+      - id: 2-10
+        description: >
+          Security questions must be activated, regularly updated, and documented in a safe place.
+      - id: 2-11
+        description: >
+          <organization name>’s social media accounts access rights must be managed based on business need, considering the sensitivity of the accounts, the level of access rights, and the type of devices and systems used.
+      - id: 2-12
+        description: >
+          Access to official <organization name>’s social media accounts must be available for authorized personnel only, upon request and verification.
+      - id: 2-13
+        description: >
+          If possible, access to each official <organization name>’s social media account must be granted to at least two authorized people.
+      - id: 2-14
+        description: >
+          If possible, relevant roles must be set for people with access to official <organization name>’s social media accounts, determining their management rights and permissions in terms of account operating.
+      - id: 2-15
+        description: >
+          Access rights of service providers of social media management, social media monitoring, or brand protection must be restricted to minimum.
+      - id: 2-16
+        description: >
+          Access to <organization name>’s social media accounts must be restricted to specific devices.
+      - id: 2-17
+        description: >
+          User identities and access rights used for <organization name>’s social media accounts must be reviewed at least once a year.
+      - id: 2-18
+        description: >
+          Personnel must be informed that accessing official <organization name>’s social media accounts must be performed only when necessary and the personnel must sign off once the official <organization name>’s social media account is not used by them.
+
+  - id: 3
+    title: Information System and Processing Facilities Protection
+    objective: >
+      To ensure the protection of information systems and information processing facilities (including workstations and infrastructures) against cyber risks related to social media.
+    risk_implication: >
+      If <organization name>’s information systems and information processing facilities are not properly protected against cyber risks related to social media, this can result in cyber-attacks, data leakage, and data loss.
+    requirements:
+      - id: 3-1
+        description: >
+          Applications for social media must be downloaded and installed only from known and trusted sources.
+      - id: 3-2
+        description: >
+          Updates and security patches for social media applications used in <organization name> must be applied at least once a month (if available).
+      - id: 3-3
+        description: >
+          Reviews and hardening of configurations of <organization name>’s social media accounts and technology assets related to them must be performed at least once a year.
+      - id: 3-4
+        description: >
+          Reviews and hardening of default configurations, such as default passwords, pre-login, and lockout, for <organization name>’s social media accounts and technology assets related to them must be performed at least once a year.
+      - id: 3-5
+        description: >
+          Restriction of activation of features and services in social media accounts on a need basis and carrying out risk assessment if there is a need to activate it must be ensured.
+
+  - id: 4
+    title: Mobile Device Security
+    objective: >
+      To ensure the protection of mobile devices (including laptops, smartphones, tablets) from cyber risks and to ensure the secure handling of the <organization name>’s information (including sensitive information) while utilizing Bring Your Own Device (BYOD) policy.
+    risk_implication: >
+      If mobile devices are not properly protected against cyber risks and adequately managed, this can result in confidentiality breach and unauthorized access.
+    requirements:
+      - id: 4-1
+        description: >
+          Mobile devices for <organization name>’s social media accounts must be managed centrally using a Mobile Device Management system (MDM).
+      - id: 4-2
+        description: >
+          Updates and security patches on mobile devices used for <organization name>’s social media presence must be applied at least once a month (if available).
+      - id: 4-3
+        description: >
+          Mobile devices used for <organization name>’s social media presence must be adequately protected using either password or biometrics.
+      - id: 4-4
+        description: >
+          Accessing official <organization name>’s social media accounts must be performed only from a device compliant with <organization name>’s related policies.
+      - id: 4-5
+        description: >
+          Accessing official <organization name>’s social media accounts must be performed only from a trusted network.
+      - id: 4-6
+        description: >
+          Official <organization name>’s social media accounts must be accessed only using secure sessions (HTTPS).
+      - id: 4-7
+        description: >
+          In case a mobile device used for <organization name>’s social media presence is lost or damaged, this event must be timely reported in order to implement relevant corrective measures.
+
+  - id: 5
+    title: Data and Information Protection
+    objective: >
+      To ensure the confidentiality, integrity, and availability of <organization name>’s data and information as per organizational policies and procedures, and related laws and regulations.
+    risk_implication: >
+      If <organization name>’s data and information is not properly protected and privacy settings are misconfigured, this can result in confidentiality breach, reputational damage, and legal implications.
+    requirements:
+      - id: 5-1
+        description: >
+          Technology assets for management of <organization name>’s social media accounts must not contain classified data, per relevant regulations.
+      - id: 5-2
+        description: >
+          Before setting up and using the official <organization name>’s social media accounts, relevant privacy policies and rules of social media providers must be read, understood, and accepted. If these privacy policies and rules are not acceptable by <organization name>, relevant risks must be assessed and then either accepted or relevant official <organization name> social media accounts must not be created.
+      - id: 5-3
+        description: >
+          Privacy policies and rules of social media providers must be read, understood, and accepted upon any changes during usage of the official <organization name>’s social media accounts. If these privacy policies and rules are no longer acceptable by <organization name> after introduced changes, relevant risks must be assessed and then either accepted or relevant official <organization name>’s social media accounts must be deleted.
+      - id: 5-4
+        description: >
+          Official <organization name>’s social media accounts default privacy settings must be reviewed and adjusted to balance between the purpose of the account and the <organization name>’s internal privacy requirements.
+      - id: 5-5
+        description: >
+          Geo-location feature must be disabled for official <organization name>’s social media accounts and not be added to published content.
+      - id: 5-6
+        description: >
+          Sensitive information, in particular:
+          - <organization name>’s confidential information
+          - personal data
+          must not be disclosed without approval in social media under any circumstances. Such information may be published only, if necessary, upon written approval, and by authorized personnel of <organization name>.
+      - id: 5-7
+        description: >
+          Only validated and reviewed information or announcements must be published using official <organization name>’s social media accounts.
+      - id: 5-8
+        description: >
+          All images, photos, and files published using official <organization name>’s social media accounts must be either with rights owned by <organization name> or copyright free.
+      - id: 5-9
+        description: >
+          Any content reposted or forwarded via the official <organization name>’s social media accounts must be from known and trusted sources.
+
+  - id: 6
+    title: Cybersecurity Events Logs and Monitoring Management
+    objective: >
+      To ensure timely collection, analysis, and monitoring of cybersecurity events for early detection of potential cyber-attacks in order to prevent or minimize the negative impacts on the <organization name>’s operations.
+    risk_implication: >
+      If collection of logs and monitoring of events related to social media is not properly managed, this can result in vulnerability to cyber-attacks and reputational damage.
+    requirements:
+      - id: 6-1
+        description: >
+          All notifications and cybersecurity alerts for <organization name>’s social media accounts and cybersecurity events logs on related technology assets must be activated.
+      - id: 6-2
+        description: >
+          <organization name>’s social media accounts must be followed and monitored to ensure that they do not post any unauthorized content, or login any unauthorized access. Each official <organization name>’s social media account must be monitored, even if currently unused.
+      - id: 6-3
+        description: >
+          Social media networks must be monitored to ensure the <organization name> is not being impersonated.
+      - id: 6-4
+        description: >
+          Usage of official <organization name>’s social media account must be monitored in terms of permission rights granted to various applications.
+      - id: 6-5
+        description: >
+          Content published using official <organization name>’s social media accounts must be regularly monitored and reviewed to check whether it is aligned with internal requirements.
+      - id: 6-6
+        description: >
+          Destination of outgoing communication from official <organization name>’s social media accounts must be regularly monitored.
+      - id: 6-7
+        description: >
+          Social media must be regularly scanned for <organization name>’s secrets, confidential information, and unapproved use of branding.
+      - id: 6-8
+        description: >
+          Automated monitoring for any change in the accounts pattern, indicators of compromise, or the publication of any unauthorized content or impersonation of the <organization name> must be performed.
+      - id: 6-9
+        description: >
+          Social media monitoring must be configured in a way that enables integration with <organization name>’s brand monitoring and protection services (if provided within <organization name>).
+
+  - id: 7
+    title: Cybersecurity Incident and Threat Management
+    objective: >
+      To ensure timely identification, detection, effective management, and handling of cybersecurity incidents and threats related to social media to prevent or minimize negative impacts on <organization name>’s operation.
+    risk_implication: >
+      If <organization name>’s inventory on information and technology assets related to social media is not properly managed, this could lead to negative effects.
+    requirements:
+      - id: 7-1
+        description: >
+          A plan to recover the <organization name>’s social media accounts and to deal with cyber incidents must be developed.
+      - id: 7-2
+        description: >
+          Any incident regarding official <organization name>’s social media accounts, especially:
+          - Social media deception
+          - Brand impersonation
+          - Confidential information leaks
+          - Credentials theft
+          must be handled according to the <organization name>’s Incident Response plans and procedures.
+      - id: 7-3
+        description: >
+          Personnel with access to official <organization name>’s social media accounts must be aware of how to report suspicious or unusual events and incidents related to social media presence, so they would be adequately handled.
+
+  - id: 8
+    title: Third-Party Cybersecurity
+    objective: >
+      To ensure the protection of assets against the cybersecurity risks related to third parties including outsourcing and managed services in social media area as per organizational policies and procedures, and related laws and regulations.
+    risk_implication: >
+      If <organization name>’s assets are not properly protected against the risks related to third parties in social media, this can result in unauthorized access, data loss or leakage, reputational damage, and financial losses.
+    requirements:
+      - id: 8-1
+        description: >
+          A need assessment for the use of social media management, automated monitoring, or brand protection services along with associated cybersecurity risks must be conducted.
+      - id: 8-2
+        description: >
+          Non-disclosure clauses and secure removal of <organization name>’s data by the third-party upon service termination must be ensured.
+      - id: 8-3
+        description: >
+          Communication procedures to report vulnerabilities and cyber incidents related to social media are established and implemented.
+      - id: 8-4
+        description: >
+          Requirements for the third-party to comply with cybersecurity requirements and policies to protect <organization name>’s social media accounts, and related laws and regulations are followed.
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
