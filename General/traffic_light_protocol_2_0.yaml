@@ -1,0 +1,70 @@
+traffic_light_protocol_2_0:
+  intro:
+    description: >
+      TLP is a set of four labels used to indicate the sharing boundaries to be applied by the recipients.
+      TLP provides a simple and intuitive schema for indicating with whom potentially sensitive information can be shared.
+    notes:
+      - TLP_is_not_a_formal_classification_scheme
+    official_website: www.first.org/tlp
+    current_version: TLP_2.0
+    current_version_date: November_1_2022
+  terms:
+    - community: >
+        A group who share common goals, practices, and informal trust relationships.
+        A community can be as broad as all cybersecurity practitioners in a country (or in a sector or region).
+    - organization: >
+        A group who share a common affiliation by formal membership and are bound by common policies set by the organization.
+        An organization can be as broad as all members of an information sharing organization, but rarely broader.
+    - clients: >
+        Clients are those people or entities that receive cybersecurity services from an organization.
+        Clients are by default included in TLP:AMBER so that the recipients may share information further downstream in order for clients to take action to protect themselves.
+  brand_book:
+    color:
+      - TLP:RED: RGB_255_43_43
+      - TLP:AMBER: RGB_255_192_0
+      - TLP:GREEN: RGB_51_255_0
+      - TLP:CLEAR: RGB_255_255_255
+    notes:
+      - MUST_not_contain_spaces_and_SHOULD_be_in_capitals
+  how_to_use:
+    documents:
+      - in_the_header_and_footer_of_each_page
+      - SHOULD_be_in_12-point_type_or_greater
+    automated_information_exchanges:
+      - not_defined
+    emails_and_chats:
+      - TLP_label_SHOULD_be_in_the_subject_line_of_email
+      - use_a_pinned_message_or_rules_of_behavior_document_for_standing_chat_channels
+    verbal_discussions:
+      - speakers_may_designate_the_information_they_are_communicating_at_a_TLP_level_and_if_needed_caveat
+      - participants_should_assume_information_is_TLP:CLEAR_if_the_speaker_does_not_provide_a_designation
+  TLP:
+    TLP:RED:
+      description: >
+        For the eyes and ears of individual recipients only, no further disclosure.
+        When information cannot be effectively acted upon without significant risk for the privacy, reputation, or operations of the organizations involved.
+      notes:
+        - Recipients_may_therefore_not_share_TLP:RED_information_with_anyone_else
+        - In_the_context_of_a_meeting_for_example_TLP:RED_information_is_limited_to_those_present_at_the_meeting
+    TLP:AMBER:
+      description: >
+        Limited disclosure, recipients can only spread this on a need-to-know basis within their organization and its clients.
+        Recipients may share TLP:AMBER information with members of their own organization and its clients, but only on a need-to-know basis to protect their organization and its clients and prevent further harm.
+    TLP:AMBER+STRICT:
+      description: >
+        Restricts sharing to the organization only.
+      notes:
+        - new_v2.0
+    TLP:GREEN:
+      description: >
+        Limited disclosure, recipients can spread this within their community.
+        When information is useful to increase awareness within their wider community.
+      notes:
+        - Recipients_may_share_TLP:GREEN_information_with_peers_and_partner_organizations_within_their_community_but_not_via_publicly_accessible_channels
+        - May_not_be_shared_outside_of_the_community
+        - When_community_is_not_defined_assume_the_cybersecurity_community
+    TLP:CLEAR:
+      description: >
+        Recipients can spread this to the world, there is no limit on disclosure.
+      notes:
+        - TLP_WHITE_was_TLP_1.0
