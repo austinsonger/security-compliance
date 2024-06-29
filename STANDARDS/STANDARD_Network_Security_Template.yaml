@@ -1,116 +1,235 @@
 purpose:
   description: >
-    This standard aims to define the detailed cybersecurity requirements related to Mobile Devices protection for <organization name> and Bring Your Own Device "BYOD" in order to minimize cyber risks resulting from internal and external threats at <organization name>.
+    This standard aims to define detailed cybersecurity requirements to protect <organization name> networks security to achieve the main objective which is minimizing cybersecurity risks resulting from internal and external threats.
 scope:
   description: >
-    This standard covers all Mobile Devices at <organization name> and all BYOD and applies to all personnel (employees and contractors) at <organization name>.
+    This standard covers <organization name>'s information technology networks systems and applies to all its personnel (employees and contractors).
 standards:
-  - Device_Access_Locking:
-      objective: To ensure that unattended, lost and/or stolen devices cannot be accessed by unauthorized users.
+  - Secure_Access:
+      objective: >
+        To ensure the right security configuration is applied to the network security administration interfaces for effective protection against network security attacks.
       risk_implication: >
-        In case of unauthorized access to a mobile device owned by <organization name> and containing information pertaining to <organization name>, or if privileges are granted to access <organization name>'s IT environment, any potential work-related penetration could impact the department according to incident's severity.
+        Inadequate configuration of network security administration interfaces solution may result in undetected attacks or compromise of network devices inside the <organization name>’s environment.
       requirements:
         - 1-1: >
-            Set up complex passcode configurations to be consisting of both upper-case letters, lower-case letters, numbers and special characters. Simple passcodes consisting of consecutive or sequential characters (e.g., 0000, 1234, 9876, etc.) must be prohibited. Passcodes consisting of additional character sets or greater lengths are recommended.
+            Secure Access for Networks must be implemented in accordance with the <organization name>’s approved identity and Access Management standard.
         - 1-2: >
-            Whenever possible, additional authentication factor must be implemented to lock/unlock the mobile device (e.g., facial recognition, swiping pattern, fingerprint, One-Time-Password, etc.).
+            An access list must be configured to protect all network segments from Layer-3 IP address spoofing.
         - 1-3: >
-            The passcode for the mobile device must be changed periodically or at least every three months.
-        - 1-4: >
-            Users must be prohibited from modifying or disabling security locking mechanisms.
-        - 1-5: >
-            The device auto-lock mechanism must be set to lock the device when it is idle and not being used for no more than 90 seconds or as per <organization name>’s requirements.
-
-  - Device_Contents_Integrity:
-      objective: Apply a standard mechanism to prevent unintentional or harmful modifications to the contents of data stored on the device.
+            Restrict wireless network administrators’ access to use dedicated Privileged Access Workstations (PAWs) or jump servers placed in an out-of-band management network, segmented from <organization name>’s network and isolated from the internet. Access through wireless network must be prohibited.
+  - Network_Segregation:
+      objective: >
+        To ensure the network design and architecture is secure and the network segments are protected according to their security level through network segregation.
       risk_implication: >
-        If data stored on the device are tampered with, corrupted, or modified, neither the device nor stored data can be considered credible assets that may be used within <organization name>'s IT environment.
+        Networks without segregation share the same broadcast domain and devices will be able to communicate without policing or inspecting the traffic, therefore, any attack on any system could lead to serious internal threats and attacks on most systems of the network facilitating lateral movement within the network.
       requirements:
         - 2-1: >
-            If the mobile device supports it, full device contents encryption must be enabled.
+            A logically and/or physically segmented network must be designed and implemented, taking into consideration business needs and enterprise architecture, and based on the principles of defense-in-depth and multi-tier architecture.
         - 2-2: >
-            If supported by personal mobile devices (BYOD), data segregation between personal information and data owned by the <organization name> must be enabled and enforced. Additionally, segregated data must be encrypted.
+            Appropriate level of security controls must be applied to different network segments based on the value and classification of information stored or processed in the network, levels of trust, business impact and associated risks.
         - 2-3: >
-            BIOS bootloader passwords must be configured.
+            Multi-tier architecture protected by dual layer of firewalls must be implemented. Specifically, the network must be segmented into three or more layers (boundary/perimeter, core and trusted) and the network segments must be divided into zones (demilitarized zone “DMZ”, management zone, production zone, database zone, development/testing zone, etc.) as per <organization name>’s enterprise architecture and security architecture.
         - 2-4: >
-            If the mobile device supports it, locking Bootloader must be enabled.
+            Networks must be designed and configured to filter traffic between different segments and block any unauthorized access.
         - 2-5: >
-            Encryption must be configured and enforced on any removable storage (e.g., SD cards or USB) that can be accessed by mobile devices.
+            Servers or data stores with sensitive information must be placed in dedicated separate network segments.
         - 2-6: >
-            The device must be set up to perform automatic lockout after five failed passcode entry attempts, and to perform data wiping after ten failed passcode entry attempts or as supported by the device operating system.
+            Firewalls and routers must be configured to prevent any unauthorized connections between untrusted networks and any system components storing confidential information.
         - 2-7: >
-            Wiping data remotely from lost/stolen devices must be enabled.
+            Levels and boundaries must be defined and implemented for each security zone.
         - 2-8: >
-            Modifying or disabling Bootloader locking by users must be prohibited.
+            An out-of-band management network zone or segment, including all administration servers, machines with administrative access, Secure Shell (SSH) servers, jump servers and Privileged Access Workstations (PAWs), must be defined and implemented.
         - 2-9: >
-            Rooting or jailbreaking a mobile device must be prohibited, and the use of rooted or jailbroken devices within <organization name>’s IT environment must also be prohibited.
-  - Device_OS_and_Applications_Security:
-      objective: To update and configure the operating system and applications installed on mobile devices properly prior to use.
+            Wireless networks must be segregated from the internal network, isolated networks and private networks.
+        - 2-10: >
+            Servers, networks and production, test, and trusted environments used for developing, testing, scanning and storing data and any other related activities, must be clearly identified and segregated from other networks.
+        - 2-11: >
+            Segments of critical systems must be logically isolated from other environments.
+        - 2-12: >
+            Critical systems must be prevented from connecting to the wireless network.
+        - 2-13: >
+            Critical systems that offer internal services which do not require remote or Internet access must be prevented from connecting to the Internet.
+        - 2-14: >
+            Security configurations, rules, policies and profiles for firewalls and routers that support critical networks must be reviewed at least every six months.
+  - Boundary_Defense:
+      objective: >
+        To protect the network boundary from cyber threats.
       risk_implication: >
-        Installing unauthorized applications or failure to update operating systems and mobile devices' applications increases the likelihood of malware that could affect <organization name>'s IT environment.
+        If the network boundary is left unprotected without the proper security controls, external attackers could easily breach the internal network and impose further serious threats.
       requirements:
         - 3-1: >
-            Application installation must be allowed only from the organization approved applications or Vendor approved stores.
+            An up-to-date inventory of all of <organization name>’s network boundaries must be maintained.
         - 3-2: >
-            The permissions assigned to applications installed on a mobile device must be restricted, and the principle of Least Privilege must be applied.
+            Regular scans from outside each trusted network boundary must be performed to detect any unauthorized connections that can be accessed across the boundary.
         - 3-3: >
-            Camera and Microphone must be disabled by default and access to them should be allowed based on need.
+            Communications with known malicious or unused Internet IP addresses must be denied, and access must be limited to trusted and necessary IP address ranges at each of <organization name>’s network boundaries.
         - 3-4: >
-            Application digital signatures must be verified before installation.
+            Communication over unauthorized TCP or UDP ports or application traffic must be denied to ensure that only authorized protocols are allowed to cross the network boundary in or out of the network at each of <organization name>’s network boundaries.
         - 3-5: >
-            The mobile device must be updated to last Operating Systems (OS) versions/releases provided by the device vendor. If a device cannot be further updated to a newer OS, and the vendor has not provided security patches for the device in the last two years, the mobile device must be decommissioned and replaced.
+            Monitoring systems must be configured to record network packets passing through the boundary at each of <organization name>’s network boundaries.
         - 3-6: >
-            Security Content Automation Protocol (SCAP) must be utilized to audit and verify all security configuration elements within the mobile devices, catalog approved exceptions, and report any unauthorized changes.
+            Network-based Intrusion Detection Systems (IDS) sensors must be deployed to detect any unusual attack mechanisms and detect any compromise of these systems at each of <organization name>’s network boundaries.
         - 3-7: >
-            Users must not be able to modify or remove any secure configuration on the mobile device.
+            Network-based Intrusion Detection and Prevention Systems (IDPS) must be deployed to block malicious network traffic at each of <organization name>’s network boundaries.
         - 3-8: >
-            Disabling or removal of default accounts, and limiting access to accounts with high privilege based on identity and Access Management Policy.
+            Network-based Advanced Persistent Threat (APT) detection/prevention systems must be deployed to detect or block malicious network attacks and zero-day attacks at each of <organization name>’s network boundaries.
         - 3-9: >
-            A Minimum-Security Baseline for mobile devices must be developed, implemented and regularly monitored.
+            Application inspection firewall must be deployed to block applications that are not whitelisted, unknown or non-compliant with security controls (for example, applications communicating over UDP/53 while not being compliant with DNS protocol) at each of <organization name>’s network boundaries.
         - 3-10: >
-            A regular full backup of data stored on the mobile devices must be performed as per <organization name>’s Backup Policy.
+            Web Application Firewall (WAF) must be placed to analyze, filter, monitor, and block unauthorized Internet traffic to and from a web application.
         - 3-11: >
-            Mobile devices must be regularly patched and updated as per <organization name>’s Workstation and Mobile Device Security Policy and Patch Management Policy to ensure that all OS and application software is up-to-date.
+            Acceptable and approved encryption protocols such as some types of Transport Layer Security (TLS) must be configured to terminate on any WAF device to inspect decrypted traffic. If the device does not support TLS offloading, WAF must sit behind a decryption device to inspect decrypted traffic. Otherwise, a host-based web application firewall must be deployed.
         - 3-12: >
-            Hardware controls must be implemented and access to removable media must be blocked where necessary or as per <organization name>’s Acceptable Use Policy.
+            The collection of NetFlow and logging data must be enabled on all network boundary devices.
         - 3-13: >
-            Device control software must be implemented on all mobile devices to prevent unauthorized use of network communication tools (Wi-Fi, Bluetooth, etc.) or peripheral devices.
+            All network traffic to/from the Internet must pass through an authenticated application layer proxy that is configured to filter unauthorized connections.
         - 3-14: >
-            Disabling all information and file sharing features such as (Airdrop, NFC, and Bluetooth, etc.).
+            Only specific and whitelisted URL categories must be allowed to users. Access to hacking, malware, proxy, anonymizers, phishing, suspicious, unknown, and uncategorized URLs must be disabled.
         - 3-15: >
-            Protection software including antivirus, antimalware, application whitelisting and data leakage prevention software must be installed on all mobile devices.
+            All encrypted Internet browsing traffic at the boundary proxy must be decrypted prior to analyzing the content. However, <organization name> may use whitelists of allowed sites that can be accessed through the proxy without decrypting the traffic.
         - 3-16: >
-            Watermark feature must be used on users’ screen.
+            All remote login access to <organization name>’s network must be configured to encrypt data in transit. Additionally, Multi-Factor Authentication must be used.
         - 3-17: >
-            Workstation secure configuration and hardening, including software and operating system level hardening, must be implemented in accordance with <organization name>’s Secure Configuration and Hardening Policy.
-  - Other_Standard_controls:
-      objective: Implement all mobile devices security standard controls and requirements to ensure the highest protection levels.
+            A remote access device that uses technologies such as Virtual Private Network (VPN), or SSL-VPN solutions must be deployed to terminate and protect all remote access to <organization name>’s network.
+        - 3-18: >
+            All devices remotely logging into <organization name>’s network must be scanned prior to accessing the network to ensure that all of <organization name>’s security policies have been enforced in the same manner used on local network devices.
+        - 3-19: >
+            Denial of Service (DoS) and Distributed DoS (DDoS) detection/prevention technologies must be deployed (on-prem or by a third party) to detect or block DoS attacks at each of <organization name>’s network boundaries.
+        - 3-20: >
+            Domain Name System (DNS) security technologies must be deployed to detect and block DNS attacks at each of <organization name>’s network boundaries.
+        - 3-21: >
+            Domain Name System (DNS) query logging must be enabled to detect hostname lookups for known malicious domains.
+        - 3-22: >
+            Email security gateway must be deployed to detect and block email-based attacks at each of <organization name>’s network boundaries.
+        - 3-23: >
+            All subscription services, URL categories, threat feeds, blacklists, and signatures must be up-to-date and updated regularly.
+  - Limitations_and_Controls:
+      objective: >
+        To minimize sources of attacks and protect the internal network from threats.
       risk_implication: >
-        Failure to implement all security standard controls and requirements exposes <organization name> to increased mobile devices security risks.
+        Weak internal network and its associated constraints and controls increase the risk of internal threats and network lateral movement.
       requirements:
         - 4-1: >
+            Active ports, services and protocols must be associated with the hardware assets in the asset inventory.
+        - 4-2: >
+            Only network ports, protocols, and services listening on a system with validated business needs must be running on each system.
+        - 4-3: >
+            Automated port scans must be performed on a regular basis against all systems, and alerts must be raised upon the detection of unauthorized ports on a system.
+        - 4-4: >
+            Host-based firewalls or port filtering tools must be applied on end systems, with a default-deny rule that drops all traffic except those services and ports that are explicitly allowed.
+        - 4-5: >
+            A datacenter firewall must be deployed to inspect and monitor inter-VLAN, trust-to-untrust, zone-to-zone, segment-to-segment, and east-west communications to protect the internal network and block internal attacks.
+        - 4-6: >
+            Firewall policies and rules model must be configured to follow positive security model (whitelisting model) by blocking all traffic by default and only allowing specific traffic to identified services. This can be achieved by configuring the last rule in an access control list to deny all traffic. In addition, this can be performed explicitly or implicitly, depending on the platform.
+        - 4-7: >
+            Datacenter firewall must be configured with application identification (Layer4-Layer7), and application whitelisting and blacklisting.
+        - 4-8: >
+            Firewall rules must be configured with user identification to build policies based on User identity (UID).
+        - 4-9: >
+            In case <organization name> network is IPv4 based, Layer 2 security controls must be deployed to protect the internal network.
+        - 4-10: >
+            Private/Isolated VLANs must be configured for critical network segments or isolated segments.
+        - 4-11: >
+            Networks or segments of critical systems must not be allowed to access any system in the environment unless they are scanned, and if required security controls are applied and security posture of the system is verified.
+        - 4-12: >
+            Communications network must be isolated by placing it in appropriate separate VLANs based on function and leveraging private VLANs or micro-segmentation.
+  - Wireless_Access:
+      objective: >
+        To implement appropriate security controls for the use and protection of wireless networks.
+      risk_implication: >
+        If the wireless network is left unprotected, <organization name> will be exposed to the risks of unauthorized connection to the network or data disclosure.
+      requirements:
+        - 5-1: >
+            A comprehensive risk assessment exercise must be conducted to evaluate the risks of connecting wireless networks to the internal network.
+        - 5-2: >
+            An inventory of authorized wireless access points connected to the wired network must be maintained.
+        - 5-3: >
+            Network vulnerability scanning tools must be configured to detect and alert on unauthorized wireless access points connected to the wired network.
+        - 5-4: >
+            Wireless Intrusion Detection System (WIDS) must be used to detect/prevent and alert on unauthorized wireless access points connected to the wired network.
+        - 5-5: >
+            Wireless access on devices that do not have a business purpose for wireless access must be disabled.
+        - 5-6: >
+            Wireless access on client machines that do not have a business need for wireless access must be configured to allow access to authorized wireless networks only, and to restrict access to other wireless networks.
+        - 5-7: >
+            Peer-to-peer (ad hoc) wireless network capabilities must be disabled on wireless clients.
+        - 5-8: >
+            Wireless access points and wireless devices must be configured to connect to the wireless network using secure protocol such as WPA3.
+        - 5-9: >
+            Wireless networks must use authentication protocols such as Extensible Authentication Protocol-Transport Layer Security (EAP/TLS) that requires mutual Multi-Factor Authentication.
+        - 5-10: >
+            Wireless access of peripheral devices (such as Bluetooth and NFC) must be disabled unless such access is required for a business purpose.
+        - 5-11: >
+            A separate wireless network must be created for personal or untrusted devices. Enterprise access from this network must be treated as untrusted and must be filtered and audited accordingly.
+  - Cryptography:
+      objective: >
+        To ensure the confidentiality of network data traffic and verify its confidentiality against unauthorized access and sensitive information disclosure.
+      risk_implication: >
+        Lack of proper security technologies to ensure the encryption of network data may expose the <organization name>'s data to high cyber risks as a result of unauthorized access.
+      requirements:
+        - 6-1: >
+            Network Cryptography must be implemented in accordance with <organization name>’s approved Cryptography standard.
+        - 6-2: >
+            The use of secure encrypted management protocols, such as Secure Shell (SSH) v2 and Remote Desktop Protocol (RDP) over TLS, must be enforced.
+        - 6-3: >
+            Sensitive and confidential network traffic must be encrypted by using next generation encryption cipher suites (such as Suite B cryptography) in accordance with <organization name>’s approved Cryptography standard.
+        - 6-4: >
+            Remote access traffic over IPsec or TLS must be encrypted with next generation encryption cipher suites (such as Suite B cryptography) in accordance with <organization name>’s approved Cryptography standard.
+        - 6-5: >
+            Application protocols must be configured to use encryption wherever applicable (HTTPS, FTP over SSL, LDAP over SSL, etc.)
+  - Hardware_and_Software_Integrity_Validation:
+      objective: >
+        To ensure that all network software and hardware come from legal sources and that they have not been tampered with and verified.
+      risk_implication: >
+        Intrusion in the supply chain is an opportunity to deploy and install malicious software and hardware within <organization name> network. Compromised software and hardware may affect the network's performance and jeopardize <organization name>’s data confidentiality, integrity and availability.
+      requirements:
+        - 7-1: >
+            All physical network devices must be scanned for signs of tampering upon installation.
+        - 7-2: >
+            Software, updates, patches, and upgrades to network components must be obtained from validated sources.
+        - 7-3: >
+            When downloading software from the Internet, hash verification must be compared against the vendor’s database to detect unauthorized modification to firmware or software.
+        - 7-4: >
+            A change control process must be implemented and followed for any changes bearing a significant risk to <organization name>’s network, including rules that allow traffic to flow through network devices, firewall security policies, Network Address Translation (NAT), etc. The process must be documented and must include the following:
+            - The rule’s purpose
+            - The affected service(s) or application(s)
+            - The affected users and devices
+            - The date when the rule was added
+            - The rule’s expiration date, if applicable
+            - The name of the person who added the rule
+            - The problem statement
+            - Supporting data
+            - Management’s approval of changes
+  - Other_Standard_controls:
+      objective: >
+        To implement all network security standard controls and requirements to ensure the highest protection levels.
+      risk_implication: >
+        Not applying the required security standard controls to protect the <organization name>'s network will expose it to cyber threats that disrupt operations and services.
+      requirements:
+        - 8-1: >
             The following standard controls must be implemented:
-            1. Disaster recovery and backup standard
-            2. Event and audit logging standard
-            3. Malware protection standard
-            4. Cryptography standard
-            5. Secure and hardening configuration standard
+            - Disaster recovery and backup standard
+            - Event and audit logging standard
+            - Physical security standard
+            - Wireless security standard
+            - Secure and hardening configuration standard
+            - National cryptographic standard controls
 roles_and_responsibilities:
-  - standard_owner: "<head_of_the_cybersecurity_function>"
-  - standard_review_and_update: "<cybersecurity function>"
-  - standard_implementation_and_execution: "<information technology function> & <cybersecurity function>"
-  - standard_compliance_measurement: "<cybersecurity function>"
+  - Standard_Sponsor_and_Owner: >
+      <head of the cybersecurity function>
+  - Standard_Review_and_Update: >
+      <cybersecurity function>
+  - Standard_Implementation_and_Execution: >
+      <IT function>
+  - Standard_Compliance_Measurement: >
+      <cybersecurity function>
 update_and_review:
-  - <cybersecurity_function>:
-    - description: >
-        Must review the standard at least once a year or in case any changes happen to the infrastructure, policy, or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+  description: >
+    <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
 compliance:
-  - <head_of_the_cybersecurity_function>:
-    - description: >
-        Will ensure compliance of <organization name> with this standard on a regular basis.
-  - personnel:
-    - description: >
-        All personnel at <organization name> must comply with this Standard Controls.
-  - violation:
-    - description: >
-        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
+  - 1: >
+      The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  - 2: >
+      All personnel at <organization name> must comply with this standard.
+  - 3: >
+      Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
