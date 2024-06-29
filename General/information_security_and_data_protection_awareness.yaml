@@ -1,0 +1,232 @@
+information_security_and_data_protection_awareness:
+  main_topics:
+    intro:
+    information_security_policy:
+      - purpose_and_objectives
+      - principles
+      - external_and_internal_requirements
+    threats_and_risks:
+      general:
+      - malware
+      - spam_phishing_spear_phishing_and_social_engineering
+      - data_leakage
+    examples_of_incidents:
+      - world
+      - industry
+      - organisation
+    roles_and_responsibilities:
+      - CISO
+      - IS_committee
+      - IT
+    acceptable_use_policy:
+      - shadow_IT
+    physical_security:
+      - physical_entry
+      - identity_badges:
+          - employees
+          - visitors
+      - security_zones
+    media_and_public_relations_policy:
+    privacy_and_data_protection:
+    other:
+      - external_audits_and_inspections
+      - social_media_and_the_internet
+      - media_comments
+      - presentations_and_public_speeches
+      - communication_with_partners_and_clients
+    data_protection_policy:
+      - policies_and_procedures
+      - incident_notification_and_response
+      - why_data_protection_privacy_is_important
+      - key_terms:
+          - personal_data
+          - processing
+          - controller
+          - processor
+          - joint_controller
+          - PIMS
+          - privacy
+          - supervisory_authority
+      - legislation_and_regulations
+      - principles_relating_to_processing_of_personal_data:
+          - fines_global_country_industry
+          - responsibility_of_the_controller_processor
+          - lawfulness_fairness_and_transparency
+          - purpose_limitation
+          - data_minimisation
+          - accuracy
+          - storage_limitation
+          - integrity_and_confidentiality_security
+          - accountability
+    DPO_DPM_role:
+      - responsibility
+      - powers
+      - contacts
+    roles_and_responsibilities:
+      - CPO_and_privacy_team
+      - DPO_DPM
+      - privacy_committee
+      - employee_representatives
+    incident_notification_and_response:
+    additional_materials:
+      rights_of_the_data_subject:
+        - right_to_be_informed
+        - right_of_access
+        - right_to_rectification
+        - right_to_erasure
+        - right_to_restrict_processing
+        - right_to_data_portability
+        - right_to_object
+        - rights_in_relation_to_automated_decision_making_and_profiling
+      lawfulness_of_processing
+      processing_of_special_categories_of_personal_data
+      responding_to_requests
+      privacy_notices_and_consents
+      records_of_processing_activities
+      data_protection_impact_assessment_DPIA
+      retention_period
+      other_policies_and_procedures
+      data_transfer
+      transfers_of_personal_data_to_third_countries
+      security_of_personal_data
+    why_information_security_is_important:
+    key_terms:
+      - information
+      - CIA_triad:
+          - confidentiality
+          - integrity
+          - availability
+      - information_security
+      - threats
+      - vulnerabilities
+      - risks
+      - ISMS
+    all_employees_commitment_to_continual_improvement:
+    asset_owners:
+    the_board:
+    information_security_team:
+    secure_disposal:
+    employee_monitoring_privacy_in_working_life:
+      - physical_copies_of_information
+      - equipment
+      - CCTV_notification
+    definition_of_information_security
+    commitment_to_satisfy_applicable_requirements
+    protection_of_intellectual_property_rights
+    clear_desk_and_clear_screen:
+      - logout
+      - collecting_outputs_from_printers
+      - securely_storing_documents_and_removable_storage_media
+      - privacy_screen_filters
+      - pop-ups_on_screens_during_presentations_or_screen_sharing
+      - whiteboards_and_flip_charts
+      - feedback_forms:
+          - examples
+    contacts
+    corporate_services:
+    equipment:
+      - user_endpoint_devices
+      - printers_and_scanners
+      - portable_storage_devices
+      - specialist_equipment
+      - authentication_hardware:
+          - mechanical_keys
+          - physical_tokens
+          - smartcards
+      - mobile_devices:
+          - mobile_phones
+          - smartphones_tablets
+          - laptops
+          - BYOD
+    enterprise_file_storage:
+      - internal_portal
+      - corporate_email
+      - online_services
+      - personal_email
+      - cloud_storage
+      - notes
+      - documents
+      - office
+      - infographics
+      - PDF
+      - joint_work
+    planners_and_calendars
+    translators
+    collaboration_platforms:
+      - MS_Teams
+    video_conferencing_services
+    social_media_and_messengers
+    delivery_and_loading_areas:
+      - public_areas
+      - secure_areas
+      - meeting_rooms
+      - archive
+      - server_rooms
+    taking_photos_audio_and_video_recording_in_the_workplace:
+      - live_streaming
+    return_of_assets
+    evacuation_plan:
+    key_management:
+    restrictions:
+    information_security_awareness_education_and_training:
+      - additional_materials
+    remote_access:
+      - what_to_do_if_you_lose_it
+    visitors:
+      - responsible_person
+      - badges
+      - escort_and_supervision
+      - security_zones
+      - guest_WiFi
+      - recording_the_date_and_time_of_entry_and_departure
+      - fire
+      - communication_with_the_authorities
+    confidentiality_or_non-disclosure_agreements
+    data_breach:
+      - procedures
+      - change_management:
+          - access_rights
+          - new_software
+          - new_hardware
+      - password_recovery
+    information_classification_and_handling:
+      - labelling_of_information
+      - information_transfer:
+          - electronic_transfer
+          - physical_storage_media_transfer
+          - verbal_transfer
+    business_continuity:
+      - power_outage
+    incident_notification_and_response:
+    data_backup_and_recovery:
+    remote_work_and_business_trips:
+      - threats:
+          - from_family_and_friends
+          - from_the_suppliers
+          - from_the_official_authorities
+          - from_other_persons_in_public_places
+      - working_in_public_places
+      - mobile_device_security
+      - document_security
+      - communications_security_requirements
+      - remote_access
+      - printing_and_disposal_of_information
+      - use_of_networks:
+          - home
+          - public
+      - hardware_and_software_support_and_maintenance
+      - emergency_assistance
+      - information_security_event_reporting
+      - other_border_crossing
+      - ATMs
+    IT:
+      - access_rights_and_restrictions
+      - password_policy
+      - protection_against_malware
+      - data_leakage_prevention
+      - web_filtering
+      - VPN
+      - use_of_cryptography
+      - software_license_restriction_issues
+      - software_updates
+    IT_support_contacts
