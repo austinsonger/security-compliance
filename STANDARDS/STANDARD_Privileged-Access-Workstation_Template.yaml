@@ -1,0 +1,130 @@
+purpose: >
+  This standard aims to define the detailed cybersecurity requirements related for Privileged Access Workstations in <organization name>.
+
+scope: >
+  This standard covers <organization name>’s information and technology assets and applies to all personnel (employees and contractors) in <organization name>.
+
+standards:
+  - id: 1
+    title: Workstation Security Controls
+    objective: >
+      Ensure the successful deployment of secure workstations.
+    risk_implication: >
+      If workstation protection is not properly implemented, this may lead to severe implications that encompass information theft, unauthorized access, and information disclosure.
+    requirements:	
+      - id: 1-1
+        description: >
+          Privileged Access Workstation (PAW) must be both logically and physically located in a dedicated, secured, and trusted network segment.
+      - id: 1-2
+        description: >
+          PAWs must be covered by the Privileged Access Management (PAM) and have additional monitoring compared to regular workstations. In addition to regular workstations, all events with privileged access on PAWs must be monitored and logged.
+      - id: 1-3
+        description: >
+          <organization name> must implement endpoint management services for proper PAWs monitoring and controls.
+      - id: 1-4
+        description: >
+          PAWs must limit the use of any risky applications to absolute necessary functionalities to work in accordance with the project and should not be connected to the Internet.
+      - id: 1-5
+        description: >
+          PAWs must incorporate application whitelisting policy to use only verified and approved software applications or executable files to provide dedicated services.
+      - id: 1-6
+        description: >
+          PAWs must not connect to Wi-Fi networks.
+      - id: 1-7
+        description: >
+          PAWs’ software security updates and patches must be applied as soon as available and according to <organization name>’s change management procedure. Update process must not interrupt any applications that are crucial for privilege access management.
+      - id: 1-8
+        description: >
+          Access to PAWs must be restricted to selected administrators by only allowing access using network Access Control Lists (ACL) to administrators’ individual accounts, which must be separated from their normal accounts and used only for a specific purpose.
+      - id: 1-9
+        description: >
+          Default/non-interactive/unneeded accounts must be disabled or renamed.
+      - id: 1-10
+        description: >
+          Session timeout and session idle lockout must be configured in accordance with <organization name>’s cybersecurity policies.
+      - id: 1-11
+        description: >
+          BIOS bootloader passwords must be configured on all PAWs.
+      - id: 1-12
+        description: >
+          Host-based Intrusion Prevention System (HIPS) must be implemented on all PAWs to prevent known and unknown malicious attacks.
+      - id: 1-13
+        description: >
+          Software host firewall must be implemented on all PAWs to control the specific network behavior of individual applications on a system.
+      - id: 1-14
+        description: >
+          Antivirus and Endpoint Detection and Response (EDR) software must be implemented on all PAWs.
+      - id: 1-15
+        description: >
+          Data Loss Prevention (DLP) agents must be implemented on all PAWs.
+
+  - id: 2
+    title: Hardware root of trust
+    objective: >
+      Ensure proper hardening process of workstations by creating a ‘root of trust’. Proper technology must be selected in order to fulfill this objective.
+    risk_implication: >
+      Improper hardening process may result in creating hardware vulnerabilities and attack vectors that can have severe implications that could lead to information theft, unauthorized access, and information disclosure.
+    requirements:	
+      - id: 2-1
+        description: >
+          PAWs must be built on trusted hardware provided by trusted and verified supplier/third party vendor. Hardware must be maintained by trusted supplier periodically.
+      - id: 2-2
+        description: >
+          Any PAWs changes (especially relating to the operating system) must be logged and monitored. Log solution must be configured to send only specific logs to the central log system e.g., using syslog protocol and CEF, LEEF or RFC 5425 specified log format.
+      - id: 2-3
+        description: >
+          PAWs must implement a secure boot procedure to ensure that workstations boot only using software that is trusted by the Original Equipment Manufacturer (OEM).
+      - id: 2-4
+        description: >
+          PAW hardware drivers and firmware must be updated in a secure manner, using cybersecurity best practices (e.g., hash comparison).
+      - id: 2-5
+        description: >
+          PAWs must support Hypervisor-Protected Code Integrity (HVCI) technology to isolate the Code Integrity (CI) decision-making function from the rest of the operating system (Windows only).
+      - id: 2-6
+        description: >
+          PAWs must implement kernel Direct Memory Access (DMA) protection to prevent memory access attacks by malicious external devices.
+      - id: 2-7
+        description: >
+          PAWs must implement software security measures to protect and maintain the integrity of the system.
+      - id: 2-8
+        description: >
+          On startup, PAWs must validate that system integrity has truly been maintained through local and remote attestation.
+
+  - id: 3
+    title: Other Standards
+    objective: >
+      The goal is to implement all PAW applicable and mandatory standards and requirements to ensure the highest levels of protection.
+    risk_implication: >
+      Failure to align with <organization name>’s security standards and requirements could lead to information theft, unauthorized access, and information disclosure.
+    requirements:	
+      - id: 3-1
+        description: >
+          The following standards must be implemented in relevance to PAWs:
+          1. Virtualization security
+          2. Key Management
+          3. Certification Authority
+          4. Cryptography
+          5. Event and audit logging
+          6. Physical security
+          7. Secure configuration and hardening
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All privileged personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
