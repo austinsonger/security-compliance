@@ -1,0 +1,147 @@
+purpose:
+  description: >
+    This standard aims to define the detailed cybersecurity requirements related to coding protection for <organization name> in order to minimize cyber risks resulting from internal and external threats at <organization name>.
+scope:
+  description: >
+    This standard covers all software and application coding activities, projects and practices and information and technology assets at <organization name> and applies to all personnel (employees and contractors) at <organization name>.
+standards:
+  - secure_code_development:
+      objective: >
+        To provide cybersecurity requirements to ensure the protection of software and application development activities and cybersecurity controls to secure developed software.
+      risk_implication: >
+        Insecure code development practices could create security vulnerabilities that could be exploited to jeopardize the confidentiality, integrity and availability of <organization name>’s data and business operation.
+      requirements:
+        - 1-1: >
+            A Secure Software Development Life Cycle (SSDLC) process must be developed and implemented.
+        - 1-2: >
+            A DevSecOps methodology and process must be developed and adopted.
+        - 1-3: >
+            Cybersecurity requirements must be provided in the initial phases of software development and incorporated in the SSDLC process.
+        - 1-4: >
+            Cybersecurity testing must be conducted in the testing phases of software development and incorporated in the SSDLC process.
+        - 1-5: >
+            Automatic security testing must be developed and conducted in the testing phases of the SSDLC to detect malicious code injection, malware infection and known cybersecurity attacks.
+        - 1-6: >
+            Different techniques of cybersecurity testing must be used against all the development phases of the application (e.g. fuzzing, black box tests).
+        - 1-7: >
+            A secure environment must be designed and configured for development, testing and quality assurance purposes.
+        - 1-8: >
+            The secure coding guidelines under Table (A) must be implemented.
+        - 1-9: >
+            Memory-safe language must be used and the application must be tested against memory attacks.
+        - 1-10: >
+            Mitigations to the Open Web Application Security Project (OWASP) API Top 10 Application Security Risks must be implemented for critical systems and applications.
+        - 1-11: >
+            Mechanisms to restrict modification of production source code or production data must be implemented.
+        - 1-12: >
+            Third party vendors must be required to adhere to <organization name>’s cybersecurity policies and standard controls.
+        - 1-13: >
+            Only up-to-date, trusted and licensed sources of software development tools, libraries and components must be used.
+        - 1-14: >
+            Web application security controls must be implemented as per <organization name>’s Web Application Security Policy and Standard.
+        - 1-15: >
+            Standardized and extensively reviewed encryption algorithms must be used only as per relevant standard controls and procedures.
+        - 1-16: >
+            All versions of all software acquired from outside <organization name> must be verified to be still supported by the developer and appropriately hardened based on the developer's security recommendations.
+        - 1-17: >
+            Conduct training on writing secure code appropriate to the programming language and development environment being used for all software development personnel.
+        - 1-18: >
+            Ensure that all personnel involved in the SDLC of <organization name> are prepared to perform their SDLC-related roles and responsibilities throughout the SDLC.
+        - 1-19: >
+            <organization name> must secure and harden development endpoints (e.g., endpoints for software designers, developers, testers, etc.) by performing security development-related tasks using a risk-based approach.
+        - 1-20: >
+            <organization name> must limit access to development environment and enable event logs to ensure only authorized changes to code.
+  - source_code_repository:
+      objective: >
+        To provide cybersecurity controls to ensure the protection of source code, libraries, and source code repository.
+      risk_implication: >
+        If the source code repository and libraries are not properly and sufficiently protected, <organization name>’s source code could be exposed, tampered or accessed without authorization.
+      requirements:
+        - 2-1: >
+            A secure source code repository that has authentication, version control, and logging enabled must be used.
+        - 2-2: >
+            Deny access to source code and source code repository for anyone except application developers and owners when needed.
+        - 2-3: >
+            A unified version control numbering scheme must be used to reflect when updated versions of the software are installed.
+        - 2-4: >
+            Outdated versions of source code must be archived periodically.
+        - 2-5: >
+            Source code for applications under development must be segregated from source code for applications in production.
+        - 2-6: >
+            The source code of end of life applications must be archived to ensure that it can still be retrieved if needed.
+        - 2-7: >
+            A copy of the source code for all applications developed by third parties specifically for <organization name> must be acquired and stored in a secure source code repository.
+        - 2-8: >
+            Container and Docker security hardening standard controls and security best practices guidelines must be developed and implemented.
+        - 2-9: >
+            Secret management mechanisms must be deployed to manage secrets, keys and certifications and prevent storing secrets in containers.
+        - 2-10: >
+            Container images must be used from trusted or approved sources.
+        - 2-11: >
+            A private container registry must be used to ensure only verified and safe container images are downloaded to <organization name>'s system, and that every image is scanned for common known vulnerabilities.
+        - 2-12: >
+            Containers must not be run with super user accounts.
+  - secure_code_review_and_testing:
+      objective: >
+        To provide assurance on the implemented secure coding cybersecurity controls and detect weaknesses, vulnerabilities and issues in software.
+      risk_implication: >
+        If the source code and code development activities are not regularly tested and reviewed for security vulnerabilities, misconfigurations and weaknesses, <organization name> could be exposed to severe security risks.
+      requirements:
+        - 3-1: >
+            A secure code review process must be conducted regularly for internally developed web applications.
+        - 3-2: >
+            Static and dynamic analysis tools must be applied to verify that secure coding practices are being adhered to for internally developed software.
+        - 3-3: >
+            Conduct a secure code review process regularly for all applications developed by third parties specifically for <organization name>.
+        - 3-4: >
+            Security controls of new internally developed applications must be reviewed and approved prior to application deployment into the production environment.
+        - 3-5: >
+            Existing internally developed applications must be re-evaluated and re-approved after a significant change is made to the application, or after a predetermined period.
+        - 3-6: >
+            Risk assessments for all applications under development, or which are purchased, must be conducted to determine the controls required to mitigate application risks to acceptable limits prior to deployment into production environment (refer to <organization name>’s Risk Management Policy).
+        - 3-7: >
+            Cybersecurity compliance testing must be conducted for software against <organization name>’s cybersecurity policies and standard controls prior to deployment into production environment.
+        - 3-8: >
+            OWASP Application Security Verification Standard must be employed as a guide to define security requirements and generate test cases to review critical systems and applications.
+        - 3-9: >
+            Configurations review of software, including secure configuration hardening and patching, must be conducted prior to deployment into production environment.
+        - 3-10: >
+            Cybersecurity testing; including vulnerability assessment, penetration testing and secure code review; must be conducted prior to deployment into production environment.
+        - 3-11: >
+            Cybersecurity testing, including vulnerability assessment and penetration testing, must be conducted after deployment into production environment.
+        - 3-12: >
+            All developed application security issues discovered during the secure code review must be remediated prior to implementation into production environment.
+        - 3-13: >
+            Developed applications must be tested to ensure that Segregation of duties controls are appropriately implemented.
+        - 3-14: >
+            Test accounts and test data that are used in non-production environments must be removed before the application is moved into production.
+        - 3-15: >
+            Test and development environment must be logically separated from production and other environments using network restrictions by configuring Access-Control Lists (ACLs) and security policies on firewalls.
+        - 3-16: >
+            Source code peer-review must be conducted by a developer who did not write any of the code prior to its deployment into <organization name>’s production environment.
+        - 3-17: >
+            Only approved and licensed source code and software security assessment tools must be used.
+        - 3-18: >
+            Security testing for developed applications must be performed in all testing phases of SDLC including non-functional testing, Unit Testing (UT), System Integration Testing (SIT), and User Acceptance Testing (UAT).
+        - 3-19: >
+            A process and registry must be developed and maintained to manage software bugs, vulnerabilities and security issues.
+        - 3-20: >
+            Testing must be embedded as part of the Continuous Improvement/Continuous Development (CI/CD) pipeline.
+roles_and_responsibilities:
+  - standard_owner: <head of the cybersecurity function>
+  - standard_review_and_update: <cybersecurity function>
+  - standard_implementation_and_execution: <information technology function>
+  - standard_compliance_measurement: <cybersecurity function>
+update_and_review:
+  - description: >
+      <cybersecurity function> must review the standard at least once a year or in case any changes happen to the infrastructure, policy, or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+compliance:
+  - description: >
+      The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  - all_personnel_compliance: >
+      All personnel at <organization name> must comply with this standard.
+  - violation_consequence: >
+      Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
+
+
+
