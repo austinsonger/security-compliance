@@ -1,0 +1,137 @@
+information_security_controls_by_operational_capabilities:
+  governance:
+    - 5.1_policies_for_information_security
+    - 5.2_information_security_roles_and_responsibilities
+    - 5.4_management_responsibilities
+    - 5.5_contact_with_authorities
+    - 5.6_contact_with_special_interest_groups
+    - 5.7_information_security_in_project_management
+    - 5.8_information_security_risk_management_planning_and_preparation
+  asset_management:
+    - 5.9_inventory_of_information_and_other_associated_assets
+    - 5.10_acceptable_use_of_information_and_other_associated_assets
+    - 5.11_return_of_assets
+    - 5.12_information_transfer
+    - 5.13_removal_of_records
+    - 5.25_disposal_of_processing_procedures
+    - 5.26_responsibilities_after_termination_or_change_of_employment
+    - 7.2_securing_offices_rooms_and_facilities
+    - 7.3_equipment_siting_and_protection
+    - 7.6_security_of_assets_off-premises
+    - 7.10_clean_desk_and_clear_screen
+    - 7.12_securing_assets
+    - 7.14_secure_disposal_or_re-use_of_equipment
+    - 8.10_backups_of_information_processing_facilities
+  information_protection:
+    - 5.9_inventory_of_information_and_other_associated_assets
+    - 5.12_classification_of_information
+    - 5.13_labelling_of_information
+    - 5.14_handling_of_information
+    - 5.15_protection_of_records
+    - 5.16_privacy_and_protection_of_PII
+    - 8.1_confidentiality_or_non-disclosure_agreements
+    - 8.12_remote_working
+    - 8.14_mobile_devices
+    - 8.20_protection_against_malware
+    - 8.28_intrusion_detection
+    - 8.34_media_handling
+    - 8.35_information_exchange
+    - 8.36_data_leakage_prevention
+    - 8.37_information_masking
+    - 9.1_protection_of_information_systems_during_audit_testing
+  human_resource_security:
+    - 6.1_screening
+    - 6.2_terms_and_conditions_of_employment
+    - 6.3_information_security_awareness_education_and_training
+    - 6.4_disciplinary_process
+    - 6.5_responsibilities_after_termination_or_change_of_employment
+    - 8.1_confidentiality_or_non-disclosure_agreements
+  physical_security:
+    - 5.17_documented_operating_procedures
+    - 7.1_secure_working
+    - 7.2_securing_offices_rooms_and_facilities
+    - 7.3_equipment_siting_and_protection
+    - 7.4_physical_security_perimeter
+    - 7.5_protection_against_physical_and_environmental_threats
+    - 7.6_security_of_assets_off-premises
+    - 7.8_clean_desk_and_clear_screen
+    - 7.10_secure_disposal_or_re-use_of_equipment
+    - 7.12_securing_assets
+    - 7.13_equipment_maintenance
+    - 8.10_backups_of_information_processing_facilities
+  system_and_network_security:
+    - 5.17_documented_operating_procedures
+    - 8.20_protection_against_malware
+    - 8.21_use_of_privileged_utility_programs
+    - 8.22_network_configuration
+    - 8.23_security_of_network_services
+    - 8.27_secure_system_architecture_and_engineering_principles
+    - 8.28_intrusion_detection
+    - 8.30_security_testing_in_development_and_acceptance
+    - 8.33_outsourced_development
+    - 8.34_separation_of_development_test_and_production_environments
+    - 8.37_change_management
+    - 9.1_protection_of_information_systems_during_audit_testing
+  application_security:
+    - 5.17_documented_operating_procedures
+    - 8.14_access_to_source_code
+    - 8.20_protection_against_malware
+    - 8.21_use_of_privileged_utility_programs
+    - 8.27_secure_system_architecture_and_engineering_principles
+    - 8.28_intrusion_detection
+    - 8.30_security_testing_in_development_and_acceptance
+    - 8.31_separation_of_development_test_and_production_environments
+    - 8.32_change_management
+  secure_configuration:
+    - 5.17_documented_operating_procedures
+    - 8.14_access_to_source_code
+    - 8.16_software_utility_programs
+    - 8.18_configuration_management
+    - 8.20_protection_against_malware
+    - 8.21_use_of_privileged_utility_programs
+    - 8.22_network_configuration
+    - 8.23_security_of_network_services
+    - 8.24_use_of_cryptography
+  identity_and_access_management:
+    - 5.15_access_control
+    - 5.17_documented_operating_procedures
+    - 7.1_secure_working
+    - 8.12_privacy_and_protection_of_PII
+    - 8.13_information_access_restrictions
+    - 8.14_access_to_source_code
+    - 8.16_software_utility_programs
+  threat_and_vulnerability_management:
+    - 5.17_documented_operating_procedures
+    - 8.24_management_of_technical_vulnerabilities
+    - 8.34_intrusion_detection
+  continuity:
+    - 5.26_responsibilities_after_termination_or_change_of_employment
+    - 8.12_privacy_and_protection_of_PII
+    - 8.37_information_backup
+    - 8.41_redundancy_of_information_processing_facilities
+  supplier_relationships_security:
+    - 5.19_information_security_in_supplier_relationships
+    - 5.20_addressing_information_security_with_supplier_agreements
+    - 5.21_handing_information_security_incident_within_the_IT_supply_chain
+    - 5.22_monitoring_review_and_change_management_of_supplier_services
+    - 5.23_information_security_for_use_of_cloud_services
+    - 8.1_confidentiality_or_non-disclosure_agreements
+  legal_and_compliance:
+    - 5.29_legal_statutory_regulatory_and_contractual_requirements
+    - 5.31_intellectual_property_rights
+    - 5.33_protection_of_records
+    - 5.34_privacy_and_protection_of_PII
+    - 5.36_compliance_with_policies_rules_and_standards_for_information_security
+  information_security_event_management:
+    - 5.24_information_security_incident_planning_and_preparation
+    - 5.25_assessment_and_decision_on_information_security_incidents
+    - 5.26_response_to_information_security_incidents
+    - 5.27_learning_from_information_security_incidents
+    - 8.11_how_information_security_incidents_are_determined
+    - 8.15_collecting_evidence
+    - 8.34_intrusion_detection
+    - 9.1_protection_of_information_systems_during_audit_testing
+  information_security_assurance:
+    - 5.35_independent_review_of_information_security
+    - 5.36_compliance_with_policies_rules_and_standards_for_information_security
+    - 8.30_security_testing_in_development_and_acceptance
