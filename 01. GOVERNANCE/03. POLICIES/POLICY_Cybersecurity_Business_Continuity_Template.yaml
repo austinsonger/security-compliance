@@ -1,0 +1,78 @@
+purpose: >
+  This policy aims to define the detailed cybersecurity requirements related to <organization name>'s business continuity in order to minimize the cybersecurity risks resulting from internal and external threats in <organization name> and to preserve confidentiality, integrity, and availability. 
+  The requirements in this policy are aligned with the cybersecurity requirements issued by the <Governing Body> including but not limited to <Controls> in addition to other related cybersecurity legal and regulatory requirements.
+
+scope: >
+  This policy covers all information and technology assets in <organization name> and applies to all personnel (employees and contractors) in the <organization name>.
+
+policy_statements:
+  - id: 1
+    title: General Requirements
+    requirements:
+      - 1-1: >
+          Continuity of Cybersecurity systems and procedures at <organization name> must be ensured.
+      - 1-2: >
+          Assessment of risks that may affect business continuity of <organization name> must be performed.
+      - 1-3: >
+          Vulnerabilities must be addressed to avoid incidents that may affect business continuity of <organization name>.
+      - 1-4: >
+          Legal and regulatory requirements related to business continuity at <organization name> must be defined.
+      - 1-5: >
+          Cybersecurity incident response plans that may affect business continuity of <organization name> must be developed.
+      - 1-6: >
+          Supply chain continuity plans must be included in <organization name>'s business continuity plans.
+      - 1-7: >
+          Disaster Recovery Plans must be developed.
+      - 1-8: >
+          High risk cybersecurity incidents must be included as a rationale for activating Business Continuity Plan at <organization name>.
+      - 1-9: >
+          Communication means dedicated for the cybersecurity team must be included and documented in <organization name> both internal and external means.
+      - 1-10: >
+          Roles and responsibilities of business continuity related parties in <organization name> must be defined.
+      - 1-11: >
+          Implementation and monitoring plans for cybersecurity responsibilities and actions during disasters and until conditions return to normal must be developed.
+      - 1-12: >
+          Identity and Access on all systems and data hosted on the disaster recovery site of <organization name> must be managed to ensure they are not being accessed by unauthorized persons.
+      - 1-13: >
+          Implementation of Cybersecurity Controls must be ensured as per <organization name> and NCA requirements such as (ECC-1:2018, CSCC-1:2019) and best global practices at <organization name> DRC environment.
+      - 1-14: >
+          Use KPI to ensure continuous improvement and proper and effective use of cybersecurity business continuity requirements.
+
+  - id: 2
+    title: Critical Systems and Cloud Computing Systems
+    requirements:
+      - 2-1: >
+          Business Impact Analysis must be conducted to define critical systems in <organization name> and copy them to the disaster recovery site.
+      - 2-2: >
+          <Organization name>'s critical systems must be included in the disaster recovery plans.
+      - 2-3: >
+          Disaster recovery centre for critical systems must be established.
+      - 2-4: >
+          Periodic tests must be conducted to ensure effectiveness of disaster recovery plans for <organization name> critical systems at least once a year.
+      - 2-5: >
+          Requirements for periodic backup of critical systems must be defined to the recovery centre.
+      - 2-6: >
+          Disaster recovery and business continuity procedures related to cloud computing must be developed, implemented, and include the relevant requirements in <organization name> contracts and agreements with third parties and cloud service providers.
+      - 2-7: >
+          Annual Live DR Test for critical systems must be conducted whenever possible.
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <business continuity function>, <IT function>, and <cybersecurity function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the policy at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this policy on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this policy.
+    - id: 3
+      description: >
+        Any violation of this policy may be subject to disciplinary action as per <organization name>’s procedures.

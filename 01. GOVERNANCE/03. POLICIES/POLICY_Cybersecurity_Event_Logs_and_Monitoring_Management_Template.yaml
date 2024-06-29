@@ -1,0 +1,88 @@
+purpose: >
+  This policy aims to define the cybersecurity requirements related to event logs and monitoring management systems of <organization name> in order to minimize the cybersecurity risks resulting from internal and external threats to preserve confidentiality, integrity, and availability. 
+  The requirements in this policy are aligned with the cybersecurity requirements issued by the <Governing Body> including but not limited to <Controls> in addition to other related cybersecurity legal and regulatory requirements.
+
+scope: >
+  This policy covers all event logs management and cybersecurity monitoring systems of <organization name> and applies to all personnel (employees and contractors) in <organization name>. This standard must follow the NCA’s operating model for cybersecurity operation centers and NCA’s regulatory cybersecurity requirements.
+
+policy_statements:
+  - id: 1
+    title: General Requirements
+    requirements:
+      - 1-1: >
+          Risk level monitoring systems must be aligned with NCA’s regulatory cybersecurity requirements, in order to collect and analyze event logs, and to collect cyber event logs for information assets, systems and applications, databases, and networks, and protection systems in <organization name>. These logs must contain the following information as a minimum:
+      - 1-1-1: >
+          Event type.
+      - 1-1-2: >
+          Source of event (IIS, EDR, AV, Sysmon, security logs, etc.).
+      - 1-1-3: >
+          System from which the event was performed (e.g. mail server).
+      - 1-1-4: >
+          Date and Time of Event.
+      - 1-1-5: >
+          The user or the tool used to perform the event.
+      - 1-1-6: >
+          Event status or outcome (Success vs. Failure).
+      - 1-2: >
+          Activate and combine Event Logs, Audit Trails, and Login of all relevant technical assets as per the risk log of <organization name>, including CTS, Critical Systems, OT, Telework systems, and Social Media Accounts Information Assets pursuant to the relevant legal and regulatory requirements.
+      - 1-3: >
+          Protect cybersecurity event logs against unauthorized change, disclosure, destruction, access, and release. Also, event logs of all activities must be protected to support digital forensics processes, if needed, as per the relevant legal and regulatory requirements.
+      - 1-4: >
+          Use Automatic Control Means necessary to monitor event logs.
+      - 1-5: >
+          Monitor Access Control Points between network boundaries and external communications.
+      - 1-6: >
+          Monitor all cybersecurity events 24/7/365 by specialized teams.
+      - 1-7: >
+          Monitor social media accounts and login attempts to ensure the operation of systems 24/7/365, and collect relevant logs.
+      - 1-8: >
+          The systems to be monitored must activate event logs when one of the following events at least occurs:
+      - 1-8-1: >
+          Cybersecurity events on all technical components of the systems to be monitored, including OT, databases, storage, applications, and networks.
+      - 1-8-2: >
+          Cybersecurity events of industrial network and associated communications.
+      - 1-8-3: >
+          Events related to accounts that have privileged and critical access to information assets.
+      - 1-8-4: >
+          Events related to DNS Logs, Internet Connection, and Wireless Network.
+      - 1-8-5: >
+          Events related to remote access.
+      - 1-8-6: >
+          Events related to Cloud computing and hosting events.
+      - 1-8-7: >
+          Events related to information transfer through external storage media.
+      - 1-8-8: >
+          Events related to making changes to logs, critical systems files through File Integrity Management (FIM) techniques.
+      - 1-8-9: >
+          Events related to system, network, or service configuration changes, including downloading patches, or other changes to installed software.
+      - 1-8-10: >
+          Events related to suspicious activities, such as activities detected by the Intrusion Prevention System (IPS).
+      - 1-8-11: >
+          Events related to User Behaviour Analytics (UBA).
+      - 1-8-12: >
+          Events related to multiple and unsuccessful access attempts.
+      - 1-8-13: >
+          Events related to the connection of new or unauthorized devices to the critical system networks and industrial control systems (OT/ICS).
+      - 1-9: >
+          Key performance indicators (KPIs) must be used to ensure the continuous improvement as well as the proper and effective use of Cybersecurity Event Logs and Monitoring Management requirements.
+
+roles_and_responsibilities:
+  standard_owner: <head of cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the policy at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this policy on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this policy.
+    - id: 3
+      description: >
+        Any violation of this policy may be subject to disciplinary action as per <organization name>’s procedures.

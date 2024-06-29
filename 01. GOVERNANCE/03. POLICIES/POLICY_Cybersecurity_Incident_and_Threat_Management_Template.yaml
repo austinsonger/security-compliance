@@ -1,0 +1,155 @@
+purpose: >
+  This policy aims to define the cybersecurity requirements related to cybersecurity incident and threat management at <organization name> to minimize cybersecurity risks and protect it against internal and external threats by focusing on key security objectives namely; confidentiality integrity and availability. 
+  The requirements in this policy are aligned with the cybersecurity requirements issued by the <Governing Body> including but not limited to <Controls> in addition to other related cybersecurity legal and regulatory requirements.
+
+scope: >
+  This policy covers all information and technology assets in the <organization name> and applies to all personnel (employees and contractors) in the <organization name>.
+
+policy_statements:
+  - id: 1
+    title: General Requirements
+    requirements:
+      - 1-1: >
+          The <organization name> must establish the required mechanisms to timely identify and detect cybersecurity incidents in <organization name> to effectively manage reports received from personnel or beneficiaries.
+      - 1-2: >
+          The <organization name> must proactively handle cybersecurity incidents by adopting defensive mechanisms to prevent or mitigate the impacts on confidentiality, integrity, or availability.
+      - 1-3: >
+          Incident response plan must be documented and approved to establish procedures to address any cyber-attack defining response team roles and responsibilities defining decision making authority and establishing interaction mechanism with internal and external stakeholders as well as incident escalation plan.
+      - 1-4: >
+          Cybersecurity incident response capabilities readiness level and approved plan must be tested periodically through Attack Simulation Exercises.
+      - 1-5: >
+          Provide organization's personnel (employees and contractors) with the required skills and training to effectively respond to cybersecurity incidents.
+      - 1-6: >
+          Examples of cybersecurity incidents shall include but not limited to:
+          - Unauthorized changes in workstations configurations 
+          – both desktops and/or laptops and server’s configurations.
+          - Malware infections.
+          - Changes in applications in terms of appearance (unusual appearance) in addition to modifications in user’s privileges
+          - Unauthorized access to data or modification of data without authorization or user’s privileges.
+          - Attempts to gain information that may be used to initiate an attack (Port Scans Social Engineering attacks targeted scans across IP range etc.).
+          - Unauthorized activation of suspended or deleted user accounts.
+      - 1-7: >
+          Cybersecurity incident response plans must be aligned with the IT incident response plans crisis management and business continuity plans.
+      - 1-8: >
+          In case of telework cybersecurity incident response plans and contact information must be updated within the organization in line with the status of telework ensuring communication capability and readiness of incident response teams
+      - 1-9: >
+          In case a cybersecurity incident is detected in <organization name> the incident response team must immediately take the necessary steps to handle the detected incident by analysing the incident data and determining its impact.
+      - 1-10: >
+          If a cybersecurity incident is detected relevant available information such as system and network logs logs from relevant security products (e.g. logs from malware protection solutions firewall and advanced intrusion detection and prevention protection systems) must be analysed.
+      - 1-11: >
+          Necessary evidence (e.g. evidence collection in accordance with legal constraints and evidence protection against unauthorized tampering) must be handled documented and maintained securely to preserve its merits. Such evidence must be analysed without damage or modification to its original form.
+      - 1-12: >
+          In case a cybersecurity incident is detected the cause of cybersecurity incident must be investigated supported by specialists such as digital forensics analysts and cyber incident response teams.
+      - 1-13: >
+          The incident response plans capabilities and readiness must be reviewed at least once a year.
+      - 1-14: >
+          Cybersecurity incidents must be classified according to severity level and impact on <organization name>'s business
+      - 1-15: >
+          Cybersecurity incidents must be classified according to the relevant legal and regulatory requirements as per the table below:
+
+  - id: 2
+    title: Cybersecurity Incidents Classification
+    requirements:
+      - 2-1: >
+          Severity Level:
+          - Catastrophic
+          - Critical Incident
+          - High Incident
+          - Medium Incident
+          - Limited Incident
+      - 2-2: >
+          Definition:
+          - Catastrophic: Catastrophic failures of services or negative impact on national cybersecurity that result in or threaten to cause serious economic or social complications or lead to death of certain people.
+          - Critical Incident: Gross threat or damage to image reputation or credibility of <organization name> multiple business functional units getting severely impacted location of business critically affected and business continuity measures would have to be invoked.
+          - High Incident: Severe outage affecting single business functional units key services or location.
+          - Medium Incident: Moderate degradation to business functional units locations IT assets in addition to moderate to high impact to non-critical business units within in <organization name>.
+          - Limited Incident: Affecting few resources and the issue can be tolerated for a particular period of time.
+      - 2-3: >
+          Target Response Time:
+          - Catastrophic: Immediate
+          - Critical Incident: Immediate
+          - High Incident: 1-2 Hours
+          - Medium Incident: 2-3 hours
+          - Limited Incident: 5 hours
+      - 2-4: >
+          Target Incident Resolution Time:
+          - Catastrophic: Immediate
+          - Critical Incident: 2 hours
+          - High Incident: 4-5 hours
+          - Medium Incident: 8-9 hours
+          - Limited Incident: 24 hours
+
+  - id: 3
+    title: Cybersecurity Incidents Reporting
+    requirements:
+      - 3-1: >
+          Raise security awareness of <organization name>’s personnel and define their cybersecurity incidents and threats responsibilities to promptly report any cybersecurity incident or threat.
+      - 3-2: >
+          The <organization name> must establish point of contact (POC) for reporting incidents internally be it a phone number or email address.
+      - 3-3: >
+          The <organization name> must specify which incident or threat to be reported when and to whom they are reported. The parties most commonly notified include <representative> <head of cybersecurity function> incident response teams within the <organization name> and information and technology assets owners.
+      - 3-4: >
+          Prior to disclosure of information about security incidents to third parties approvals must be obtained according to the relevant legal and regulatory requirements.
+      - 3-5: >
+          Report cybersecurity incidents to NCA once detected.
+      - 3-6: >
+          Share incident reports and breach indicators and reports with NCA.
+
+  - id: 4
+    title: Incidents Response and Recovery
+    requirements:
+      - 4-1: >
+          Incident response team in <organization name> must create a detailed cybersecurity incident report. The report must include incident type and category personnel who reported it tools used in detecting the incident service/assets/information affected how they were detected and any relevant supporting documents.
+      - 4-2: >
+          Analyse and update Root Cause Analysis of cybersecurity incidents and develop plans to address them.
+      - 4-3: >
+          If needed involve vendors to resolve the incident and/or restore the service.
+      - 4-4: >
+          Implement and execute cybersecurity incident and threat recommendations and alerts issued by the sector supervisor or NCA.
+      - 4-5: >
+          Cybersecurity incident recovery procedures must identify vulnerabilities exploited and apply the necessary remediation technical and administrative measures including but not limited to:
+          - Implement compensating controls.
+          - Deploy updated security patches.
+          - Restore system backup versions.
+          - Reconfigure security devices including firewalls and intrusion detection systems.
+      - 4-6: >
+          The <organization name> must safeguard incident reports (which includes data about security intrusions and incidents such as information about individuals organizations specific systems and/or attack methodology) and restrict access to it.
+      - 4-7: >
+          The incident if not resolved and corrected within the pre-defined timeframes must be escalated as per the classification of security incidents and incidents escalation rules and procedures.
+      - 4-8: >
+          Any changes to technology components required to resolve an incident must be performed in accordance with the <organization name>’s Change Management Process.
+      - 4-9: >
+          The incident response team at <organization name> must hold a “lessons learned” meeting with all involved functions after a major incident to reflect on how to better handle future incidents and how to proactively handle them to prevent or mitigate impacts on <organization name>'s business.
+
+  - id: 5
+    title: Threat Intelligence Feeds
+    requirements:
+      - 5-1: >
+          Subscribe with authorized and trusted cybersecurity resources “Threat Intelligence” to collect information about new cybersecurity threats and incidents and act immediately.
+      - 5-2: >
+          Store and organize the collected threat intelligence feeds in a knowledge base such as wikis which are quite flexible and suitable for developing working notes and indicator metadata.
+      - 5-3: >
+          Update Intrusion Prevention and Detection Systems to ensure their capability of detecting such threats based on threat intelligence feeds.
+      - 5-4: >
+          Subscribe with Telework-related threat Intelligence providers to collect information and deal with such information periodically.
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: <information technology function> and <cybersecurity function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the policy at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this policy on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this policy.
+    - id: 3
+      description: >
+        Any violation of this policy may be subject to disciplinary action as per <organization name>’s procedures.
