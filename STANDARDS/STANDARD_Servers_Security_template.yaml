@@ -1,0 +1,119 @@
+purpose:
+  description: >
+    This standard aims to define the detailed cybersecurity requirements related to the management and protection of <organization's name>'s servers in order to minimize cybersecurity risks resulting 
+scope:
+  description: >
+    This standard covers all <organization name>’s information and technology assets (including servers) and applies to all personnel (employees and contractors) in <organization name>.
+standards:
+  secure_access:
+    objective: >
+      To ensure the protection of servers and their functions against unauthorized access.
+    risk_implication: >
+      Unauthorized access to servers exposes <organization name> to severe risks that can lead to data leakage or theft, service interruption, or security compromises that attackers can use to carry out further cybersecurity attacks against <organization name> and its infrastructure.
+    requirements:
+      - id: 1-1
+        description: Access on servers must be restricted to server administrators by only allowing access to administrators’ individual accounts and workstation IPs using network Access Control Lists (ACLs).
+      - id: 1-2
+        description: Default/non-interactive/unneeded accounts must be disabled or renamed.
+      - id: 1-3
+        description: Session timeout and session idle lockout must be configured in accordance with the <organization name>’s approved identity and access management standard.
+      - id: 1-4
+        description: BIOS bootloader passwords must be configured.
+      - id: 1-5
+        description: Access to critical servers must be restricted by administrators and operators to be provided through Privileged Access Workstations (PAW) only, and all administrative access must be encrypted.
+      - id: 1-6
+        description: Access to servers must be restricted by administrators and operators and must only be provided through a jump server or PAM.
+      - id: 1-6-1
+        description: A separate jump server must be used for system administrators and users.
+      - id: 1-6-2
+        description: The use of Multi-Factor authentication must be required for the access of jump servers used by system administrators by implementing ACLs.
+      - id: 1-6-3
+        description: Access to jump servers must be restricted to the accounts of authorized administrators and operators only.
+      - id: 1-6-4
+        description: Network access must be restricted to jump servers by implementing ACLs.
+      - id: 1-6-5
+        description: Jump servers must be placed in the network management zone.
+      - id: 1-6-6
+        description: Internet access on jump servers must be disabled.
+      - id: 1-6-7
+        description: Unnecessary and risky services (such as sending and receiving emails) must be disabled on jump servers.
+      - id: 1-6-8
+        description: All levels of logging, as well as audit trail and security logs, must be enabled locally and to a centralized event logging system.
+  server_protection:
+    objective: >
+      To ensure the protection of servers against viruses, malware, Advanced Persistent Threats (APTs), Zero-Day attacks, and any other types of malicious attacks.
+    risk_implication: >
+      Successful malicious attacks on servers can expose <organization name> to a security breach, unauthorized access, or data disclosure if servers are left unprotected.
+    requirements:
+      - id: 2-1
+        description: OS and application functionality lockout must be configured with the least privilege required to operate in normal conditions.
+      - id: 2-2
+        description: Application whitelisting must be enabled on servers to allow only specific applications and software to run based on need.
+      - id: 2-3
+        description: Application whitelisting agents must be configured so that users cannot disable the agents with the exception of administrators when performing specific administrative tasks that would require disabling application whitelisting temporarily.
+      - id: 2-4
+        description: A list of approved executables (exe, com, pif, etc.), software libraries (dll, ocx, etc.), scripts (ps1, bat, vbs, etc.), and installers (msi, msp, etc.) must be defined and approved to be executed by certain users as per the needs.
+      - id: 2-5
+        description: Application whitelisting must be implemented to use cryptographic hash rules, publisher certificate rules, or path rules to allow or restrict the use of applications.
+      - id: 2-6
+        description: Application folders must be configured with file system permissions to prevent unauthorized modification of folder and file permissions.
+      - id: 2-7
+        description: Exploit protection functionality must be enabled on servers with both operating system mitigation measures and application-specific mitigation measures.
+      - id: 2-8
+        description: Endpoint Detection and Response (EDR), Host-based Intrusion Detection System (HIDS) and Host-based Intrusion Prevention System (HIPS) must be implemented on all servers.
+      - id: 2-9
+        description: Software host firewall must be implemented on all servers.
+      - id: 2-10
+        description: Antivirus must be implemented on all servers.
+      - id: 2-11
+        description: End-point protection must be implemented on all servers.
+      - id: 2-12
+        description: Advanced Persistent Threat agents must be implemented on all servers.
+      - id: 2-13
+        description: End-point device control software must be implemented on all servers to prevent the use of unauthorized devices.
+      - id: 2-14
+        description: Data Leakage Prevention (DLP) must be implemented where required in accordance with <organization name>’s approved Data Leakage Prevention standard.
+      - id: 2-15
+        description: All requirements under <organization name>’s Malware Protection Policy must be implemented.
+  central_management:
+    objective: >
+      To define security requirements for central management to ensure that servers are managed and operated securely and that all security requirements are implemented and enforced.
+    risk_implication: >
+      The lack of secure management and the non-implementation of security requirements on servers increases the probability of exposure to attacks and the existence of vulnerabilities and weaknesses in‏ <organization name>’s environment. Exploiting such vulnerabilities in malicious attacks or breaches can compromise the security of <organization name> 's ‏servers and data. ‏
+    requirements:
+      - id: 3-1
+        description: Central management server or domain server must be configured to enforce <organization name>‘s Configuration and Hardening policies on all servers.
+      - id: 3-2
+        description: System configuration management tools that automatically enforce and redeploy configuration settings to systems at regularly scheduled intervals must be deployed.
+      - id: 3-3
+        description: Configuration monitoring system compliant with Security Content Automation Protocol (SCAP) must be implemented to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
+  other_standards:
+    objective: >
+      To implement all server security standards and requirements to ensure the highest protection levels.
+    risk_implication: >
+      Failure to‏ implement all security standards and requirements exposes ‏ <organization name> to increased server security risks.
+    requirements:
+      - id: 4-1
+        description: The following standards must be implemented:
+        standards:
+          - virtualization_security_standard
+          - disaster_recovery_and_backup_standard
+          - cryptography_standard
+          - cybersecurity_event_and_monitoring_management_standard
+          - physical_security_standard
+          - secure_configuration_and_hardening_standard
+roles_and_responsibilities:
+  - standard_owner: <head of the cybersecurity function>
+  - standard_review_and_update: <cybersecurity function>
+  - standard_implementation_and_execution: <information technology organization>
+  - standard_compliance_measurement: <cybersecurity function>
+update_and_review:
+  description: >
+    <cybersecurity function> must review the standard at least once a year or in case any changes happen to the infrastructure, policy, or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+compliance:
+  description: >
+    The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  all_personnel_compliance: >
+    All personnel at <organization name> must comply with this standard.
+  violation_consequence: >
+    Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
