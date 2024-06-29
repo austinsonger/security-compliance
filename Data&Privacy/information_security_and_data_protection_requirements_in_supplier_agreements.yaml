@@ -1,0 +1,75 @@
+information_security_and_data_protection_requirements_in_supplier_agreements:
+  general:
+    - meeting_legal_and_regulatory_requirements_including_data_protection
+    - requirements_for_the_protection_of_information_by_suppliers
+    - information_classification_scheme_mapping_alignment
+    - non-disclosure_agreement_NDA
+    - information_transfer_controls
+    - sub-contracting_by_suppliers:
+        - notification_and_approval
+        - contract_requirements
+        - audit
+        - geographical
+        - legal_jurisdiction
+        - mergers_and_acquisitions
+        - sub-suppliers
+        - IT_infrastructure
+    - notification_of_any_significant_changes
+  requested_information:
+    certification:
+      - information_security_policy
+      - data_protection_policy
+      - information_classification_and_labelling_policy
+      - summary_of_information_security_measures
+      - ISO_27001_27701
+      - SOC_2
+      - cyber_essentials
+      - europay
+    contacts:
+      - CISO_IS_team
+      - DPO_privacy_team
+  IS_controls:
+    implementing_appropriate_technical_and_organisational_measures:
+      - the_pseudonymisation_and_encryption_of_personal_data
+      - the_ability_to_ensure_the_ongoing_confidentiality_integrity_availability_and_resilience_of_processing_systems_and_services
+      - the_ability_to_restore_the_availability_and_access_to_personal_data_in_a_timely_manner_in_the_event_of_a_physical_or_technical_incident
+      - a_process_for_regularly_testing_assessing_and_evaluating_the_effectiveness_of_technical_and_organisational_measures_for_ensuring_the_security_of_the_processing
+    access_control
+    incident_management_policy_and_procedures
+  people_control:
+    - notification
+    - collaboration
+    - single_point_of_contact
+    - personnel_screening
+    - training_and_awareness
+    - NDA
+    - authorisation_if_applicable
+    - physical_security
+    - rules_of_acceptable_use
+    - complying_with_good_practice_for_information_security
+  processing_of_personal_data:
+    - documented_instructions
+    - GDPR_article_28a
+    - requirements_for_international_transfers
+    - responding_to_requests
+    - breach_notification
+    - prior_consultation
+    - DPIA
+    - security_of_processing
+    - assisting_the_controller_in_ensuring_compliance_with_the_obligations
+  assurance:
+    - right_to_audit_the_supplier_processes_and_IS_controls
+    - description_of_the_information_to_be_provided
+    - audits
+    - independent_reports_on_effectiveness_of_IS_controls
+    - penetration_testing
+    - regular_security-related_performance_monitoring_reporting
+  termination:
+    - contract_exit_or_renegotiation_mechanisms
+    - return_of_assets
+    - secure_disposal
+  other:
+    - indemnities_and_remediation_for_failure_of_contractor_to_meet_requirements
+    - defect_resolution_and_conflict_resolution_process
+    - other_legal_statutory_regulatory_and_contractual_requirements
+    - intellectual_property_rights_and_copyright
