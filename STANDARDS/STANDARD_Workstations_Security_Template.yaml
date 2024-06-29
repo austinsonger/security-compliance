@@ -1,0 +1,153 @@
+purpose:
+  description: >
+    This standard aims to define the detailed cybersecurity requirements related to <organization name> workstations to minimize cybersecurity risks and protect it against internal and external threats at <organization name>. 
+scope:
+  description: >
+    This standard covers all workstations in the <organization name> and applies to all personnel (employees and contractors) in <organization name>.
+standards:
+  secure_access:
+    objective: >
+      To ensure the protection of workstations and their functionality against unauthorized access.
+    risk_implication: >
+      Unauthorized access to workstations has severe implications that could lead to information theft and compromise where they can be used to carry out further harmful attacks against <organization name>’s personnel and infrastructure or against any other outside target.
+    requirements:
+      - id: 1-1
+        description: Secure access and identity management for workstations must be implemented in accordance with the technical security controls mentioned in the Identity and Access Management standard applied in <organization name> in order to defend cybersecurity attacks.
+      - id: 1-2
+        description: Access to workstations must be limited to the accounts of the individual users of the workstations only.
+      - id: 1-3
+        description: In addition to a user/password combination, users must be required to use other authentication mechanisms or Multi-Factor Authentication (MFA), such as biometrics, hardware keys, one-time passwords, smart cards, certificates, etc., on workstations of highly protected environment, such as Security Operations Center (SOC).
+      - id: 1-4
+        description: BIOS bootloader passwords must be configured.
+      - id: 1-5
+        description: Restricting physical access to workstations to only authorized personnel.
+      - id: 1-6
+        description: Securing workstations (screen lock or logout) prior to leaving the workspace to prevent unauthorized access.
+      - id: 1-7
+        description: Enabling a password-protected screen saver with a session timeout of <5 minutes> to ensure that workstations that were left unsecured will be protected.
+      - id: 1-8
+        description: Installing privacy screen filters or using other physical barriers to alleviate exposing data to unauthorized disclosure.
+      - id: 1-9
+        description: Exit running applications and close open documents when leaving the office.
+      - id: 1-10
+        description: Ensure access to wireless networks is secure by following the wireless security standard at <organization name>.
+  secure_configuration_and_hardening:
+    objective: >
+      To define critical workstation security requirements to ensure that the workstations are designed, configured, and operated in a secure manner.
+    risk_implication: >
+      Improper and weak configuration of workstations could create security vulnerabilities that could be exploited to jeopardize the confidentiality, integrity, and availability of <organization name>’s data and business operation.
+    requirements:
+      - id: 2-1
+        description: Secure configuration and hardening for workstations must be implemented in accordance with the technical security controls mentioned in the Secure Configuration and Hardening standard applied in <organization name> in order to defend cybersecurity attacks.
+      - id: 2-2
+        description: Unnecessary/unrequired applications and services, such as Telnet Protocol, touch keyboard, remote registry (if not needed), etc., must be removed/disabled on workstations.
+      - id: 2-3
+        description: Secure workstation images or templates must be created for all workstations based on the approved configuration standard controls and as per <organization name>’s Secure Configuration and Hardening Policy, and compromised workstations must be reimaged using one of the workstation image templates.
+      - id: 2-4
+        description: Workstation images must be stored in a secure environment on securely configured offline backups or storage environment, and they must be validated regularly using integrity monitoring tools.
+      - id: 2-5
+        description: Installing unauthorized software on workstations must be blocked.
+      - id: 2-6
+        description: Watermark feature must be used on workstations.
+  endpoint_protection_software:
+    objective: >
+      To ensure the protection of workstations from viruses, malware, advanced persistent threats (APTs), zero-day attacks, and any other type of malicious attacks.
+    risk_implication: >
+      Successful malicious attacks on workstations could expose <organization name> to a breach, unauthorized access, and disclosure of data if workstations are left unprotected.
+    requirements:
+      - id: 3-1
+        description: Prevent creation/modification/deletion of operating system settings and peripheral security software. For example, changing system time manually, editing system files, creating/modifying/deleting files, etc., must be disabled.
+      - id: 3-2
+        description: Application whitelisting must be implemented on workstations to allow only specific applications and software to run based on need.
+      - id: 3-3
+        description: Application whitelisting must be implemented and two features of identifying the application must be used, including but not limited to cryptographic hash rules, publisher certificate rules, or path rules to allow or restrict the use of applications.
+      - id: 3-4
+        description: Application whitelisting agents must be configured so that users cannot disable the agents with the exception of administrators when performing specific administrative tasks that require disabling application whitelisting temporarily.
+      - id: 3-5
+        description: For application whitelisting, a list of approved executable files (exe, com, pif, etc.), software libraries (dll, ocx, etc.), scripts (ps1, bat, vbs, etc.), and installers (msi, msp, etc.) must be defined to allow files from the approved list to be executed only.
+      - id: 3-6
+        description: Host-based Intrusion Prevention System (HIPS) must be implemented on all workstations.
+      - id: 3-7
+        description: Software host firewall must be implemented on all workstations.
+      - id: 3-8
+        description: Antivirus must be implemented on all workstations.
+      - id: 3-9
+        description: Antimalware must be implemented on all workstations.
+      - id: 3-10
+        description: Host Advanced Persistent Threat (APT) agents must be implemented on all workstations.
+      - id: 3-11
+        description: Endpoint Detection and Response must be implemented on all workstations.
+      - id: 3-12
+        description: Endpoint Device Control software must be implemented on all workstations to prevent the use of unauthorized peripheral devices.
+      - id: 3-13
+        description: Data Leakage Prevention (DLP) must be implemented where deemed necessary by <organization name>’s relevant policies and procedures.
+  cryptography:
+    objective: >
+      To ensure the confidentiality of user data and verify its integrity and authenticity against unauthorized access and sensitive information disclosure.
+    risk_implication: >
+      Lack of proper security technologies to ensure the encryption of workstations data may expose <organization name>’s data to high cyber risks as a result of unauthorized access.
+    requirements:
+      - id: 4-1
+        description: Cryptography for workstations must be implemented in accordance with the technical security controls mentioned in the Cryptography standard applied in <organization name> in order to prevent attempts of unauthorized access.
+      - id: 4-2
+        description: Workstations storage media, including hard disks, must be encrypted where deemed necessary by <organization name>’s relevant policies and procedures.
+      - id: 4-3
+        description: Workstation management protocol that supports or configures encryption for workstation management protocols, such as LDAP over TLS, SNMPv3 with authentication and privacy, Kerberos with TLS, encrypted syslog, etc., must be used.
+  central_management:
+    objective: >
+      To define security requirements for the management of workstations to ensure that workstations are centrally managed and operated in a secure manner and ensure all security requirements are implemented and enforced.
+    risk_implication: >
+      Lack of secure management and enforcement of security requirements on workstations increase the attack surface and expose <organization name> environment to potential vulnerabilities and weaknesses that could be exploited in a malicious attack or breach to compromise <organization name>’s workstations and data.
+    requirements:
+      - id: 5-1
+        description: The central management server or domain server must be configured to enforce <organization name>’s workstation security policy on all workstations.
+      - id: 5-2
+        description: System configuration management tools that automatically enforce and redeploy configuration settings to workstations at regularly scheduled intervals must be deployed. For more details, refer to the <organization name>’s Secure Configuration and Hardening Policy.
+      - id: 5-3
+        description: A Security Content Automation Protocol (SCAP) compliant configuration monitoring system must be implemented to verify all security configuration elements, catalog approved exceptions, and alert when unauthorized changes occur.
+  privileged_access_workstations:
+    objective: >
+      To define additional security requirements for the protection of privileged access workstations PAWs used to access critical systems and network zones.
+    risk_implication: >
+      Successful malicious attacks on PAWs could expose <organization name> to serious breaches and compromise of its most critical assets leading to extremely harmful outcomes.
+    requirements:
+      - id: 6-1
+        description: Use of multi-factor authentication must be required for accessing PAWs used by system administrators.
+      - id: 6-2
+        description: Access to PAWs must be restricted to only authorized administrators and operators.
+      - id: 6-3
+        description: PAWs must be placed in the network management zone.
+      - id: 6-4
+        description: All traffic transmitted to or out of PAWs, including administrative access and control traffic (such as Secure Shell “SSH” and Remote Desktop Protocol “RDP”), and data traffic using cryptographic mechanisms (such as Transport Layer Security “TLS”), must be encrypted as per <organization name>’s Cryptography Standard.
+      - id: 6-5
+        description: Internet access on PAWs must be disabled.
+      - id: 6-6
+        description: Services that are not necessary or required (such as sending and receiving emails) must be disabled on PAWs.
+      - id: 6-7
+        description: All levels of logging, as well as audit trail and security logs, must be enabled locally and to a centralized event logging system.
+  other_standard_controls:
+    objective: >
+      To implement all workstation security standard controls and requirements to ensure the highest protection levels.
+    risk_implication: >
+      Failure to implement all security standard controls and requirements exposes <organization name> to increased workstations security risks.
+    requirements:
+      - description: The following standard must be implemented in relevance to workstations:
+        standards:
+          - Cybersecurity Event Logs and Monitoring Management standard
+          - Cybersecurity Backup management standard
+          - Physical security standard
+roles_and_responsibilities:
+  standard_owner: <head of cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: 
+    - <information technology function>
+    - <cybersecurity function>
+  standard_compliance_measurement: <cybersecurity function>
+update_and_review:
+  description: >
+    <cybersecurity function> must review this standard at least once a year or in case any significant changes happen to the infrastructure, or any changes happen to the policy or the regulatory procedures in <organization name> or the relevant legislative and regulatory requirements.
+compliance:
+  description: >
+    The <head of cybersecurity function> will ensure the compliance of <organization name> with this standard on a regular basis.
+    All personnel at <organization function> must comply with this standard.
+    Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
