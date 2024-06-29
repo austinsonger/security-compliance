@@ -1,0 +1,216 @@
+purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to protecting <organization name>’s external web applications to minimize cybersecurity risks and protect it against internal and external threats.
+
+scope: >
+  This standard applies to all <organization name>'s external web applications and to all personnel (employees and contractors) in <organization name>.
+
+standards:
+ - id: 1
+    title: Access Management
+    objective: >
+      To ensure the protection of web applications against unauthorized access.
+    risk_implication: >
+      Unauthorized access to web applications has severe implications that could lead to information exfiltration or theft where they can be used to carry out further cyber-attacks against <organization name>’s infrastructure.
+    requirements:
+      - id: 1-1
+        description: >
+          Secure access and identity management for web applications must be implemented in accordance with the technical security controls mentioned in the Identity and Access Management standard controls applied in <organization name> in order to defend cybersecurity attacks.
+      - id: 1-2
+        description: >
+          Ensure secure session management, including session authenticity, session lockout and session timeout.
+ - id: 2
+    title: Web Application Architecture
+    objective: >
+      To define web application cybersecurity architecture requirements to ensure that the web applications are designed and deployed in a secure manner.
+    risk_implication: >
+      Weak security designs are critical security risks that could be exploited in cyber-attacks to jeopardize <organization name>’s business operation.
+    requirements:
+      - id: 2-1
+        description: >
+          Web applications for critical systems must follow the multi-tier architecture principle with minimum 3 tiers, or micro-services architecture protected by a dual layer of firewalls must be implemented. More specifically, webservers must be placed in the Internet DMZ, web application servers must be placed in the Production Zone, and database servers must be placed in the Trusted/Database zone.
+      - id: 2-2
+        description: >
+          Logical or physical isolation of critical web applications from other web applications or systems must be implemented. For example, physical isolation can be achieved by hosting web applications in a completely different separate physical environment, while logical isolation can be achieved by implementing web applications in a separate zone inside the network without allowing access from any other zone.
+      - id: 2-3
+        description: >
+          Production web applications must be logically isolated from test and development environments using network restrictions by configuring Access-Control Lists (ACLs) and security policies on firewalls.
+      - id: 2-4
+        description: >
+          Network access to web applications must be restricted to web servers zones, web applications server zones and management server zone.
+      - id: 2-5
+        description: >
+          A Web Application Firewall (WAF) must be deployed in front of all web application servers to verify and validate the traffic going to the server. Since WAF devices detect or block web-based and application-based attacks on external-facing services and web applications, any unauthorized traffic must be blocked and logged. (Additionally, WAF must be configured to enable IP the intelligence feature and IP geo-location features in order to block blacklisted IPs and specific countries).
+      - id: 2-6
+        description: >
+          Configure WAF to mitigate OWASP Top Ten Web Application Security Risks for critical web applications as per <organization name>’s relevant standard controls.
+      - id: 2-7
+        description: >
+          Apply API security controls to mitigate OWASP Top Ten API Security for critical web applications at the minimum level.
+      - id: 2-8
+        description: >
+          IPS and WAF must be configured to enable signatures that match the web application behavior and protocols (e.g., Oracle OHS, IIS, Apache, SQL, XML, etc.).
+      - id: 2-9
+        description: >
+          Malware protection solution and APT systems must be configured to check all file transfer operations related to web applications for malicious files for example as per <organization name>’s Malware Protection Policy and Standard controls.
+      - id: 2-10
+        description: >
+          Web application security solutions and systems must be configured to follow a positive security model or whitelisting model by allowing only specific file types, specific protocols and ports, specific layer 7 web applications and specific web application parameters, while denying all files and applications that are not configured.
+      - id: 2-11
+        description: >
+          Secure web applications and communication protocols, such as HTTPS, SFTP, TLS, etc. must be used.
+ - id: 3
+    title: Secure Configuration and Hardening
+    objective: >
+      To define web application secure configuration and hardening requirements to ensure that the web applications are configured and operated in a secure manner.
+    risk_implication: >
+      Misconfiguration and weak configurations of web applications and its technology components are common security vulnerabilities that could be exploited in cyber-attacks to jeopardize <organization name>’s business operation.
+    requirements:
+      - id: 3-1
+        description: >
+          Secure configuration and hardening for web applications must be implemented in accordance with the technical security controls mentioned in the Secure Configuration and Hardening standard controls applied in <organization name> in order to defend cybersecurity attacks.
+      - id: 3-2
+        description: >
+          Web application security assessments, including Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST), must be performed regularly.
+      - id: 3-3
+        description: >
+          Unnecessary/unrequired services, functionalities and configuration files must be removed or disabled.
+      - id: 3-4
+        description: >
+          Access to unnecessary/unrequired network shared files and directories must be blocked.
+      - id: 3-5
+        description: >
+          Application source code must be secured and hardened.
+      - id: 3-6
+        description: >
+          Secure web application images or templates must be created for all web applications based on the approved configuration standard controls. Any web application server that becomes compromised must be reimaged using one of these image templates.
+      - id: 3-7
+        description: >
+          Images must be stored in a secure environment on securely configured servers, and must be regularly validated using integrity monitoring tools.
+ - id: 4
+    title: Availability
+    objective: >
+      To maintain availability of external web applications against denial of service attacks (DDOS) and accidental failure.
+    risk_implication: >
+      If web applications are not sufficiently protected against denial of service attacks and infrastructure failure, web applications could be a target of DoS attacks and face sustained service outage and performance issues.
+    requirements:
+      - id: 4-1
+        description: >
+          A web application architecture that eliminates the existence of single points of failure must be deployed and implemented.
+      - id: 4-2
+        description: >
+          Load balancing mechanisms, such as those offered by an application load balancer device, must be deployed.
+      - id: 4-3
+        description: >
+          Web application data replication mechanisms must be implemented on Disaster Recovery (DR) or secondary sites.
+      - id: 4-4
+        description: >
+          An exact replica of critical web application production environment must be deployed on the Disaster Recovery (DR) site.
+      - id: 4-5
+        description: >
+          For web applications hosted by third parties, the Service Level Agreement (SLA) must maintain an acceptable level of web application and services availability in accordance with <organization name>’s Third Party Cybersecurity Policy.
+      - id: 4-6
+        description: >
+          Automated or manual web application traffic redirection to the backup or Disaster Recovery (DR) site must be configured in case of production environment failure.
+ - id: 5
+    title: Cryptography
+    objective: >
+      To ensure the confidentiality of web application data and verify its integrity.
+    risk_implication: >
+      Without encryption and integrity validation techniques, web application data and protected information could be exposed, tampered or accessed without authorization.
+    requirements:
+      - id: 5-1
+        description: >
+          Cryptography for web applications must be implemented in accordance with the technical security controls mentioned in the Cryptography standard controls applied in <organization name> and related laws and regulations in order to defend cybersecurity attacks.
+      - id: 5-2
+        description: >
+          End-to-end encryption for web applications client/server communications must be used.
+      - id: 5-3
+        description: >
+          Web application certificates must be provided from a trusted CA compliance source and periodically renewed in accordance with the related laws and regulations.
+      - id: 5-4
+        description: >
+          Certificate based asymmetric (private/public) cryptography must be used for all public external web applications as per <organization name>’s Cryptography Standard controls.
+      - id: 5-5
+        description: >
+          Encryption functionalities and certificate management must be enabled on the web application firewall to provide more visibility into threats and attacks.
+      - id: 5-6
+        description: >
+          Web applications cryptographic keys must be stored in a secure vault and physically secure locations as per <organization name>’s relevant policies and procedures.
+ - id: 6
+    title: Event and Audit Logging
+    objective: >
+      To ensure all web application events in <organization name> are monitored and logged.
+    risk_implication: >
+      Failure to monitor and log web application events in <organization name> will make it difficult for it to detect cybersecurity attacks and threats, leading to more damages to the applications.
+    requirements:
+      - id: 6-1
+        description: >
+          Event and Audit Logging for web applications must be enabled in accordance with the technical security controls mentioned in the <organization name>’s Cybersecurity Event Logs and Monitoring Management standard controls in order to defend cybersecurity attacks.
+ - id: 7
+    title: Backup and Archival
+    objective: >
+      To ensure the integrity, availability and recoverability of web application data against tampering, accidental loss or destruction.
+    risk_implication: >
+      If web applications data are deleted or tampered due to accidental loss, damage or attack the <organization name> will not be able to recover data which will impact normal business operations.
+    requirements:
+      - id: 7-1
+        description: >
+          Backup and archival for web applications must be implemented in accordance with the technical security controls mentioned in the Backup and Recovery Management standard controls applied in <organization name> in order to defend cybersecurity attacks.
+      - id: 7-2
+        description: >
+          Full backups for web applications must be performed, serialized, time-dated and indexed in accordance with <organization name>’s Backup and Recovery Management Policy. The backups must include at minimum web applications' configuration backups, and the stored data and information of web applications.
+ - id: 8
+    title: Modernized and Cloud Native Web Applications
+    objective: >
+      To define cybersecurity requirements for cloud native web applications to ensure that they are deployed, configured and operated in a secure manner.
+    risk_implication: >
+      Using cloud computing service to operate web applications without proper security and cybersecurity measures are common security vulnerabilities that could be exploited in cyber-attacks to jeopardize <organization name>’s business operation efficiency.
+    requirements:
+      - id: 8-1
+        description: >
+          A DevSecOps methodology and process must be developed and adopted.
+      - id: 8-2
+        description: >
+          A secure Continuous Integration/Continuous Deployment (CI/CD) pipeline must be developed and implemented following best practices.
+      - id: 8-3
+        description: >
+          A container security platform must be deployed from a trusted vendor to manage container security and ensure that the container system is safe.
+      - id: 8-4
+        description: >
+          Security patches must be regularly deployed.
+      - id: 8-5
+        description: >
+          Critical information management mechanisms must be implemented to manage Confidential information, keys and certifications, and prevent storing confidential information in containers.
+      - id: 8-6
+        description: >
+          Container images from trusted or approved sources must be used.
+      - id: 8-7
+        description: >
+          Containers' infrastructure must be isolated.
+      - id: 8-8
+        description: >
+          Automated vulnerability detection must be used to scan containers before and after their deployment into the production environment.
+      - id: 8-9
+        description: >
+          Monitoring tools must be deployed to regularly monitor applications' health, availability, and efficiency.
+
+roles_and_responsibilities:
+  standard_owner: <head of the cybersecurity function>
+  standard_review_and_update: <cybersecurity function>
+  standard_implementation_and_execution: < IT function> and <cybersecurity function>
+  standard_compliance_measurement: <cybersecurity function>
+
+update_and_review: >
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  requirements:
+    - id: 1
+      description: >
+        The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    - id: 2
+      description: >
+        All personnel at <organization name> must comply with this standard.
+    - id: 3
+      description: >
+        Any violation of this standards may be subject to disciplinary action according to <organization name>’s procedures.
