@@ -1,0 +1,76 @@
+ISO_27018_2014:
+  scope:
+    description: "Information technology — Security techniques — Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors"
+    details: "This International Standard establishes commonly accepted control objectives, controls and guidelines for implementing measures to protect Personally Identifiable Information (PII) in accordance with the privacy principles in ISO/IEC 29100 for the public cloud computing environment."
+    applicable_to:
+      - all_types_and_sizes_of_organizations:
+          - public_and_private_companies
+          - government_entities
+          - not-for-profit_organizations
+      - organizations_acting_as_PII_processors
+      - organizations_providing_information_processing_services
+      - relevant_to_organizations_acting_as_PII_controllers
+  terms:
+    definitions:
+      - data_breach
+      - personally_identifiable_information_PII
+      - PII_controller
+      - PII_principal
+      - PII_processor
+      - processing_of_PII
+      - public_cloud_service_provider
+  controls_ISO_27002:
+    areas:
+      - information_security_policies
+      - organization_of_information_security
+      - human_resource_security
+      - asset_management
+      - access_control
+      - cryptography
+      - physical_and_environmental_security
+      - operations_security
+      - communications_security
+      - system_acquisition_development_and_maintenance
+      - supplier_relationships
+      - information_security_incident_management
+      - information_security_aspects_of_business_continuity_management
+      - compliance
+  annex_A_public_cloud_PII_processor_extended_control_set_for_PII_protection:
+    A.1: obligation_to_co-operate_regarding_PII_principals_rights
+    A.1.1: consent_and_choice
+    A.2.1: public_cloud_PII_processor's_purpose
+    A.2.2: public_cloud_PII_processor's_commercial_use
+    A.3: collection_limitation
+    A.4: data_minimization
+    A.4.1: secure_erasure_of_temporary_files
+    A.5.1: PII_disclosure_notification
+    A.5.2: recording_of_PII_disclosures
+    A.6: accuracy_and_quality
+    A.7.1: disclosure_of_sub-contracted_PII_processing
+    A.7.2: openness_transparency_and_notice
+    A.8: individual_participation_and_access
+    A.9: notification_of_a_data_breach_involving_PII
+    A.9.1: retention_period_for_administrative_security_policies_and_guidelines
+    A.9.3: PII_return_transfer_and_disposal
+    A.10.1: confidentiality_or_non-disclosure_agreements
+    A.10.2: restriction_of_the_creation_of_hardcopy_material
+    A.10.3: control_and_logging_of_data_restoration
+    A.10.4: protecting_data_on_storage_media_leaving_the_premises
+    A.10.5: use_of_unencrypted_portable_storage_media_and_email_transmissions
+    A.10.6: encryption_of_PII_transmitted_over_public_data-transmission_networks
+    A.10.7: secure_disposal_of_hardcopy_materials
+    A.10.8: unique_use_of_user_IDs
+    A.10.9: records_of_authorized_users
+    A.10.10: user_ID_management
+    A.10.11: contract_measures
+    A.10.12: sub-contracted_PII_processing
+    A.10.13: access_to_data_on_pre-used_data_storage_space
+    A.11.1: geographical_location_of_PII
+    A.11.2: intended_destination_of_PII
+  references:
+    standards:
+      - ISO_17788
+      - ISO_27000
+      - ISO_27001
+      - ISO_27002
+      - ISO_29100
