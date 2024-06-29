@@ -1,0 +1,85 @@
+ISO_27035_information_security_incident_management:
+  standards:
+    - ISO/IEC_27035-1:2023: Part_1_Principles_and_process
+    - ISO/IEC_27035-2:2023: Part_2_Guidelines_to_plan_and_prepare_for_incident_response
+    - ISO/IEC_27035-3:2020: Part_3_Guidelines_for_ICT_incident_response_operations
+    - ISO/IEC_CD_27035-4: Part_4_Coordination (under_development)
+  terms:
+    - information_security_event: occurrence_indicating_a_possible_breach_of_information_security_or_failure_of_controls
+    - information_security_incident: related_and_identified_information_security_events_that_can_harm_an_organization's_assets_or_compromise_its_operations
+    - information_security_incident_management: collaborative_activities_to_handle_information_security_incidents_in_a_consistent_and_effective_way
+  process:
+    1_plan_and_prepare:
+      - develop_and_maintain_security_policies_guides_and_standards_related_to_IS_management_at_the_organizational_and_system_service_and_network_levels
+      - establish_incident_response_team
+      - establish_IS_incident_management_plan
+      - develop_and_document_IS_incident_management_policy_and_related_documentation_reviews
+    2_detect_and_report:
+      - detect_and_alert_anomalous_suspicious_or_malicious_activities
+      - report_information_security_events
+      - assess_information_security_event_and_determine_if_it_constitutes_IS_incident
+      - establish_the_necessary_IS_incident_response_team
+    3_assess_and_decide:
+      - investigate_and_determine_whether_IS_incidents_are_under_control
+      - contain_and_eradicatie_IS_incidents
+    4_respond:
+      - identify_document_and_communicate_the_lessons_learnt
+      - make_and_implement_improvements_to_IS_management
+    5_learn_lessons:
+      - evaluate_the_performance_and_effectiveness_of_the_IS_response_team
+  benefits_of_a_structured_approach:
+    - improving_overall_information_security
+    - reducing_adverse_business_consequences
+    - strengthening_the_focus_on_information_security_incident_prevention
+    - improving_prioritization
+    - supporting_evidence_collection_and_investigation
+    - contributing_to_budget_and_resource_justifications
+    - improving_updates_to_IS_risk_assessment_and_treatment_results
+    - providing_enhanced_IS_awareness_and_training_programme_material
+    - providing_IS_policy_and_related_documentation_reviews
+    - developing_and_documenting_IS_management_policies_and_procedures
+    - identifying_and_reporting_on_root_causes
+    - establishing_and_maintaining_relationships_with_external_parties
+  ISO_27035-1:
+    content:
+      - introduction
+      - 1_scope
+      - 2_normative_references
+      - 3_terms_definitions_and_abbreviated_terms
+      - 4_overview
+      - 5_process
+      - Annex_A: relationship_to_investigative_standards
+      - Annex_B: examples_of_information_security_incidents_and_their_causes
+      - Annex_C: cross-references_table_of_ISO/IEC_27035_to_the_ISO/IEC_27035_series
+  ISO_27035-2:
+    content:
+      - introduction
+      - 1_scope
+      - 2_normative_references
+      - 3_terms_definitions_and_abbreviated_terms
+      - 4_IS_incident_management_policy
+      - 5_updating_of_IS_policies
+      - 6_creating_IS_incident_management_plan
+      - 7_establishing_IS_response_team
+      - 8_establishing_internal_and_external_relationships
+      - 9_defining_IS_incident_reporting_and_tracking
+      - 10_creating_IS_incident_reports_and_supporting_information
+      - 11_testing_the_IS_incident_management_plan
+      - Annex_A: considerations_related_to_legal_or_regulatory_requirements
+      - Annex_B: example_figures_for_IS_event_reports_incidents_and_vulnerability_reports
+  ISO_27035-3:
+    content:
+      - introduction
+      - 1_scope
+      - 2_normative_references
+      - 3_terms_definitions_and_abbreviated_terms
+      - 4_overview
+      - 5_content
+      - 6_common_types_of_attacks
+      - 7_incident_detection_operations
+      - 8_incident_notification_operations
+      - 9_incident_triage_operations
+      - 10_incident_analysis_operations
+      - 11_incident_containment_eradication_and_recovery_operations
+      - 12_incident_reporting_operations
+      - Annex_A: example_of_the_incident_detection_based_on_information_security_controls_and_indicators
