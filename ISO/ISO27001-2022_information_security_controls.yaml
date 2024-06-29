@@ -1,0 +1,96 @@
+information_security_controls:
+  6.1 Screening:
+    purpose: "To ensure all personnel are eligible and suitable for the roles they are considered for, and to maintain and improve security."
+    verification:
+      - Procedures should define criteria and limitations for verification reviews
+      - All personnel:
+        - Full-time
+        - Part-time
+        - Temporary staff
+      - Repeated periodically
+      - Conducted in accordance with any relevant legislation:
+        - e.g., Data Protection
+      - Screening requirements should be included in the contractual agreements
+  6.2 Terms and conditions of employment:
+    purpose: "To ensure that employees and contractors understand their information security responsibilities during the pre-employment process."
+    topics:
+      - Responsibilities for the classification of information
+      - Responsibilities for handling of information obtained from interested parties
+      - Access to be taken if personnel disregard the organisation's security requirements
+      - Information security roles and responsibilities during the pre-employment process
+      - Code of conduct
+  6.3 Information security awareness, education and training:
+    purpose: "To ensure all personnel are provided with appropriate awareness education and training."
+    awareness:
+      - Inform all personnel of the organization's information security policy, topic-specific policies, and relevant procedures
+      - Initial and periodic security awareness training
+      - Personnel understanding should be assessed
+      - Awareness to general aspects:
+        - New hires
+        - Contractors
+        - Visitors
+      - Mechanisms for communication (e.g., newsletters, websites, meetings)
+    education_and_training:
+      - Provide training for technical teams
+      - Provide awareness training for non-technical staff
+      - Educate personnel on the "what," "how," but also the "why," where possible
+  6.4 Disciplinary process:
+    purpose: "To ensure that there are disciplinary processes in place to handle personnel who have committed information security breaches."
+    factors:
+      - Disciplinary procedures should address:
+        - Handling of information security incidents
+        - Consequences for unacceptable behavior
+        - Impact on roles
+        - Proper channels for the violation to be addressed
+      - Encourage good behavior
+  6.5 Responsibilities after termination or change of employment:
+    purpose: "To protect the organization's interests as part of the process of changing or terminating employment."
+    important_documentation:
+      - Return of assets:
+        - Paper documents
+        - Hardware
+        - Software
+      - Authentication credentials
+    processes:
+      - Ensure proper handover of responsibilities and return of equipment
+      - Upon termination of employment, ensure the copying of critical information by individuals during their notice period should be restricted
+  6.6 Confidentiality or non-disclosure agreements:
+    purpose: "To maintain confidentiality of information accessible to personnel and external parties."
+    topics:
+      - Definition of the information to be protected in the confidentiality agreement
+      - The expected duration of the agreement
+      - Required actions to protect information and confidentiality
+      - Rights and obligations of the parties involved
+      - The provisions of confidentiality should remain effective even after the termination or change of employment
+      - Requirements for monitoring and review
+      - Ensure that information will be returned or destroyed at the end of the period
+      - Regular review of confidentiality agreements
+  6.7 Remote working:
+    purpose: "To ensure the security of information when personnel are working remotely."
+    areas:
+      - Prevention of suitable equipment:
+        - Selection
+        - Confidentiality
+        - Protection of data
+      - Awareness and training:
+        - Provision of suitable equipment
+        - Physical security
+        - Rules and guidance on family and visitor access to equipment and information
+        - Provision of hardware and software support and maintenance
+        - Provision of insurance
+        - Procedures for backup and business continuity
+        - Asset and security monitoring
+        - Reallocation of authority and access rights at the end of employment
+  6.8 Information security event reporting:
+    purpose: "To ensure timely and effective reporting of information security events."
+    event_reporting:
+      - Ineffective controls
+      - Breach of expectations
+      - Human errors
+      - Non-compliance with policies
+      - Breaches of physical security measures
+      - System changes that have not gone through the change management process
+      - Malfunctions or other anomalies
+      - Access violations
+      - Vulnerabilities
+      - Suspected malware infections
