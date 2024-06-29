@@ -1,0 +1,39 @@
+jira_for_cybersecurity:
+  main_project: Cybersecurity_Team
+  issue_type:
+    - Epic: large_projects
+    - Task: by_default
+    - Story: unstructured_requirements_or_requests_from_the_interested_parties
+  text:
+    - summary
+    - parent_task: link_to_the_epic
+    - description: text
+    - labels: tags
+  status:
+    default:
+      - backlog
+      - to_do
+      - in_progress
+      - done
+    other:
+      - approval
+      - archive
+      - in_waiting
+  priority:
+    - highest: This_problem_will_block_progress
+    - high: Serious_problem_that_could_block_progress
+    - medium: Has_the_potential_to_affect_progress
+    - low: Minor_problem_or_easily_worked_around
+    - lowest: Trivial_problem_with_little_or_no_impact_on_progress
+  people:
+    - reporter
+    - assignee
+    - reviewer
+    - approvers
+  dates:
+    - deadline
+    - start_date
+    - due_date
+  other:
+    - attachment
+    - linked_issues
