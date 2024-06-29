@@ -1,0 +1,156 @@
+Purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to Endpoint Detection and Response (EDR) solutions for <organization name>. The ability of <organization name> to deploy and use EDR solutions in accordance with this standard will assist in proper monitoring of malicious activities and detection of anomalies on all endpoints, and in preserving the availability, integrity, and confidentiality of <organization name>’s assets and information.
+Scope: >
+  The standard covers <organization name>’s information and technology assets and applies to all personnel (employees and contractors) in <organization name> and related third parties.
+Standards:
+  1:
+    title: General Requirements
+    Objective: >
+      The EDR solution must be securely managed and appropriately used when required.
+    Risk Implication: >
+      Misconfiguration of EDR solutions may reduce the chance of threat identification and result in information theft, unauthorized access, and information disclosure.
+    Requirements:
+      1-1: >
+        At the most general level, the EDR solution must provide real-time continuous security monitoring and collection of endpoint data with rules-based automated response and analysis capabilities.
+      1-2: >
+        EDR solution must be deployed as an agent mode solution.
+      1-3: >
+        EDR solution must provide monitoring and protection among every endpoint in the <organization name>. This requirement is independent of the endpoint's operating system. In case of particular operating systems not supporting EDR solution deployment, those must be separated into a special group and monitored in a dedicated, special manner.
+      1-4: >
+        EDR solution must provide information not only about techniques, tactics, and procedures that the attacker uses, but it must also provide information about how attackers break into the internal network, move to other machines, escalate on-host privilege to accomplish their goals in the attack.
+      1-5: >
+        All security updates to the EDR software must be installed as they are released by the vendor.
+      1-6: >
+        All security updates must follow patch management and hardening policy requirements.
+      1-7: >
+        EDR software updates must be conducted according to the change management procedure.
+      1-8: >
+        EDR solution must provide abilities for deep analysis and advanced forensics examination in case of a need to conduct an investigation.
+      1-9: >
+        EDR solution shall be scalable to address next-generation cybersecurity threats concern.
+      1-10: >
+        Periodic backup of relevant data and alerts, EDR configuration files (rules, reports, dashboards, groups, scheduled actions), and file storage management must be conducted according to the <organization name>’s backup policy and procedure.
+      1-11: >
+        A Service Level Agreement (SLA) must be defined to outline specific responsibilities of the EDR solution provider and satisfy <organization name>’s expectations.
+      1-12: >
+        <organization name> must verify the list of permissions needed to be assigned for proper work of the EDR agent. The list of permissions might be different based on the EDR working mode (block or monitor) and should be adjusted accordingly using the least privileges rule.
+  2:
+    title: Data Collection and Monitoring
+    Objective: >
+      EDR software agents must properly monitor and collect endpoint data, such as processes, connections, volume of activity, and data transfers into a central database.
+    Risk Implication: >
+      Improper monitoring and data collection of software agents may have severe consequences in EDR solution not detecting and reacting to threats properly.
+    Requirements:
+      2-1: >
+        EDR solution must implement a centralized management console with the following features:
+        - simultaneous access,
+        - monitoring of current events,
+        - visualization of important information,
+        - display of particular event details,
+        - multi-window work mode,
+        - advanced filtering capabilities,
+        - automatic refreshing,
+        - access without the need to switch interfaces,
+        - automatic reporting.
+      2-2: >
+        EDR solution must monitor and collect activity data from endpoints that could indicate a threat.
+      2-3: >
+        EDR solution must cross-correlate data across the whole environment of its monitoring range.
+      2-4: >
+        EDR solution must collect and monitor data without interfering with the endpoint activities.
+      2-5: >
+        EDR solution must work regardless of whether there is or isn't any antivirus software on the endpoint.
+      2-6: >
+        EDR solution must collect and monitor relevant data to build a complete picture of endpoint activity.
+      2-7: >
+        Relevant data for EDR solution must include information covering the following areas: Processes, Connections, Files, Drivers, Autorun, System, Machine, Users. Additional data sources may be used, including but not limited to:
+        - logs,
+        - performance monitoring,
+        - file details,
+        - running processes, and
+        - configuration data.
+      2-8: >
+        EDR solution must properly collect and monitor endpoint activity no matter where the endpoint is located.
+  3:
+    title: Data Analysis and Threat Pattern Identification
+    Objective: >
+      Real-time analysis for rapid diagnosis of threats that weren’t foreseen in automated response tables.
+    Risk Implication: >
+      Improper data analysis and threat pattern identification may have severe consequences in automatic response and notification not reacting correctly.
+    Requirements:
+      3-1: >
+        EDR solution must monitor every endpoint in the organization to collect and analyze gathered data that could give indication of suspicious activities or potential threats.
+      3-2: >
+        EDR solution must give a clear signal of being under attack to the <organization name>’s IT staff members. EDR must provide details concerning where the attack comes from and what the attacker has managed to achieve.
+      3-3: >
+        EDR solution must identify threat patterns based on aggregated data from all endpoints, rather than a single one.
+      3-4: >
+        EDR solution must compare new dataset patterns to the previous ones, in order to identify previously unknown or known malicious activities.
+      3-5: >
+        EDR solution must provide behavioral threat detection capabilities.
+      3-6: >
+        EDR solution must use globally accessible knowledge databases concerning cybersecurity threat categorization (e.g., MITRE ATT&CK globally accessible knowledge base of adversary tactics and techniques based on real-world observations).
+      3-7: >
+        EDR solution must assign risk scorings and categorize cyber threats based on criticality and confidence. Criticality estimates the impact on the cyber environment of a potentially ineffective detection. Confidence means how likely it is that the detection is valid and not a false-positive.
+  4:
+    title: Automatic Response and Notification
+    Objective: >
+      Creation of pre-configured rules for rapid response in case of potential rule violation, combined with proper alarming.
+    Risk Implication: >
+      Misconfigured or poor automatic response and notification may have severe consequences in taking proper actions to prevent or stop potential intrusion.
+    Requirements:
+      4-1: >
+        EDR solution must provide an automatic response and alerting system, covering up-to-date attack scenarios.
+      4-2: >
+        EDR solution must accelerate response time by integrating and sharing security insights with Network Detection and Response (NDR), Security Information and Event Management (SIEM), and Security Orchestration, Automation, and Response (SOAR) tools.
+      4-3: >
+        EDR solution must trigger an automatic response based on previously identified threat (Table A).
+      4-4: >
+        EDR solution must prevent the malicious file from running and spreading throughout the network during or after your investigation.
+      4-5: >
+        EDR solution must automatically isolate infected hosts on finding an indicator of compromise associated with a fast-spreading threat.
+      4-6: >
+        EDR solution must automatically quarantine files associated with evasive threats on all endpoints.
+      4-7: >
+        EDR solution must automatically log and notify <organization name>’s IT staff members when the solution identifies a potential threat, triggers an automatic response, or when there isn’t a defined automatic response to an identified threat.
+      4-8: >
+        EDR solution must gather in the log file any events that may be in the scope of audit inspection (e.g., suspicious activities, threat identification, automatic action, staff notification).
+  5:
+    title: Other Standards
+    Objective: >
+      The EDR solution must be securely configured and used appropriately when required.
+    Risk Implication: >
+      If <organization name> is not compliant with all standards and requirements, it could be exposed to severe threat exposure.
+    Requirements:
+      5-1: >
+        The following standards must be implemented in relevance to EDR solution:
+        - Identity and access Management
+        - Disaster recovery and backup
+        - Cryptography
+        - Event and audit logging
+        - Physical security
+        - Secure configuration and hardening
+        - Event Log Management and Monitoring
+        - Malware Protection
+        - Backup and Recovery Management
+        - Network Detection and Response
+Table A – Responding to detections:
+  - File retrieve: Retrieves files.
+  - Process shutdown: Shuts down suspicious processes.
+  - Thread shutdown: Shuts down suspicious threads.
+  - Connection shutdown: Shuts down suspicious connections.
+  - File deletion: Deletes suspicious files.
+  - Registry deletion: Deletes suspicious register records.
+  - Scheduled task deletion: Deletes scheduled tasks.
+  - Service deletion: Deletes services that match particular criteria.
+Roles and Responsibilities:
+  Standard Owner: <head of the Cybersecurity function>
+  Standard Review and Update: <cybersecurity function>
+  Standard Implementation and Execution: <information technology function>
+  Standard Compliance Measurement: <cybersecurity function>
+Update and Review:
+  <cybersecurity function> must review the standard at least once a year or in case any changes happen to the policy or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+Compliance:
+  - The <head of the Cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+  - All personnel at <organization name> must comply with this standard.
+  - Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
