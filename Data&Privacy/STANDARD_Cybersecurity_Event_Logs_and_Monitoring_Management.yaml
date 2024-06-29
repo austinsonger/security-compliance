@@ -1,0 +1,75 @@
+document_approval:
+  - role: "Choose Role"
+    job_title: "<Insert job title>"
+    name: "<Insert individual's full personnel name>"
+    date: "Click here to add date"
+    signature: "<Insert signature>"
+
+purpose:
+  description: >
+    This Standard aims to define the detailed cybersecurity requirements for cybersecurity event logs and monitoring management of ‏<organization name> ‏to achieve the main objective of this Standard which is minimizing cybersecurity risks resulting from internal and external threats at ‏<organization name>.
+    The requirements in this standard are aligned with the Cybersecurity Event Logs and Monitoring Management Policy and the cybersecurity requirements issued by the National Cybersecurity Authority (NCA) including but not limited to (ECC-1:2018) and (CSCC-1:2019), in addition to other related cybersecurity legal and regulatory requirements.
+
+scope:
+  description: >
+    This standard covers all ‏<organization name> ‏cybersecurity event logs and monitoring management and applies to all personnel (employees and contractors) in the ‏<organization name>. This standard must follow the NCA’s operating model for cybersecurity operation centers and NCA’s regulatory cybersecurity requirements.
+
+standards:
+  log_format:
+    objective: "To enforce a standard and consistent log format including all the required information."
+    risk_implication: >
+      If logs are recorded on an inconsistent basis, it may be difficult to compare multiple different logs. This leads to a higher risk of misinformation, thus potentially making security incidents more challenging to remediate.
+    requirements:
+      - "1-1 Events log format must include:"
+      - "1-1-1 Event Log Type: Such as System, Security, Audit, Kernel, Authorization, Mail, etc."
+      - "1-1-2 Location of the event or source/system of the log."
+      - "1-1-3 Date and Timestamp of the event log."
+      - "1-1-4 Event Status: Success, Failure, Up, Down, Allow, Deny, etc."
+      - "1-1-5 Event Severity: Emergency, Alert, Critical, Error, Warning, Notice, Informational, etc."
+      - "1-1-6 Event Message: Actual message of the event."
+      - "1-2 Additional details must be included in logs wherever applicable, such as user, source address/port, destination address/port, and other useful elements."
+  timestamps:
+    objective: "To enforce a credible system for internal information and technology assets."
+    risk_implication: >
+      If logs are recorded on an inconsistent basis, it may be difficult to compare multiple different logs. This leads to a higher risk of misinformation, thus potentially making security incidents more challenging to remediate.
+    requirements:
+      - "2-1 The information and technology assets must be synchronized with three redundant central time servers within milliseconds from a trusted synchronization source."
+  event_logging:
+    objective: "To ensure that cybersecurity incidents and unauthorized activity in the environment do not go undocumented and unnoticed."
+    risk_implication: >
+      It is important to record main events executed in the environment. If fails to log the specified events in the control requirements, this would lead to an increased risk of unidentified and possible unauthorized events occurring in the environment, which could cause potential business impact depending on the severity of the incident.
+    requirements:
+      - "3-1 All the events specified under these control requirements must be logged:"
+      - "3-1-1 Successful login attempts."
+      - "3-1-2 Unsuccessful login attempts, along with the identification of whether the login attempt involved an invalid password."
+      - "3-1-3 All logoffs."
+      - "3-1-4 Additions, deletions and modifications to user accounts/privileges."
+      - "3-1-5 Users switching IDs during an online session."
+      - "3-1-6 Attempts to perform unauthorized functions."
+      - "3-1-7 Activities performed by privileged accounts."
+      - "3-1-8 Modifications to system settings (parameters)."
+      - "3-1-9 Read or write access to protected information, where there is a potential for theft of that information."
+      - "3-1-10 Exfiltration of materials related to classified information outside <organization name>."
+      - "3-1-11 Detections in inbound and outbound communications for unusual or unauthorized activities including the detection of malware (such as malicious code, spyware, and adware)."
+      - "3-1-12 Additions, deletions and modifications to security/audit log parameters."
+      - "3-1-13 Faults (technical problems in information and technology assets) that could potentially be attributed to a security event."
+      - "3-1-14 Activation or deactivation of activities by a specific service."
+      - "3-1-15 System crashes or restarts."
+      - "3-1-16 Password changes."
+      - "3-1-17 Enablement of all critical systems logs."
+
+roles_and_responsibilities:
+  - standard_owner: "<head of the cybersecurity function>"
+  - standard_review_and_update: "<cybersecurity function>"
+  - standard_implementation_and_execution: "<information technology function>"
+  - standard_compliance_measurement: "<cybersecurity function>"
+
+update_and_review:
+  description: >
+    <cybersecurity function> must review the standard at least once a year or in case any changes happen to the infrastructure, policy, or the regulatory procedures in <organization name> or the relevant regulatory requirements.
+
+compliance:
+  description: >
+    1. The <head of the cybersecurity function> will ensure compliance of <organization name> with this standard on a regular basis.
+    2. All personnel at <organization name> must comply with this standard.
+    3. Any violation of this standard may be subject to disciplinary action according to <organization name>’s procedures.
