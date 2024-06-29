@@ -1,0 +1,99 @@
+ISO_IEC_27701_2019_privacy_information_management:
+  intro:
+    - document_scope: >
+        This document specifies requirements and provides guidance for establishing, implementing, maintaining and continually improving a PIMS in the form of an extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy management within the context of the organization.
+        This document can be used by PII Controllers and PII Processors.
+        This document is applicable to all types and sizes of organizations.
+  terms:
+    - Personally_Identifiable_Information_PII: not_defined
+    - Privacy_Information_Management_System_PIMS: >
+        Information Security Management System which addresses the protection of privacy as potentially affected by the processing of personal data.
+  5_2_context_of_the_organization:
+    - 5.2.1_understanding_the_organization_and_its_context
+    - 5.2.2_understanding_the_needs_and_expectations_of_interested_parties
+    - 5.2.3_determining_the_scope_of_the_information_security_management_system
+    - 5.2.4_information_security_management_system
+  5_3_leadership:
+    - 5.3.1_leadership_and_commitment
+    - 5.3.2_policy
+    - 5.3.3_organizational_roles_responsibilities_and_authorities
+  5_4_planning:
+    - 5.4.1_actions_to_address_risks_and_opportunities
+    - 5.4.2_information_security_objectives_and_planning_to_achieve_them
+    - 5.4.3_information_security_risk_assessment
+    - 5.4.4_information_security_risk_treatment
+  5_5_support:
+    - 5.5.1_resources
+    - 5.5.2_competence
+    - 5.5.3_awareness
+    - 5.5.4_communication
+    - 5.5.5_documented_information:
+        - creating_and_updating
+        - control_of_documented_information
+  5_6_operation:
+    - 5.6.1_operational_planning_and_control
+    - 5.6.2_information_security_risk_assessment
+    - 5.6.3_information_security_risk_treatment
+  5_7_performance_evaluation:
+    - 5.7.1_monitoring_measurement_analysis_and_evaluation
+    - 5.7.2_internal_audit
+    - 5.7.3_management_review
+  5_8_improvement:
+    - 5.8.1_nonconformity_and_corrective_action
+    - 5.8.2_continual_improvement
+  terms:
+    - context
+    - scope
+  annexes:
+    - PIMS-specific_reference_control_objectives_and_controls_PI_controllers
+    - PIMS-specific_reference_control_objectives_and_controls_PI_processors
+    - mapping_to_ISO/IEC_27002
+    - mapping_to_GDPR
+    - mapping_to_ISO/IEC_27018_and_ISO/IEC_29151
+    - how_to_apply_ISO/IEC_27701_to_ISO/IEC_27001_and_ISO/IEC_27002
+  additional_ISO/IEC_27002_guidance_for_PII_processors:
+    - 8.2_conditions_for_collection_and_processing
+      - 8.2.1_customer_agreement
+      - 8.2.2_organizations_purposes
+      - 8.2.3_marketing_and_advertising
+      - 8.2.4_informing_individuals
+      - 8.2.5_customer_obligations
+      - 8.2.6_records_retention_and_disposal
+    - 8.3_obligations_to_PII_principals
+      - 8.3.1_obligations_to_PII_principals
+    - 8.4_privacy_by_design_and_privacy_by_default
+    - 8.5_PII_transmission_controls
+      - 8.5.1_basis_for_PII_transfer_between_jurisdictions
+      - 8.5.2_countries_and_international_organizations_to_which_PII_can_be_transferred
+      - 8.5.3_records_of_PII_disclosure_to_third_parties
+      - 8.5.4_notification_of_PII_disclosure_requests
+      - 8.5.5_disclosure_of_subcontractors_used_to_process_PII
+      - 8.5.7_engagement_of_a_subcontractor_to_process_PII
+      - 8.5.8_change_of_subcontractor_to_process_PII
+  additional_ISO/IEC_27002_guidance_for_PII_controllers:
+    - 7.2_conditions_for_collection_and_processing
+      - 7.2.1_identify_and_document_purpose
+      - 7.2.2_determine_when_and_how_consent_is_to_be_obtained
+    - 7.3_obligations_to_PII_principals
+      - 7.3.1_determining_information_for_PII_principals
+      - 7.3.2_providing_information_to_PII_principals
+      - 7.3.3_providing_mechanism_to_verify_or_withdraw_consent
+      - 7.3.5_providing_mechanism_to_object_to_PII_processing
+      - 7.3.6_access_correction_and_erasure
+    - 7.4_privacy_by_design_and_privacy_by_default
+      - 7.4.1_minimization_objective
+      - 7.4.2_PII_de-identification_and_deletion_at_the_end_of_processing
+      - 7.4.5_temporary_files
+      - 7.4.6_TPIA
+      - 7.4.7_retention
+      - 7.4.8_disposal
+      - 7.5_PII_transmission_controls
+      - 7.5.1_basis_for_PII_transfer_between_jurisdictions
+      - 7.5.2_countries_and_international_organizations_to_which_PII_can_be_transferred
+      - 7.5.3_records_of_transfer_of_PII
+  additional_ISO/IEC_27002_guidance_for_PII_controllers:
+    - 7_additional_ISO/IEC_27002_guidance_for_PII_controllers
+  additional_ISO/IEC_27002_guidance_for_PII_processors:
+    - 8_additional_ISO/IEC_27002_guidance_for_PII_processors
+  PIMS-specific_guidance_related_to_ISO/IEC_27002:
+    - 6_PIMS-specific_guidance_related_to_ISO/IEC_27002
