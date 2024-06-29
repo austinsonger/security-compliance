@@ -1,0 +1,126 @@
+step_by_step_guide_to_OKRs:
+  intro:
+    - OKRs_objectives_and_key_results: >
+        "Measure What Matters" — Focus on what matters
+        OKR is a critical thinking framework and goal setting methodology that helps companies (as well as teams and individuals) achieve audacious goals by ensuring everyone is aligned, focused, and working on what matters.
+    benefits:
+      - With_OKRs_your_whole_company_is_aligned_and_running_in_the_same_direction
+      - You_gain_organizational_transparency_and_build_effective_communication
+      - OKRs_help_foster_growth_improvement_and_innovation
+    example:
+      objectives:
+        - Increase_1000_users_on_YouTube_channel
+      key_results:
+        - Get_10_blog_followers_on_Instagram
+        - Get_20_more_engagements_on_website_by_20_percent
+  elements:
+    - objectives:
+        description: >
+          Quarterly Goals
+        characteristics:
+          - Measurable
+          - Specific
+          - Time_Bound
+    - key_results:
+        description: >
+          Metrics to track
+        characteristics:
+          - Quantitative
+          - Measurable
+          - Value-based
+    - plan:
+        description: >
+          Weekly Initiatives
+        characteristics:
+          - Action/Initiative
+          - Tactical
+          - Weekly_Priorities
+  getting_started:
+    steps:
+      - set_your_objectives: >
+          Choose from X to Y
+          Review quarterly
+      - define_your_key_results: >
+          Improve by X% vs. Y%
+          Achieve X amount
+          Based on performance
+      - update_your_OKRs: >
+          Weekly
+      - plan_your_activities_and_hold_weekly_check-ins: >
+          Weekly initiative
+          Check-ins
+      - review_your_OKRs: >
+          2-5 times a quarter
+    objectives:
+      questions:
+        - Does_the_objective_help_achieve_company_goals?
+        - Is_the_objective_inspiring?
+        - Does_it_help_provide_business_value?
+        - Is_this_objective_realistic_in_one_quarter?
+        - Is_this_objective_solving_the_problems_our_team_is_having?
+        - Is_this_objective_achievable_in_achievable_by_just_us?
+      notes: >
+        Objectives_should_not_be_easy
+        Objectives_should_be_aspirational_goals
+        Objectives_should_not_be_tasks_to_be_completed
+    key_results:
+      notes: >
+        Specific
+        Measurable_or_quantifiable
+        Achievable
+        Actionable
+        Objective
+        Be_difficult_but_not_impossible
+        Should_be_numeric_and_tracked_throughout_the_quarter
+        Should_not_be_tasks_to_be_completed
+  outputs_vs_outcomes:
+    outputs:
+      description: >
+        Deliverables, projects, etc. that help us work toward our goals.
+      examples: >
+        The things we do
+        Outputs_in_action_that_show_what_we_are_doing
+      notes: >
+        We hope it brings success but doesn’t guarantee it
+        Might_change_if_it_doesn’t_work_out
+    outcomes:
+      description: >
+        The results we hope to get after doing something
+      notes: >
+        The results we are working toward
+        The results we need to keep our eye on to measure success
+        Outcomes_are_the_measurable_results_that_help_you_see_what_you_have_completed_or_what_you_are_achieving
+        Outcomes_are_the_business_results_we_hope_to_achieve
+        Outcomes_define_what_we_are_trying_to_accomplish_not_what_we_have_achieved
+  PPP's_reporting_framework:
+    key_steps:
+      - 3-7_important_things_to_get_done_this_week
+      - should_provide_value_for_the_company
+      - the_last_achievement
+      - what_your_team_has_completed_during_the_week
+      - lessons_learned
+  other:
+    - if_something_doesn’t_deliver_that_success_then_stop_doing_it
+    - you_need_to_keep_your_eye_on_measurable_metrics_that_show_success
+    - keep_asking_why
+  terms:
+    - goal_objective: >
+        The direction we want to go in
+    - OKRs_objectives_and_key_results: >
+        The level of performance we want to achieve
+    - monitoring_how_we_are_performing:
+        - metrics
+        - targets
+        - goals
+  biggest_OKR_alignment_mistakes:
+    - LOs_are_created_directly_from_the_management
+    - Teams_work_on_their_individual_level_goals
+    - Personnel_OKRs_as_a_bad_idea
+  good:
+    characteristics:
+      - specific
+      - measurable_or_quantifiable
+      - achievable
+      - actionable
+      - objective
+      - difficult_but_not_impossible
