@@ -1,0 +1,253 @@
+ISO_27005_2018:
+  intro:
+    title: "Information technology — Security techniques — Information security risk management"
+    description: >
+      This International Standard provides guidelines for information security risk management.
+  terms:
+    definitions:
+      - consequence: outcome_of_an_event_affecting_objectives
+      - control: measure_that_is_modifying_risk
+      - event: occurrence_or_change_of_a_particular_set_of_circumstances
+      - likelihood: chance_of_something_happening
+      - level_of_risk: magnitude_of_a_risk_expressed_in_terms_of_the_combination_of_consequences_and_their_likelihood
+      - risk: effect_of_uncertainty_on_objectives
+      - residual_risk: risk_remaining_after_risk_treatment
+      - risk_criteria: terms_of_reference_against_which_the_significance_of_a_risk_is_evaluated
+      - risk_assessment: overall_process_of_risk_identification_risk_analysis_and_risk_evaluation
+      - risk_identification: process_of_finding_recognizing_and_describing_risks
+      - risk_analysis: process_to_comprehend_the_nature_of_risk_and_to_determine_the_level_of_risk
+      - risk_evaluation: process_of_comparing_the_results_of_risk_analysis_with_risk_criteria_to_determine_whether_the_risk_and_or_its_magnitude_is_acceptable_or_tolerable
+      - risk_management: coordinated_activities_to_direct_and_control_an_organization_with_regard_to_risk
+      - risk_treatment: process_to_modify_risk
+  general:
+    ISMS_and_IS_risk_management_process:
+      plan:
+        - establishing_the_context
+        - risk_assessment
+        - developing_risk_treatment_plan
+        - risk_acceptance
+      do:
+        - implementation_of_risk_treatment_plan
+      check:
+        - continual_monitoring_and_reviewing_of_risks
+      act:
+        - maintain_and_improve_the_IS_risk_management_process
+  basic_criteria:
+    risk_management_approach
+    risk_evaluation_criteria:
+      - strategic_value_of_the_business_information_process
+      - criticality_of_the_information_assets_involved
+      - legal_and_regulatory_requirements_and_contractual_obligations
+      - operational_and_business_importance_of_confidentiality_integrity_availability
+      - stakeholders_expectations_and_perceptions_and_negative_consequences_for_goodwill_and_reputation
+    impact_criteria:
+      - breaches_of_information_security
+      - impaired_operations
+      - loss_of_business_and_financial_value
+      - disruption_of_plans_and_deadlines
+      - damage_of_reputation
+      - breaches_of_legal_regulatory_or_contractual_requirements
+    risk_acceptance_criteria
+  risk_identification:
+    identification_of_assets
+    identification_of_threats
+    identification_of_existing_controls
+    identification_of_vulnerabilities:
+      - organization
+      - processes_and_procedures
+      - management_routines
+      - personnel
+      - physical_environment
+      - information_system_configuration
+      - hardware_software_or_communications_equipment
+      - dependence_on_external_parties
+    identification_of_consequences:
+      - investigation_and_repair_time
+      - work_time_lost
+      - opportunity_lost
+      - health_and_safety
+      - financial_cost_of_specific_skills_to_repair_the_damage
+      - image_reputation_and_goodwill
+  risk_analysis:
+    methodologies:
+      - qualitative_risk_analysis
+      - quantitative_risk_analysis
+    assessment_of_consequences
+    assessment_of_incident_likelihood
+    level_of_risk_determination
+  risk_evaluation
+  risk_treatment:
+    options:
+      - risk_modification
+      - risk_retention
+      - risk_avoidance
+      - risk_sharing
+    process:
+      - avoiding_the_risk_by_deciding_not_to_start_or_continue_with_the_activity_that_gives_rise_to_the_risk
+      - taking_or_increasing_risk_in_order_to_pursue_an_opportunity
+      - removing_the_risk_source
+      - changing_the_likelihood
+      - changing_the_consequences
+      - sharing_the_risk_with_another_party_or_parties
+      - retaining_the_risk_by_informed_choice
+  annex_A:
+    scope_and_boundaries:
+      - study_of_the_organization
+      - evaluate_the_organization:
+          - main_purpose
+          - business
+          - mission
+          - values
+          - structure_of_the_organization
+          - organization_chart
+          - strategy
+      - constraints:
+          - political
+          - strategic
+          - territorial
+          - economic_and_political_climate
+          - structural
+          - functional
+          - personnel
+          - calendar
+          - methods
+          - cultural
+          - budgetary
+      - legislative_and_regulatory_references
+  annex_B:
+    assets:
+      - primary_assets:
+          - business_processes_and_activities
+          - information
+      - supporting_assets:
+          - hardware
+          - data_processing_equipment_active
+          - transportable_equipment_e_g_laptop_computer_PDA
+          - fixed_equipment_e_g_server_workstation
+          - processing_peripherals_e_g_printer_removable_disc_drive
+          - data_medium_passive:
+              - electronic_medium
+              - other_media
+          - software:
+              - operating_system
+              - service_maintenance_or_administration_software
+              - package_software_or_standard_software
+              - business_application
+          - network:
+              - medium_and_supports
+              - passive_or_active_relay
+              - communication_interface
+          - personnel:
+              - decision_maker
+              - users
+              - operation_maintenance_staff
+              - developers
+          - site:
+              - location
+              - premises
+              - zone
+              - essential_services
+              - communication
+              - utilities
+          - organization:
+              - authorities
+              - structure_of_the_organization
+              - project_or_system_organization
+              - subcontractors_suppliers_manufacturers
+      - asset_valuation:
+          - impact_assessment
+  annex_C:
+    threats:
+      - physical_damage:
+          - fire
+          - water_damage
+          - pollution
+          - major_accident
+          - destruction_of_equipment_or_media
+          - dust_corrosion_freezing
+      - natural_events:
+          - climatic_phenomenon
+          - seismic_phenomenon
+          - volcanic_phenomenon
+          - meteorological_phenomenon
+          - flood
+      - loss_of_essential_services:
+          - failure_of_air-conditioning_or_water_supply_system
+          - loss_of_power_supply
+          - failure_of_telecommunication_equipment
+      - disturbance_due_to_radiation:
+          - electromagnetic_radiation
+          - thermal_radiation
+          - electromagnetic_pulses
+      - compromise_of_information:
+          - interception_of_compromising_interference_signals
+          - remote_spying
+          - eavesdropping
+          - theft_of_media_or_documents
+          - theft_of_equipment
+          - retrieval_of_recycled_or_discarded_media
+          - disclosure
+          - data_from_untrustworthy_sources
+          - tampering_with_hardware
+          - tampering_with_software
+          - position_detection
+      - technical_failures:
+          - equipment_failure
+          - equipment_malfunction
+          - saturation_of_the_information_system
+          - software_malfunction
+          - breach_of_information_system_maintainability
+      - unauthorized_actions:
+          - unauthorized_use_of_equipment
+          - fraudulent_copying_of_software
+          - use_of_counterfeit_or_copied_software
+          - corruption_of_data
+          - illegal_processing_of_data
+          - compromise_of_functions:
+              - error_in_use
+              - abuse_of_rights
+              - forging_of_rights
+              - denial_of_actions
+              - breach_of_personnel_availability
+      - origin_of_threat:
+          - hacker_cracker
+          - computer_criminal
+          - terrorist
+          - industrial_espionage
+          - intelligence_companies
+          - foreign_governments
+          - other_government_interests
+          - insiders_employees:
+              - poorly_trained
+              - disgruntled
+              - malicious
+              - negligent
+              - dishonest
+              - terminated
+      - motivation_and_possible_consequences
+  annex_D:
+    vulnerabilities:
+      - hardware
+      - software
+      - network
+      - personnel
+      - site
+      - organization
+    examples_of_vulnerabilities
+    methods_for_assessment_of_technical_vulnerabilities:
+      - automated_vulnerability_scanning_tool
+      - security_testing_and_evaluation
+      - penetration_testing
+      - code_review
+  annex_E:
+    IS_risk_assessment_approaches
+  annex_F:
+    constraints_for_risk_modification:
+      - purpose:
+          - supporting_an_ISMS
+          - legal_compliance_and_evidence_of_due_diligence
+          - preparation_of_a_business_continuity_plan
+          - preparation_of_an_incident_response_plan
+          - description_of_the_information_security_requirements_for_a_product_a_service_or_a_mechanism
+      - level_of_classification_of_the_impacted_information_asset
+      - level_of_risks_should_be_compared_against_risk_evaluation_criteria_and_risk_acceptance_criteria
