@@ -1,0 +1,85 @@
+threat_events:
+  1. Adversarial:
+    - R1.1: Massive phishing attacks and/or spam
+    - R1.2: Spear phishing attacks and social engineering
+    - R1.3: Authentication attacks
+    - R1.4: Communications attacks
+    - R1.5: Malware attack
+    - R1.6: DDoS attack
+    - R1.7: Website hacking and defacing
+    - R1.8: Exploitation of vulnerabilities in an organisation’s information systems
+    - R1.9: Exploitation of misconfigured organisational information systems and network
+    - R1.10: Misuse of information systems
+    - R1.11: Introducing unauthorized code into applications or software
+    - R1.12: Sabotage
+    - R1.13: Eavesdropping
+    - R1.14: Insertion subversive individuals into organisations
+    - R1.15: Unauthorized network scanning and/or probing
+    - R1.16: Gathering of publicly-available information about an organisation
+    - R1.17: Unauthorized physical access to information systems
+    - R1.18: Physical damage to or tampering with information systems
+    - R1.19: Theft of equipment
+    - R1.20: Conduct physical attacks on organizational facilities or their supporting infrastructure
+    - R1.21: Attacks using do-it-yourself devices and state-sponsored attacks
+    - R1.22: Attacks on workstations when working remotely
+    - R1.23: Storing untrusted information on the corporate network
+    - R1.24: Cryptocurrency mining on company equipment
+    - R1.25: TEMPEST (Spying on information systems through leaking emanations, including unintentional radio or electrical signals, sounds, and vibrations)
+    - R1.26: Spreading false information about the company and employees
+    - R1.27: False reporting of incidents
+    - R1.28: Theft of digital identity or credentials
+    - R1.29: Unauthorized entry to facilities
+    - R1.30: Position detection
+  2. Human Error:
+    - R2.1: User errors and improper use of the IT systems
+    - R2.2: Disclosure of information
+    - R2.3: Insecure disposal of documents and equipment
+    - R2.4: Accidental destruction of information devices or media
+    - R2.5: Accidental physical damage
+    - R2.6: Loss of equipment
+    - R2.7: Loss of paper documents
+    - R2.8: Maintenance errors
+    - R2.9: Unintentional errors in system configuration and change management
+    - R2.10: Unintentional errors in access management
+    - R2.11: Inappropriate handling of passwords
+    - R2.12: Incorrect classification and labeling of information
+    - R2.13: Use of counterfeit or copied software
+    - R2.14: Violation of the clean desk and screen policy
+    - R2.15: Sending or distributing malware
+    - R2.16: Violation of laws or regulations
+  3. Infrastructure and software failure:
+    - R3.1: Power failure or fluctuation
+    - R3.2: Damage to or loss of external communications
+    - R3.3: Failure of environmental control systems
+    - R3.4: Hardware malfunction or failure
+    - R3.5: Software malfunction or failure
+    - R3.6: Fire (structural)
+    - R3.7: Flooding (structural)
+    - R3.8: Loss of stored data
+    - R3.9: Electromagnetic pulses
+  4. Environmental:
+    - R4.1: Pathogen (e.g. disease outbreak)
+    - R4.2: Storm (hail, thunder, blizzard)
+    - R4.3: Hurricane
+    - R4.4: Tornado
+    - R4.5: Earthquake
+    - R4.6: Volcanic eruption
+    - R4.7: Flooding (field)
+    - R4.8: Tsunami
+    - R4.9: Fire (wild)
+  5. Social actions:
+    - R5.1: Strike, rallies, and demonstrations
+    - R5.2: Problems caused by big public events
+    - R5.3: Terrorist attacks
+    - R5.4: Military operations and exercises
+    - R5.5: Breach of personal availability
+  6. Suppliers:
+    - R6.1: Data loss by the supplier
+    - R6.2: Third-party software compromise
+    - R6.3: Risk of critical updates
+    - R6.4: Lack of technical support
+    - R6.5: Termination of service
+    - R6.6: Failure of a service provider or supplier
+  7. Geopolitical issues:
+    - R7.1: Sanctions and bans
+    - R7.2: Political business risk; related changes in regulation in markets where our customers operate
