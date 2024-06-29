@@ -1,0 +1,57 @@
+data_breach_register:
+  breach_id:
+  dates:
+    - beginning_date_of_breach
+    - ending_date_of_breach
+    - date_of_awareness_of_breach
+  description:
+  cause_of_the_breach:
+    - internal_non_malicious
+    - internal_malicious
+    - external_non_malicious
+    - external_malicious
+    - unknown
+  impact_CIA:
+    - confidentiality
+    - integrity
+    - availability
+    - unknown
+  nature_of_the_breach:
+    - categories_and_approximate_number_of_data_subjects_concerned
+    - categories_and_approximate_number_of_personal_data_records_concerned
+    - data_subject_type
+  risk_to_data_subjects:
+    impact:
+      - very_high
+      - high
+      - medium
+      - low
+    probability:
+      - very_high
+      - high
+      - medium
+      - low
+    risk:
+      - very_high
+      - high
+      - medium
+      - low
+  root_cause:
+  measures:
+    - corrective_actions
+    - planned_actions
+  notification_and_communication:
+    to_SA:
+      required:
+      - date
+      - format
+    to_data_subjects:
+      required:
+      - date
+      - format
+    to_other_third_parties:
+      required:
+      - date
+      - format
+  comments:
+  external_links:
