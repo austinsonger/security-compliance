@@ -1,14 +1,6 @@
-document_approval:
-  - role: "Choose Role"
-    job_title: "<Insert job title>"
-    name: "<Insert individual's full personnel name>"
-    date: "Click here to add date"
-    signature: "<Insert signature>"
-
-purpose:
-  description: >
-    This standard aims to define the detailed cybersecurity requirements related to <organization's name>’s Database Management System (DBMS) هي in order to minimize cybersecurity risks resulting from internal and external threats at <organization's name>.
-    The requirements in this standard are aligned with the Database Security Policy and the cybersecurity requirements issued by the National Cybersecurity Authority (NCA) in addition to other related cybersecurity legal and regulatory requirements.
+purpose: >
+  This standard aims to define the detailed cybersecurity requirements related to <organization's name>’s Database Management System (DBMS) هي in order to minimize cybersecurity risks resulting from internal and external threats at <organization's name>.
+  The requirements in this standard are aligned with the Database Security Policy and the cybersecurity requirements issued by the <Governing Body> in addition to other related cybersecurity legal and regulatory requirements.
 
 scope:
   description: >
