@@ -1,10 +1,3 @@
-document_approval:
-  - role: "Choose Role"
-    job_title: "<Insert job title>"
-    name: "<Insert individual's full personnel name>"
-    date: "Click here to add date"
-    signature: "<Insert signature>"
-
 purpose:
   description: >
     This Standard aims to define the detailed cybersecurity requirements for cybersecurity event logs and monitoring management of ‏<organization name> ‏to achieve the main objective of this Standard which is minimizing cybersecurity risks resulting from internal and external threats at ‏<organization name>.
