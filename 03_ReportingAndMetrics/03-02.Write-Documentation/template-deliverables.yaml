@@ -1,0 +1,46 @@
+template_deliverables:
+  title: "Template deliverables"
+  metadata:
+    contributing_guide: "CONTRIBUTING.md"
+    boilerplate_notice: ""
+  overview:
+    description: ""
+    deliverables:
+      - deliverable: ""
+        example_filename: ""
+        purpose: ""
+        use_case: "'"
+  sections:
+    - name: ""
+      description: |
+
+
+
+      guidelines:
+        - 
+        - 
+    - name: ""
+      description: |
+
+
+      guidelines:
+        - ""
+      
+      faq:
+        - question: ""
+    - name: "Resources"
+      description: |
+
+
+
+        The resources file has a number of advantages:
+      advantages:
+        - for: ""
+          description: ""
+        - for: ""
+          description: ""
+        - for: ""
+          description: ""
+      guidelines:
+        - "Sources consulted - Include a bulleted list or table of the sources you consulted while researching this template. Include a link and/or full citation so that others can find it. Explain how that source influenced the design decisions in your template."
+        - "Examples - Include a bulleted list or table of the examples that served as inspiration for your
