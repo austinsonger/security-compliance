@@ -1,0 +1,26 @@
+release_notes:
+  title: "Release Notes - {Product Name} {Release Number - 0.0.0}"
+  metadata:
+    guide: "./guide-release-notes.md"
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  version: "{Optional: Release Notes Version - 0}"
+  release_date: "{Release Date - YYYY-MM-DD}"
+  summary: "{Optional: High-level summary}"
+  new_features:
+    - title: "{Feature title}"
+      description: "{Feature description}"
+  improvements:
+    - title: "{Improvement title}"
+      description: "{Improvement description}"
+  bug_fixes:
+    - title: "{Bug fix title}"
+      description: "{Bug fix description}"
+  known_issues:
+    - title: "{Known issue title}"
+      description: "{Known issue description}"
+  deprecated_features:
+    - title: "{Deprecated feature title}"
+      description: "{Deprecated feature description}"
+  footer:
+    other_templates: ""
+    feedback_form: ""
