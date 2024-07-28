@@ -1,0 +1,43 @@
+bug_report:
+  title: "Bug Report Template"
+  metadata:
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  fields:
+    - name: "Title"
+      description: "{A description of the issue using key words relating to the issue. 50 to 80 characters recommended. Description should cover the problem, the action, and the location (if relevant).}"
+    - name: "Summary"
+      optional: true
+      description: "{If the title is insufficient for summarizing the bug, use the summary to detail the bug as concisely as possible. 3-4 sentences recommended.}"
+    - name: "Environment"
+      description: "{Detail the specific environment used when the bug was encountered.}"
+      details:
+        - "{Product version}"
+        - "{Browser}"
+        - "{Installed packages and versions}"
+        - "{Operating system}"
+        - "{Device model}"
+        - "{Connection details (type, speed, any packet loss)}"
+    - name: "Steps to reproduce"
+      description: "{An ordered list of the steps taken where the result was encountering the bug. Include any observations of relevance such as unexpected output, visual glitches, unusual process duration.}"
+      steps:
+        - "{Step 1}"
+        - "{Step 2}"
+        - "{Step 3}"
+    - name: "Observed behavior"
+      description: "{Briefly describe the result of the steps taken that resulted in the bug being encountered. Avoid any assumptions regarding the behavior.}"
+    - name: "Expected behavior"
+      optional: true
+      description: "{Briefly describe the expected result of the steps taken.}"
+    - name: "Proof"
+      optional: true
+      description: "{Provide a copy of any relevant logs, screenshots, or malformed output if relevant.}"
+    - name: "Test data"
+      optional: true
+      description: "{If the bug is only encountered when using specific test data, provide a copy of that data. If the data needs to be redacted, please ensure the redacted data also causes the unexpected behavior using the same steps.}"
+    - name: "Additional context"
+      optional: true
+      description: "{If any additional context is required, detail that context here.}"
+  footer:
+    additional_info: ""
+    other_templates: ""
+    feedback_form: ""
