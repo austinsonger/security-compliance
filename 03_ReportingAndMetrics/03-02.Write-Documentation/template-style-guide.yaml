@@ -1,14 +1,106 @@
 style_guide:
-  introduction: "\n            {Before using this template, please read the accompanying\
-    \ About the Style Guide Template documentation.}\n            \n            Welcome\
-    \ to our project! This style guide is intended for use by project contributors,\
-    \ not necessarily end-users. It provides general guidance to anyone who contributes\
-    \ to the project's documentation.\n            "
+  title: "{Your Project Name} style guide"
   metadata:
-    boilerplate_notice: This template includes writing instructions and boilerplate
-      text that you can customize, use as-is, or completely replace with your own
-      text. This text is indicated in {curly brackets}. Make sure you replace the
-      placeholders with your own text.
-    guide: ./guide-style-guide.md
-  title: '{Your Project Name} style guide'
-  version: '{Version number and last updated date}'
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  version: "{Version number and last updated date}"
+  introduction: |
+    {Before using this template, please read the accompanying About the Style Guide Template documentation.}
+    
+    Welcome to our project! This style guide is intended for use by project contributors, not necessarily end-users. It provides general guidance to anyone who contributes to the project's documentation.
+  audience_and_scope: |
+    This style guide is intended for use by any contributors that are writing documentation for {Your Project Name}, including software engineers. This guide can help project contributors to communicate clearly and consistently in {you define the scope: the project's end-user documentation, API documentation, forum posts, and so forth.}
+  preferred_style_guide: |
+    We have adopted the {your preferred style guide, such as the Google developer documentation style guide} for {Your Project} documentation. For a quick summary, see the [Google style guide highlights](https://developers.google.com/style/highlights). The rest of this document describes our project-specific customizations to {Google's or your preferred} guide.
+    
+    Our project uses {your choice: standard American spelling or standard British spelling, etc.} and our preferred dictionary is the {American Heritage Dictionary or your preferred dictionary}.
+    
+    When writing documentation for our project, align with the default guide's voice and tone.
+  glossary_of_preferred_terms:
+    description: |
+      {Calling out how to write your project name first is optional. You can choose to include your project name in the word list instead.}
+      
+      This {Your Project Name} is represented as {example}. It is {always/never} capitalized.
+      
+      The table provides guidelines about the terms you should and should not use for consistency, listed in alphabetical order:
+    terms:
+      - preferred_term: "for example"
+        avoid_terms: ["e.g."]
+        explanation: "Avoid non-English words"
+      - preferred_term: "people with disabilities"
+        avoid_terms: ["the disabled", "disabled people", "people with handicaps", "the handicapped"]
+        explanation: "Use inclusive and bias-free language. See Accessible Writing"
+      - preferred_term: "that is"
+        avoid_terms: ["i.e."]
+        explanation: "Avoid non-English words"
+  topic_types_and_templates:
+    recommended_templates: |
+      This project recommends using the following templates from the [Good Docs project](https://github.com/thegooddocsproject/templates):
+      
+      - API Overview
+      - API Quickstart
+      - API Reference
+      - Discussion Article
+      - How To Guide
+      - Logging Article
+      - Reference Article
+      - Tutorial
+  general_writing_tips:
+    description: |
+      {This section is optional.}
+      
+      For some general tips about improving writing see:
+      
+      - [Write the Docs - Style Guides](https://www.writethedocs.org/guide/writing/style-guides/#writing-style)
+      - [18F Content Guide](https://content-guide.18f.gov/)
+  accessible_writing:
+    description: |
+      Documentation should be written in a way that supports people with disabilities and users with various input methods and devices. Improving accessibility also helps make documentation clearer and more useful for everyone.
+      
+      For resources on making your writing more accessible, see:
+      
+      - [Writing accessible documentation - Google developer documentation style guide](https://developers.google.com/style/accessibility)
+      - [Accessibility guidelines and requirements - Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/accessibility/accessibility-guidelines-requirements)
+      - [Writing for Accessibility - Mailchimp Content Style Guide](https://styleguide.mailchimp.com/writing-for-accessibility/)
+  inclusive_and_bias_free_writing:
+    description: |
+      When contributing to this project, you should strive to write documentation with inclusivity and diversity in mind. Inclusive language recognizes diversity and strives to communicate respectfully to all people. This kind of language is sensitive to differences and seeks to promote equal opportunities.
+      
+      For resources on making your writing more inclusive, see:
+      
+      - [Inclusive documentation - Google developer documentation style guide](https://developers.google.com/style/inclusive-documentation)
+      - [The Conscious Style Guide - a collection of resources](https://consciousstyleguide.com/)
+      - [Bias-free communication - Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/bias-free-communication)
+      - [Guidelines for Inclusive Language - Linguistic Society of America](https://www.linguisticsociety.org/resource/guidelines-inclusive-language)
+  using_linters:
+    description: |
+      {This section is optional.}
+      
+      This project uses the {your preferred linter.}
+      
+      {Provide instructions or policies related to the linter here.}
+  updating_style_guide:
+    description: |
+      {Indicate here how frequently your style guide is reviewed, who owns the style guide, and how contributors can provide feedback on your style guide.}
+  revision_history:
+    description: |
+      {This section is optional or can be combined with the next section if needed.}
+      
+      The following table describes the history of all decisions and revisions made to this style guide over time. This guide uses the Major.Minor.Patch [semantic versioning](https://semver.org/) convention.
+    revisions:
+      - edition: "{0.1}"
+        date: "{YYYY-MM-DD}"
+        lead_authors: "{Your name here}"
+        link_to_commit: "First draft of Style Guide"
+  decision_log:
+    description: |
+      {This section is optional or can be combined with the previous section if needed.}
+      
+      The following table describes the history of all decisions made to this style guide over time:
+    decisions:
+      - ref: "1"
+        date: "{YYYY-MM-DD}"
+        description: "{Explain the decision that was made here}"
+        agreed_to_by: "{Name or role}"
+  footer:
+    other_templates: ""
+    feedback_form: ""
