@@ -1,0 +1,78 @@
+readme:
+  title: "README template"
+  metadata:
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  project:
+    logo_and_badges: "{Embed an image of the project logo and include links to relevant badges in the README.}"
+    name: "{Project Name}"
+    url: "{Project URL}"
+    owner: "{Project Owner}"
+  table_of_contents:
+    sections:
+      - "Heading 1"
+      - "Heading 2"
+      - "Heading 3..."
+  description:
+    text: |
+      "With _{Project Name}_ you can _{verb}_ _{noun}_...
+      _{Project Name}_ helps you _{verb}_ _{noun}_...
+      Unlike _{alternative}_, _{Project Name}_ _{verb}_ _{noun}_..."
+    media: "{Include screenshots and/or demo videos if applicable}"
+  target_audience:
+    text: "This project is intended for {target user} who wants to {user objective}."
+  dependencies:
+    prerequisites:
+      - "Prerequisite 1"
+      - "Prerequisite 2"
+      - "Prerequisite 3..."
+  usage_instructions:
+    get_started: "{Get started with {Project Name} by {write the first step a user needs to start using the project. Use a verb to start.}}"
+    install:
+      steps:
+        - step: "{Write the step here.}"
+          explanatory_text: "{Explanatory text here}"
+          media: "{Optional: Include a code sample or screenshot that helps your users complete this step}"
+        - step: "{Write the step here.}"
+          substeps:
+            - substep: "{Substep 1}"
+            - substep: "{Substep 2}"
+    configure:
+      steps:
+        - step: "{Write the step here.}"
+        - step: "{Write the step here.}"
+    run:
+      steps:
+        - step: "{Write the step here.}"
+        - step: "{Write the step here.}"
+    troubleshoot:
+      steps:
+        - step: "{Write the step here.}"
+        - step: "{Write the step here.}"
+      issues:
+        - issue: "{Describe the issue here}"
+          solution: "{Write solution here}"
+        - issue: "{Describe the issue here}"
+          solution: "{Write solution here}"
+        - issue: "{Describe the issue here}"
+          solution: "{Write solution here}"
+      support_links:
+        - "Link to FAQs"
+        - "Link to runbooks"
+        - "Link to other relevant support information"
+  contributing_guidelines:
+    link: "{Include a link to your contributing guide here. If you do not have a contributing guide, incorporate the information in the README.}"
+  additional_documentation:
+    references:
+      - "Reference link 1"
+      - "Reference link 2"
+      - "Reference link 3..."
+  help_resources:
+    references:
+      - "Reference link 1"
+      - "Reference link 2"
+      - "Reference link 3..."
+  terms_of_use:
+    license: "{Project Name} is licensed under {link to license file}."
+  footer:
+    other_templates: ""
+    feedback_form: ""
