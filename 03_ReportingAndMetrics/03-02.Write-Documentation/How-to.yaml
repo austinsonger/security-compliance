@@ -1,0 +1,34 @@
+how_to_guide:
+  title: "{Title}"
+  metadata:
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  overview:
+    description: "{insert a brief description of the task}"
+    optional_info: "{Specify when and why your user might want to perform the task}"
+  before_you_start:
+    description: "{insert a brief description of the task}"
+    prerequisites:
+      - "Prerequisite 1"
+      - "Prerequisite 2"
+      - "Prerequisite 3"
+  task:
+    name: "{Task name}"
+    description: "{Provide a concise description of the purpose of this task. Only include this if the purpose is not clear from the task title.}"
+    steps:
+      - step: "{Write the step here. Use a verb to start.}"
+        explanatory_text: "{Optional: Explanatory text}"
+        code_sample_or_screenshot: "{Optional: Code sample or screenshot that helps your users complete this step.}"
+        result: "{Optional: The result of completing this step.}"
+      - step: "{Write the step here. Use a verb to start.}"
+        substeps:
+          - substep: "{Substep 1}"
+          - substep: "{Substep 2}"
+  sub_task:
+    description: "{Include a sub-task only if the task is big and complex.}"
+  see_also:
+    references:
+      - "Reference link"
+      - "Concept link"
+      - "Troubleshooting link"
+  footer:
+    feedback_form: ""
