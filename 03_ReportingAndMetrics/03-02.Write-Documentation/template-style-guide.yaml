@@ -1,0 +1,14 @@
+style_guide:
+  introduction: "\n            {Before using this template, please read the accompanying\
+    \ About the Style Guide Template documentation.}\n            \n            Welcome\
+    \ to our project! This style guide is intended for use by project contributors,\
+    \ not necessarily end-users. It provides general guidance to anyone who contributes\
+    \ to the project's documentation.\n            "
+  metadata:
+    boilerplate_notice: This template includes writing instructions and boilerplate
+      text that you can customize, use as-is, or completely replace with your own
+      text. This text is indicated in {curly brackets}. Make sure you replace the
+      placeholders with your own text.
+    guide: ./guide-style-guide.md
+  title: '{Your Project Name} style guide'
+  version: '{Version number and last updated date}'
