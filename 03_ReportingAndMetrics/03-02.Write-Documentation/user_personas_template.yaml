@@ -1,45 +1,113 @@
 user_personas:
-- dimension: '{Dimension: description}'
-  experience_level:
-  - "{Describe the persona\u2019s primary knowledge background, education, or comfort\
-    \ with product.}"
-  - "{Describe the persona\u2019s secondary knowledge background, education, or comfort\
-    \ with product.}"
-  - "{Describe the persona\u2019s tertiary knowledge background, education, or comfort\
-    \ with product.}"
-  goals:
-  - "{Describe the persona\u2019s primary motivation, objective, purpose, or values.}"
-  - "{Describe the persona\u2019s secondary motivation, objective, purpose, or values.}"
-  - "{Describe the persona\u2019s tertiary motivation, objective, purpose, or values.}"
-  name_or_type: '{Name or type of first user persona}'
-  needs:
-  - "{Describe the persona\u2019s primary requirements or desired capability.}"
-  - "{Describe the persona\u2019s secondary requirements or desired capability.}"
-  - "{Describe the persona\u2019s tertiary requirements or desired capability.}"
-  pain_points:
-  - "{Describe the persona\u2019s primary difficulties, challenges, or problems.}"
-  - "{Describe the persona\u2019s secondary difficulties, challenges, or problems.}"
-  - "{Describe the persona\u2019s tertiary difficulties, challenges, or problems.}"
-  role:
-  - "{Describe the persona\u2019s primary business title or responsibilities.}"
-  - "{Describe the persona\u2019s secondary role or responsibilities.}"
-  - "{Describe the persona\u2019s tertiary role or responsibilities.}"
-  technical_expertise:
-  - "{Describe the persona\u2019s primary competencies, preferred operating systems,\
-    \ interfaces, or programming languages.}"
-  - "{Describe the persona\u2019s secondary competencies, preferred operating systems,\
-    \ interfaces, or programming languages.}"
-  - "{Describe the persona\u2019s tertiary competencies, preferred operating systems,\
-    \ interfaces, or programming languages.}"
-  thinking_pattern:
-  - "{Describe the persona\u2019s primary mindset, approach to tasks, or tolerance\
-    \ or aversion toward _x._}"
-  - "{Describe the persona\u2019s secondary mindset, approach to tasks, or tolerance\
-    \ or aversion toward _x._}"
-  - "{Describe the persona\u2019s tertiary mindset, approach to tasks, or tolerance\
-    \ or aversion toward _x._}"
-  use_case:
-  - "{Describe the persona\u2019s primary tasks to perform.}"
-  - "{Describe the persona\u2019s secondary tasks to perform.}"
-  - "{Describe the persona\u2019s tertiary tasks to perform.}"
-  visual_representation: '{Optional: Visual representation of first user persona}'
+  metadata:
+    template_title: "User personas template"
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  personas:
+    - visual_representation: "{Optional: Visual representation of first user persona}"
+      name_or_type: "{Name or type of first user persona}"
+      dimension_description: "{Dimension: description}"
+      goals:
+        - "{Describe the persona’s primary motivation, objective, purpose, or values.}"
+        - "{Describe the persona’s secondary motivation, objective, purpose, or values.}"
+        - "{Describe the persona’s tertiary motivation, objective, purpose, or values.}"
+      needs:
+        - "{Describe the persona’s primary requirements or desired capability.}"
+        - "{Describe the persona’s secondary requirements or desired capability.}"
+        - "{Describe the persona’s tertiary requirements or desired capability.}"
+      pain_points:
+        - "{Describe the persona’s primary difficulties, challenges, or problems.}"
+        - "{Describe the persona’s secondary difficulties, challenges, or problems.}"
+        - "{Describe the persona’s tertiary difficulties, challenges, or problems.}"
+      role:
+        - "{Describe the persona’s primary business title or responsibilities.}"
+        - "{Describe the persona’s secondary role or responsibilities.}"
+        - "{Describe the persona’s tertiary role or responsibilities.}"
+      experience_level:
+        - "{Describe the persona’s primary knowledge background, education, or comfort with product.}"
+        - "{Describe the persona’s secondary knowledge background, education, or comfort with product.}"
+        - "{Describe the persona’s tertiary knowledge background, education, or comfort with product.}"
+      technical_expertise:
+        - "{Describe the persona’s primary competencies, preferred operating systems, interfaces, or programming languages.}"
+        - "{Describe the persona’s secondary competencies, preferred operating systems, interfaces, or programming languages.}"
+        - "{Describe the persona’s tertiary competencies, preferred operating systems, interfaces, or programming languages.}"
+      use_case:
+        - "{Describe the persona’s primary tasks to perform.}"
+        - "{Describe the persona’s secondary tasks to perform.}"
+        - "{Describe the persona’s tertiary tasks to perform.}"
+      thinking_pattern:
+        - "{Describe the persona’s primary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+        - "{Describe the persona’s secondary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+        - "{Describe the persona’s tertiary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+    - visual_representation: "{Optional: Visual representation of second user persona}"
+      name_or_type: "{Name or type of second user persona}"
+      dimension_description: "{Dimension: description}"
+      goals:
+        - "{Describe the persona’s primary motivation, objective, purpose, or values.}"
+        - "{Describe the persona’s secondary motivation, objective, purpose, or values.}"
+        - "{Describe the persona’s tertiary motivation, objective, purpose, or values.}"
+      needs:
+        - "{Describe the persona’s primary requirements or desired capability.}"
+        - "{Describe the persona’s secondary requirements or desired capability.}"
+        - "{Describe the persona’s tertiary requirements or desired capability.}"
+      pain_points:
+        - "{Describe the persona’s primary difficulties, challenges, or problems.}"
+        - "{Describe the persona’s secondary difficulties, challenges, or problems.}"
+        - "{Describe the persona’s tertiary difficulties, challenges, or problems.}"
+      role:
+        - "{Describe the persona’s primary business title or responsibilities.}"
+        - "{Describe the persona’s secondary role or responsibilities.}"
+        - "{Describe the persona’s tertiary role or responsibilities.}"
+      experience_level:
+        - "{Describe the persona’s primary knowledge background, education, or comfort with product.}"
+        - "{Describe the persona’s secondary knowledge background, education, or comfort with product.}"
+        - "{Describe the persona’s tertiary knowledge background, education, or comfort with product.}"
+      technical_expertise:
+        - "{Describe the persona’s primary competencies, preferred operating systems, interfaces, or programming languages.}"
+        - "{Describe the persona’s secondary competencies, preferred operating systems, interfaces, or programming languages.}"
+        - "{Describe the persona’s tertiary competencies, preferred operating systems, interfaces, or programming languages.}"
+      use_case:
+        - "{Describe the persona’s primary tasks to perform.}"
+        - "{Describe the persona’s secondary tasks to perform.}"
+        - "{Describe the persona’s tertiary tasks to perform.}"
+      thinking_pattern:
+        - "{Describe the persona’s primary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+        - "{Describe the persona’s secondary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+        - "{Describe the persona’s tertiary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+    - visual_representation: "{Optional: Visual representation of third user persona}"
+      name_or_type: "{Name or type of third user persona}"
+      dimension_description: "{Dimension: description}"
+      goals:
+        - "{Describe the persona’s primary motivation, objective, purpose, or values.}"
+        - "{Describe the persona’s secondary motivation, objective, purpose, or values.}"
+        - "{Describe the persona’s tertiary motivation, objective, purpose, or values.}"
+      needs:
+        - "{Describe the persona’s primary requirements or desired capability.}"
+        - "{Describe the persona’s secondary requirements or desired capability.}"
+        - "{Describe the persona’s tertiary requirements or desired capability.}"
+      pain_points:
+        - "{Describe the persona’s primary difficulties, challenges, or problems.}"
+        - "{Describe the persona’s secondary difficulties, challenges, or problems.}"
+        - "{Describe the persona’s tertiary difficulties, challenges, or problems.}"
+      role:
+        - "{Describe the persona’s primary business title or responsibilities.}"
+        - "{Describe the persona’s secondary role or responsibilities.}"
+        - "{Describe the persona’s tertiary role or responsibilities.}"
+      experience_level:
+        - "{Describe the persona’s primary knowledge background, education, or comfort with product.}"
+        - "{Describe the persona’s secondary knowledge background, education, or comfort with product.}"
+        - "{Describe the persona’s tertiary knowledge background, education, or comfort with product.}"
+      technical_expertise:
+        - "{Describe the persona’s primary competencies, preferred operating systems, interfaces, or programming languages.}"
+        - "{Describe the persona’s secondary competencies, preferred operating systems, interfaces, or programming languages.}"
+        - "{Describe the persona’s tertiary competencies, preferred operating systems, interfaces, or programming languages.}"
+      use_case:
+        - "{Describe the persona’s primary tasks to perform.}"
+        - "{Describe the persona’s secondary tasks to perform.}"
+        - "{Describe the persona’s tertiary tasks to perform.}"
+      thinking_pattern:
+        - "{Describe the persona’s primary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+        - "{Describe the persona’s secondary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+        - "{Describe the persona’s tertiary mindset, approach to tasks, or tolerance or aversion toward _x._}"
+  footer:
+    other_templates: ""
+    feedback_form: ""
