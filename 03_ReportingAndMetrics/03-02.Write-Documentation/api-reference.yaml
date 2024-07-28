@@ -1,0 +1,112 @@
+api_reference:
+  title: "API Reference template"
+  metadata:
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  overview:
+    description: "Use the {product} APIs to {access | customize | program} the {features | functionality}."
+    base_url: "{Provide the base URL of the API. For example: https://api.example.com}"
+    authorization:
+      required: "{is | is not}"
+      methods: "{ Basic | Digest | OAuth | others}"
+      example: "{Provide an example request with {Basic | Digest | OAuth | others} authentication.}"
+    version: "{This section is optional. Provide the version number using semantic versioning or your product's API versioning scheme. For example: `0.0.1`}"
+    pagination: "{This section is optional. Due to the potentially very large result sets from API calls, responses {are | can be} returned as shorter pages. Pagination can be customized using {pagination settings}. If not specified, the default values are {values}.}"
+    rate_limiting: "{This section is optional. The {product} APIs use a {strategy-name} rate limiting strategy. The maximum number of requests allowed to access a {resource | endpoint |..} is {number} requests per {time period}.}"
+    http_status_codes:
+      - code: "200 OK"
+        message: "Request succeeds."
+        description: "{description}"
+      - code: ""
+        message: ""
+        description: ""
+    errors:
+      description: "{This section is optional. The {product} APIs use the following error types:}"
+      types:
+        - error: "{ExampleErrorType}"
+          description: "{Failure in ...}"
+        - error: ""
+          description: ""
+      example_error_type:
+        fields:
+          - field: "{errorType}"
+            type: "{enum}"
+            description: "{Predefined error codes. Possible enum values are x, y, ..., and z.}"
+          - field: "{errorMessage}"
+            type: "{string}"
+            description: "{Additional information about why the error occurs.}"
+  resources:
+    - name: "{Resource name}"
+      description: "The {resource name} is used to {functionality}."
+      data_model:
+        attributes:
+          - attribute: "{id}"
+            type: "string"
+            required: "Required"
+            description: "{Unique identifier of user}"
+          - attribute: "{name}"
+            type: "string"
+            required: "Optional"
+            description: "{Name of user}"
+      example: "{Provide an example of the data representation in the format that your project use.}"
+      endpoints:
+        - method: "POST"
+          endpoint: "{Endpoint name A}"
+          description: "Creates a {resource}."
+        - method: "GET"
+          endpoint: "{Endpoint name B}"
+          description: "Retrieves a {resource}."
+  endpoint:
+    name: "{Endpoint name}"
+    description: "{Provide a one-line description of what the API does. Starts with a verb in the indicative mood. For example, 'Retrieves a user by `userID`'.}"
+    endpoint: "{METHOD} /{request-url}/{{path-parameter}}"
+    details: "{Explain what the endpoint does.}"
+    deprecated: "{This paragraph is optional. This endpoint has been deprecated. Use {the recommended endpoint} instead. For more information about how to migrate to {the recommended endpoint}, see [{the migration guide}](#link).}"
+    rate_limit: "{This paragraph is optional. The maximum number of calls to this API endpoint is {number} per minute. For more information about API rate limiting/throttling, see [{the topic}](#example).}"
+    authorization: "The [{authorization method}](#authorization) is required for each API request."
+    permission: "{This paragraph is optional. Calling this endpoint also requires the {permission-name} permission.}"
+    request_schema:
+      path_parameters:
+        description: "{This section is optional.}"
+        parameters:
+          - name: "{id}"
+            type: "string"
+            required: "Required"
+            description: "{Unique identifier of user}"
+      query_parameters:
+        description: "{This section is optional.}"
+        parameters:
+          - name: "{pageSize}"
+            type: "int"
+            required: "Optional"
+            description: "{The number of items to be returned in a single request. The default value is N.}"
+      header_parameters:
+        description: "{This section is optional.}"
+        parameters:
+          - name: "{Content-Type}"
+            type: "string"
+            required: "Required"
+            description: "{Media type of the resource. Must be an object.}"
+      request_body:
+        description: "{This section is optional.}"
+        fields:
+          - name: "{id}"
+            type: "string"
+            required: "Required"
+            description: "{Unique identifier of the user}"
+          - name: "{name}"
+            type: "string"
+            required: "Optional"
+            description: "{Name of the user}"
+    request_example: "{Provide an example of the API request, filled with sample values.}"
+    response_schema:
+      status_codes:
+        - code: "2xx"
+          schema: "{ExampleDataType}"
+          description: "{Describe the result where the request succeeds.}"
+        - code: "4xx"
+          schema: "{ExampleErrorType}"
+          description: "{Describe the result where the request fails with the specified error code.}"
+    response_example: "{Provide an example of the API response, filled with sample values.}"
+  footer:
+    other_templates: ""
+    feedback_form: ""
