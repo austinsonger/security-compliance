@@ -1,26 +1,59 @@
 tutorial:
-  background: '{This section is optional. Feel free to use some of the text below
-    to help you get started. {product} is a {product type} that you can use to {common
-    use case}... {product} provides many of the same features as {competitors}, but
-    with {feature}, you can... Using {feature} enables you to {pain point}...}'
-  before_you_start: '{Use this section to tell users about any prerequisites needed
-    before they start the tutorial, such as: Expected prior knowledge. Software or
-    hardware to obtain. Environments to set up and configure. Access codes to obtain.
-    Before you start the tutorial, you should: {Prerequisite 1, Prerequisite 2, Prerequisite
-    3...}}'
-  next_steps: 'Consider completing some other common tasks using {feature}: {Task
-    1, Task 2, Task 3...}'
-  overview: 'In this tutorial, you''ll learn how to {insert brief description of the
-    main tutorial task}. This tutorial is intended for {audience}. It assumes you
-    have basic knowledge of: {Concept 1, Concept 2, Concept 3...}. By the end of this
-    tutorial, you''ll be able to: {Learning objective 1, Learning objective 2, Learning
-    objective 3...}'
-  summary: 'In this tutorial, you learned how to: {Summary point 1, Summary point
-    2, Summary point 3..}'
+  title: "{Title}"
+  metadata:
+    boilerplate_notice: "This template includes writing instructions and boilerplate text that you can customize, use as-is, or completely replace with your own text. This text is indicated in {curly brackets}. Make sure you replace the placeholders with your own text."
+  overview:
+    description: "In this tutorial, you'll learn how to {insert brief description of the main tutorial task}. This tutorial is intended for {audience}. It assumes you have basic knowledge of:"
+    concepts:
+      - "Concept 1"
+      - "Concept 2"
+      - "Concept 3..."
+    learning_objectives:
+      - "Learning objective 1"
+      - "Learning objective 2"
+      - "Learning objective 3..."
+  background:
+    description: |
+      {This section is optional. Feel free to use some of the text below to help you get started.}
+      
+      * {product} is a {product type} that you can use to {common use case}...
+      * {product} provides many of the same features as {competitors}, but with {feature}, you can...
+      * Using {feature} enables you to {pain point}...
+  prerequisites:
+    description: |
+      {Use this section to tell users about any prerequisites needed before they start the tutorial, such as:
+      
+      * Expected prior knowledge.
+      * Software or hardware to obtain.
+      * Environments to set up and configure.
+      * Access codes to obtain.
+      }
+    requirements:
+      - "Prerequisite 1"
+      - "Prerequisite 2"
+      - "Prerequisite 3..."
   task:
-    name: '{Task name}'
+    name: "{Task name}"
     steps:
-    - '{Write the step here. Use a verb to start. {Explanatory text} {Optional: Code
-      sample or screenshot that helps your users complete this step} {Optional: Result}}'
-    - '{Write the step here. Use a verb to start. {Substep 1, Substep 1}}'
-  title: Title
+      - step: "{Write the step here. Use a verb to start.}"
+        explanatory_text: "{Explanatory text}"
+        code_sample_or_screenshot: "{Optional: Code sample or screenshot that helps your users complete this step}"
+        result: "{Optional: Result}"
+      - step: "{Write the step here. Use a verb to start.}"
+        substeps:
+          - substep: "{Substep 1}"
+          - substep: "{Substep 1}"
+  summary:
+    points:
+      - "Summary point 1"
+      - "Summary point 2"
+      - "Summary point 3..."
+  next_steps:
+    description: "{Use this section to share links to related tutorials, videos, or other documentation}."
+    tasks:
+      - "Task 1"
+      - "Task 2"
+      - "Task 3..."
+  footer:
+    other_templates: "h"
+    feedback_form: ""
